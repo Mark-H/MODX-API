@@ -1,0 +1,123 @@
+{
+    "openapi": "3.0",
+    "info": {
+        "title": "MODX API",
+        "description": "API Specification for the MODX Restful API.",
+        "version": "0.1.0",
+        "contact": {
+            "url": "https:\/\/github.com\/Mark-H\/MODX-API\/issues"
+        },
+        "license": {
+            "name": "MIT",
+            "url": "https:\/\/opensource.org\/licenses\/MIT"
+        }
+    },
+    "paths": {
+        "\/resources": {
+            "get": {
+                "description": "Returns all resources",
+                "responses": {
+                    "200": {
+                        "description": "A list of resources.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#\/components\/schemas\/modResource"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "modAccessCategory": "models\/modaccesscategory.json",
+            "modAccessNamespace": "models\/modaccessnamespace.json",
+            "modAccessElement": "models\/modaccesselement.json",
+            "modAccessPolicy": "models\/modaccesspolicy.json",
+            "modAccessPolicyTemplate": "models\/modaccesspolicytemplate.json",
+            "modAccessPolicyTemplateGroup": "models\/modaccesspolicytemplategroup.json",
+            "modAccessPermission": "models\/modaccesspermission.json",
+            "modAccessResource": "models\/modaccessresource.json",
+            "modAccessResourceGroup": "models\/modaccessresourcegroup.json",
+            "modAction": "models\/modaction.json",
+            "modActionDom": "models\/modactiondom.json",
+            "modActionField": "models\/modactionfield.json",
+            "modActiveUser": "models\/modactiveuser.json",
+            "modCategory": "models\/modcategory.json",
+            "modCategoryClosure": "models\/modcategoryclosure.json",
+            "modChunk": "models\/modchunk.json",
+            "modClassMap": "models\/modclassmap.json",
+            "modContentType": "models\/modcontenttype.json",
+            "modContext": "models\/modcontext.json",
+            "modContextSetting": "models\/modcontextsetting.json",
+            "modContextResource": "models\/modcontextresource.json",
+            "modDashboard": "models\/moddashboard.json",
+            "modDashboardWidget": "models\/moddashboardwidget.json",
+            "modDashboardWidgetPlacement": "models\/moddashboardwidgetplacement.json",
+            "modElement": "models\/modelement.json",
+            "modElementPropertySet": "models\/modelementpropertyset.json",
+            "modEvent": "models\/modevent.json",
+            "modFormCustomizationProfileUserGroup": "models\/modformcustomizationprofileusergroup.json",
+            "modFormCustomizationProfile": "models\/modformcustomizationprofile.json",
+            "modFormCustomizationSet": "models\/modformcustomizationset.json",
+            "modLexiconEntry": "models\/modlexiconentry.json",
+            "modManagerLog": "models\/modmanagerlog.json",
+            "modMenu": "models\/modmenu.json",
+            "modNamespace": "models\/modnamespace.json",
+            "modExtensionPackage": "models\/modextensionpackage.json",
+            "modPlugin": "models\/modplugin.json",
+            "modPluginEvent": "models\/modpluginevent.json",
+            "modPropertySet": "models\/modpropertyset.json",
+            "modResource": "models\/modresource.json",
+            "modResourceGroup": "models\/modresourcegroup.json",
+            "modResourceGroupResource": "models\/modresourcegroupresource.json",
+            "modScript": "models\/modscript.json",
+            "modSession": "models\/modsession.json",
+            "modSnippet": "models\/modsnippet.json",
+            "modSystemSetting": "models\/modsystemsetting.json",
+            "modTemplate": "models\/modtemplate.json",
+            "modTemplateVar": "models\/modtemplatevar.json",
+            "modTemplateVarResource": "models\/modtemplatevarresource.json",
+            "modTemplateVarResourceGroup": "models\/modtemplatevarresourcegroup.json",
+            "modTemplateVarTemplate": "models\/modtemplatevartemplate.json",
+            "modUser": "models\/moduser.json",
+            "modUserGroup": "models\/modusergroup.json",
+            "modUserGroupMember": "models\/modusergroupmember.json",
+            "modUserGroupRole": "models\/modusergrouprole.json",
+            "modUserGroupSetting": "models\/modusergroupsetting.json",
+            "modUserMessage": "models\/modusermessage.json",
+            "modUserProfile": "models\/moduserprofile.json",
+            "modUserSetting": "models\/modusersetting.json",
+            "modWorkspace": "models\/modworkspace.json",
+            "modDbRegisterQueue": "models\/moddbregisterqueue.json",
+            "modDbRegisterTopic": "models\/moddbregistertopic.json",
+            "modDbRegisterMessage": "models\/moddbregistermessage.json",
+            "modAccessMediaSource": "models\/modaccessmediasource.json",
+            "modMediaSource": "models\/modmediasource.json",
+            "modMediaSourceContext": "models\/modmediasourcecontext.json",
+            "modMediaSourceElement": "models\/modmediasourceelement.json",
+            "modTransportProvider": "models\/modtransportprovider.json",
+            "modTransportPackage": "models\/modtransportpackage.json"
+        },
+        "responses": [],
+        "parameters": [],
+        "examples": [],
+        "requestBodies": [],
+        "headers": [],
+        "securitySchemes": [],
+        "links": [],
+        "callbacks": []
+    },
+    "security": [],
+    "tags": [],
+    "externalDocs": {
+        "description": "Source and discussion",
+        "url": "https:\/\/github.com\/Mark-H\/MODX-API"
+    }
+}

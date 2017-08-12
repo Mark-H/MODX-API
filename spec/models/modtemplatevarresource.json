@@ -1,0 +1,19 @@
+{
+    "title": "Template Var Resource",
+    "type": "object",
+    "properties": {
+        "tmplvarid": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "contentid": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "value": {
+            "type": "string"
+        }
+    }
+}

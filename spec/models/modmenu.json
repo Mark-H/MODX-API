@@ -1,0 +1,39 @@
+{
+    "title": "Menu",
+    "type": "object",
+    "properties": {
+        "text": {
+            "type": "string"
+        },
+        "parent": {
+            "type": "string"
+        },
+        "action": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "menuindex": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "params": {
+            "type": "string"
+        },
+        "handler": {
+            "type": "string"
+        },
+        "permissions": {
+            "type": "string"
+        },
+        "namespace": {
+            "type": "string",
+            "default": "core"
+        }
+    }
+}

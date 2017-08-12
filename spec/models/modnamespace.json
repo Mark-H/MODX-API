@@ -1,0 +1,15 @@
+{
+    "title": "Namespace",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "path": {
+            "type": "string"
+        },
+        "assets_path": {
+            "type": "string"
+        }
+    }
+}

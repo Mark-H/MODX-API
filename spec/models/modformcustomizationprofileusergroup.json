@@ -1,0 +1,16 @@
+{
+    "title": "Form Customization Profile User Group",
+    "type": "object",
+    "properties": {
+        "usergroup": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "profile": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

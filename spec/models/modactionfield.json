@@ -1,0 +1,30 @@
+{
+    "title": "Action Field",
+    "type": "object",
+    "properties": {
+        "action": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string",
+            "default": "field"
+        },
+        "tab": {
+            "type": "string"
+        },
+        "form": {
+            "type": "string"
+        },
+        "other": {
+            "type": "string"
+        },
+        "rank": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

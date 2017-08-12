@@ -1,0 +1,15 @@
+{
+    "title": "Element",
+    "type": "object",
+    "properties": {
+        "source": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "property_preprocess": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

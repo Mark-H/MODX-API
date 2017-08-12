@@ -1,0 +1,35 @@
+{
+    "title": "Plugin",
+    "type": "object",
+    "properties": {
+        "cache_type": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "plugincode": {
+            "type": "string"
+        },
+        "locked": {
+            "type": "boolean",
+            "default": false
+        },
+        "properties": {
+            "type": "string"
+        },
+        "disabled": {
+            "type": "boolean",
+            "default": false
+        },
+        "moduleguid": {
+            "type": "string"
+        },
+        "static": {
+            "type": "boolean",
+            "default": false
+        },
+        "static_file": {
+            "type": "string"
+        }
+    }
+}

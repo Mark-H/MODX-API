@@ -1,0 +1,33 @@
+{
+    "title": "Access Policy",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "parent": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "template": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "class": {
+            "type": "string"
+        },
+        "data": {
+            "type": "string",
+            "default": "{}"
+        },
+        "lexicon": {
+            "type": "string",
+            "default": "permissions"
+        }
+    }
+}

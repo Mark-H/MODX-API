@@ -1,0 +1,12 @@
+{
+    "title": "Access Policy Template Group",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        }
+    }
+}

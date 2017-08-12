@@ -1,0 +1,20 @@
+{
+    "title": "Property Set",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "category": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "description": {
+            "type": "string"
+        },
+        "properties": {
+            "type": "string"
+        }
+    }
+}

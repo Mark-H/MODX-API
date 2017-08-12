@@ -1,0 +1,52 @@
+{
+    "title": "User",
+    "type": "object",
+    "properties": {
+        "username": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string"
+        },
+        "cachepwd": {
+            "type": "string"
+        },
+        "class_key": {
+            "type": "string",
+            "default": "modUser"
+        },
+        "active": {
+            "type": "boolean",
+            "default": true
+        },
+        "remote_key": {
+            "type": "string"
+        },
+        "remote_data": {
+            "type": "string"
+        },
+        "hash_class": {
+            "type": "string",
+            "default": "hashing.modPBKDF2"
+        },
+        "salt": {
+            "type": "string"
+        },
+        "primary_group": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "session_stale": {
+            "type": "string"
+        },
+        "sudo": {
+            "type": "boolean",
+            "default": false
+        },
+        "createdon": {
+            "type": "string",
+            "default": "0"
+        }
+    }
+}

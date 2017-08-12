@@ -1,0 +1,54 @@
+{
+    "title": "Action Dom",
+    "type": "object",
+    "properties": {
+        "set": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "action": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "xtype": {
+            "type": "string"
+        },
+        "container": {
+            "type": "string"
+        },
+        "rule": {
+            "type": "string"
+        },
+        "value": {
+            "type": "string"
+        },
+        "constraint": {
+            "type": "string"
+        },
+        "constraint_field": {
+            "type": "string"
+        },
+        "constraint_class": {
+            "type": "string"
+        },
+        "active": {
+            "type": "boolean",
+            "default": true
+        },
+        "for_parent": {
+            "type": "boolean",
+            "default": false
+        },
+        "rank": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

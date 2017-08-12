@@ -1,0 +1,27 @@
+{
+    "title": "System Setting",
+    "type": "object",
+    "properties": {
+        "key": {
+            "type": "string"
+        },
+        "value": {
+            "type": "string"
+        },
+        "xtype": {
+            "type": "string",
+            "default": "textfield"
+        },
+        "namespace": {
+            "type": "string",
+            "default": "core"
+        },
+        "area": {
+            "type": "string"
+        },
+        "editedon": {
+            "type": "string",
+            "default": "NULL"
+        }
+    }
+}

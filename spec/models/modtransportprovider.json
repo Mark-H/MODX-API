@@ -1,0 +1,39 @@
+{
+    "title": "Transport Provider",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "service_url": {
+            "type": "string"
+        },
+        "username": {
+            "type": "string"
+        },
+        "api_key": {
+            "type": "string"
+        },
+        "created": {
+            "type": "string"
+        },
+        "updated": {
+            "type": "string"
+        },
+        "active": {
+            "type": "boolean",
+            "default": true
+        },
+        "priority": {
+            "type": "integer",
+            "format": "int32",
+            "default": 10
+        },
+        "properties": {
+            "type": "string"
+        }
+    }
+}

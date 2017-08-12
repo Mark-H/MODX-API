@@ -1,0 +1,21 @@
+{
+    "title": "Access Policy Template",
+    "type": "object",
+    "properties": {
+        "template_group": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "lexicon": {
+            "type": "string",
+            "default": "permissions"
+        }
+    }
+}

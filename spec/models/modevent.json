@@ -1,0 +1,17 @@
+{
+    "title": "Event",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "service": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "groupname": {
+            "type": "string"
+        }
+    }
+}

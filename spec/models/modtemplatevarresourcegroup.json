@@ -1,0 +1,16 @@
+{
+    "title": "Template Var Resource Group",
+    "type": "object",
+    "properties": {
+        "tmplvarid": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "documentgroup": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

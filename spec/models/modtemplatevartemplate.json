@@ -1,0 +1,21 @@
+{
+    "title": "Template Var Template",
+    "type": "object",
+    "properties": {
+        "tmplvarid": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "templateid": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "rank": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

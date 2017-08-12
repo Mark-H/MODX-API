@@ -1,0 +1,21 @@
+{
+    "title": "Category Closure",
+    "type": "object",
+    "properties": {
+        "ancestor": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "descendant": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "depth": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

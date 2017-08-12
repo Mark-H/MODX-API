@@ -1,0 +1,21 @@
+{
+    "title": "Dashboard Widget Placement",
+    "type": "object",
+    "properties": {
+        "dashboard": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "widget": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "rank": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

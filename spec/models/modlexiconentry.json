@@ -1,0 +1,31 @@
+{
+    "title": "Lexicon Entry",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "value": {
+            "type": "string"
+        },
+        "topic": {
+            "type": "string",
+            "default": "default"
+        },
+        "namespace": {
+            "type": "string",
+            "default": "core"
+        },
+        "language": {
+            "type": "string",
+            "default": "en"
+        },
+        "createdon": {
+            "type": "string"
+        },
+        "editedon": {
+            "type": "string",
+            "default": "NULL"
+        }
+    }
+}

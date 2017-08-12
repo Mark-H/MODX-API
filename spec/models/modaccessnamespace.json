@@ -1,0 +1,9 @@
+{
+    "title": "Access Namespace",
+    "type": "object",
+    "properties": {
+        "context_key": {
+            "type": "string"
+        }
+    }
+}

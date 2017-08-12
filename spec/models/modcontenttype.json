@@ -1,0 +1,25 @@
+{
+    "title": "Content Type",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "mime_type": {
+            "type": "string"
+        },
+        "file_extensions": {
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "binary": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "title": "Dashboard Widget",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "content": {
+            "type": "string"
+        },
+        "namespace": {
+            "type": "string"
+        },
+        "lexicon": {
+            "type": "string",
+            "default": "core:dashboards"
+        },
+        "size": {
+            "type": "string",
+            "default": "half"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "title": "Class Map",
+    "type": "object",
+    "properties": {
+        "class": {
+            "type": "string"
+        },
+        "parent_class": {
+            "type": "string"
+        },
+        "name_field": {
+            "type": "string",
+            "default": "name"
+        },
+        "path": {
+            "type": "string"
+        },
+        "lexicon": {
+            "type": "string",
+            "default": "core:resource"
+        }
+    }
+}

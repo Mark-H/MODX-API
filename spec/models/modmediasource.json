@@ -1,0 +1,23 @@
+{
+    "title": "Media Source",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "class_key": {
+            "type": "string",
+            "default": "sources.modFileMediaSource"
+        },
+        "properties": {
+            "type": "string"
+        },
+        "is_stream": {
+            "type": "boolean",
+            "default": true
+        }
+    }
+}

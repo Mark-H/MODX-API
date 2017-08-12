@@ -1,0 +1,22 @@
+{
+    "title": "Script",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "editor_type": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "category": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

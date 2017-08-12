@@ -1,0 +1,17 @@
+{
+    "title": "User Group Role",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "authority": {
+            "type": "integer",
+            "format": "int32",
+            "default": 9999
+        }
+    }
+}

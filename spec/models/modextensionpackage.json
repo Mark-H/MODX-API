@@ -1,0 +1,32 @@
+{
+    "title": "Extension Package",
+    "type": "object",
+    "properties": {
+        "namespace": {
+            "type": "string",
+            "default": "core"
+        },
+        "name": {
+            "type": "string",
+            "default": "core"
+        },
+        "path": {
+            "type": "string"
+        },
+        "table_prefix": {
+            "type": "string"
+        },
+        "service_class": {
+            "type": "string"
+        },
+        "service_name": {
+            "type": "string"
+        },
+        "created_at": {
+            "type": "string"
+        },
+        "updated_at": {
+            "type": "string"
+        }
+    }
+}

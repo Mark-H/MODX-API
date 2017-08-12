@@ -1,0 +1,22 @@
+{
+    "title": "Workspace",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "path": {
+            "type": "string"
+        },
+        "created": {
+            "type": "string"
+        },
+        "active": {
+            "type": "boolean",
+            "default": false
+        },
+        "attributes": {
+            "type": "string"
+        }
+    }
+}

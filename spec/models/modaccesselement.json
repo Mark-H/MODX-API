@@ -1,0 +1,9 @@
+{
+    "title": "Access Element",
+    "type": "object",
+    "properties": {
+        "context_key": {
+            "type": "string"
+        }
+    }
+}

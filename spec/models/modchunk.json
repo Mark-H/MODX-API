@@ -1,0 +1,45 @@
+{
+    "title": "Chunk",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string",
+            "default": "Chunk"
+        },
+        "editor_type": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "category": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "cache_type": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "snippet": {
+            "type": "string"
+        },
+        "locked": {
+            "type": "boolean",
+            "default": false
+        },
+        "properties": {
+            "type": "string"
+        },
+        "static": {
+            "type": "boolean",
+            "default": false
+        },
+        "static_file": {
+            "type": "string"
+        }
+    }
+}

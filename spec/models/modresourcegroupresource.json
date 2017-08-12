@@ -1,0 +1,16 @@
+{
+    "title": "Resource Group Resource",
+    "type": "object",
+    "properties": {
+        "document_group": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "document": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        }
+    }
+}

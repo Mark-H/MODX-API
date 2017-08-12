@@ -1,0 +1,39 @@
+{
+    "title": "Db Register Message",
+    "type": "object",
+    "properties": {
+        "topic": {
+            "type": "integer",
+            "format": "int32"
+        },
+        "id": {
+            "type": "string"
+        },
+        "created": {
+            "type": "string"
+        },
+        "valid": {
+            "type": "string"
+        },
+        "accessed": {
+            "type": "string"
+        },
+        "accesses": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "expires": {
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "payload": {
+            "type": "string"
+        },
+        "kill": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}
