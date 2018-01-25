@@ -14,9 +14,11 @@ $xmlFiles = [
 ];
 
 $schemas = [];
+$paths = [];
 
 foreach ($xmlFiles as $file) {
     $xml = simplexml_load_file($file);
+    $rootAttribs = $xml->attributes();
     foreach ($xml as $object) {
         $attributes = $object->attributes(); // can have class, extends, table
         $class = (string)$attributes['class'];
@@ -76,14 +78,125 @@ foreach ($xmlFiles as $file) {
 //        }
 
         $schemas[$class] = $def;
+
+        // Auto generate the URI from the class by turning something like modTemplateVar into template/var
+        $uri = $class;
+        if (strpos($class, 'mod') === 0) {
+            $uri = substr($class, 3);
+            $uri = preg_split('/(?=[A-Z])/', lcfirst($uri));
+            $uri = implode('/', $uri);
+            $uri = strtolower($uri);
+        }
+        $uri = '/' . $uri;
+
+        if ((string)$rootAttribs->package !== 'modx') {
+            $pkg = (string)$rootAttribs->package;
+            $pkg = strpos($pkg, 'modx.') === 0 ? substr($pkg, strlen('modx.')) : $pkg;
+            $pkg = str_replace('.', '/', $pkg);
+            $uri = '/' . $pkg . $uri;
+        }
+
+        $paths[$uri] = [
+            'get' => [
+                'description' => 'Returns a collection of ' . $class . ' objects.',
+                'responses' => [
+                    '200' => [
+                        'description' => 'Collection of ' . $class . ' objects.',
+                        'content' => [
+                            'application/json' => [
+                                'schema' => [
+                                    'type' => 'array',
+                                    'items' => [
+                                        '$ref' => '#/components/schemas/' . $class
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'post' => [
+                'description' => 'Creates a new ' . $class . ' object.',
+                'responses' => [
+                    '200' => [
+                        'description' => 'New ' . $class . ' object successfully created.',
+                        'content' => [
+                            'application/json' => [
+                                'schema' => [
+                                    '$ref' => '#/components/schemas/' . $class
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ];
+        $paths[$uri . '/{id}'] = [
+            'put' => [
+                'description' => 'Updates a ' . $class . ' object.',
+                'parameters' => [
+                    [
+                        'name' => 'id',
+                        'in' => 'path',
+                        'description' => 'The ID (primary key) of the modAccessCategory object to update.',
+                        'required' => true,
+                        'schema' => [
+                            'type' => 'integer'
+                        ]
+                    ]
+                ],
+                'responses' => [
+                    '200' => [
+                        'description' => $class . ' object updated.',
+                        'content' => [
+                            'application/json' => [
+                                'schema' => [
+                                    '$ref' => '#/components/schemas/' . $class
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'delete' => [
+                'description' => 'Deletes a ' . $class . ' object.',
+                'parameters' => [
+                    [
+                        'name' => 'id',
+                        'in' => 'path',
+                        'description' => 'The ID (primary key) of the modAccessCategory object that needs to be removed.',
+                        'required' => true,
+                        'schema' => [
+                            'type' => 'integer'
+                        ]
+                    ]
+                ],
+                'responses' => [
+                    '200' => [
+                        'description' => $class . ' object removed.',
+                        'content' => [
+                            'application/json' => [
+                                'schema' => [
+                                    '$ref' => '#/components/schemas/' . $class
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ];
     }
 }
 
 // Grab the existing openapi file and decode it
 $spec = file_get_contents(SPEC_PATH . 'openapi.json');
 $spec = json_decode($spec, true);
+if (empty($spec)) {
+    exit('Could not load existing openapi.json to update - perhaps the JSON is invalid?');
+}
 // Update the schemas
 $spec['components']['schemas'] = $schemas;
+$spec['paths'] = $paths;
 // Write it again
 file_put_contents(SPEC_PATH . 'openapi.json', json_encode($spec, JSON_PRETTY_PRINT));
 
