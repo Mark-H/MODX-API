@@ -1,5 +1,5 @@
 {
-    "openapi": "3.0",
+    "openapi": "3.0.0",
     "info": {
         "title": "MODX API",
         "description": "API Specification for the MODX Restful API.",
@@ -36,74 +36,1959 @@
     },
     "components": {
         "schemas": {
-            "modAccessCategory": "models\/modaccesscategory.json",
-            "modAccessNamespace": "models\/modaccessnamespace.json",
-            "modAccessElement": "models\/modaccesselement.json",
-            "modAccessPolicy": "models\/modaccesspolicy.json",
-            "modAccessPolicyTemplate": "models\/modaccesspolicytemplate.json",
-            "modAccessPolicyTemplateGroup": "models\/modaccesspolicytemplategroup.json",
-            "modAccessPermission": "models\/modaccesspermission.json",
-            "modAccessResource": "models\/modaccessresource.json",
-            "modAccessResourceGroup": "models\/modaccessresourcegroup.json",
-            "modAction": "models\/modaction.json",
-            "modActionDom": "models\/modactiondom.json",
-            "modActionField": "models\/modactionfield.json",
-            "modActiveUser": "models\/modactiveuser.json",
-            "modCategory": "models\/modcategory.json",
-            "modCategoryClosure": "models\/modcategoryclosure.json",
-            "modChunk": "models\/modchunk.json",
-            "modClassMap": "models\/modclassmap.json",
-            "modContentType": "models\/modcontenttype.json",
-            "modContext": "models\/modcontext.json",
-            "modContextSetting": "models\/modcontextsetting.json",
-            "modContextResource": "models\/modcontextresource.json",
-            "modDashboard": "models\/moddashboard.json",
-            "modDashboardWidget": "models\/moddashboardwidget.json",
-            "modDashboardWidgetPlacement": "models\/moddashboardwidgetplacement.json",
-            "modElement": "models\/modelement.json",
-            "modElementPropertySet": "models\/modelementpropertyset.json",
-            "modEvent": "models\/modevent.json",
-            "modFormCustomizationProfileUserGroup": "models\/modformcustomizationprofileusergroup.json",
-            "modFormCustomizationProfile": "models\/modformcustomizationprofile.json",
-            "modFormCustomizationSet": "models\/modformcustomizationset.json",
-            "modLexiconEntry": "models\/modlexiconentry.json",
-            "modManagerLog": "models\/modmanagerlog.json",
-            "modMenu": "models\/modmenu.json",
-            "modNamespace": "models\/modnamespace.json",
-            "modExtensionPackage": "models\/modextensionpackage.json",
-            "modPlugin": "models\/modplugin.json",
-            "modPluginEvent": "models\/modpluginevent.json",
-            "modPropertySet": "models\/modpropertyset.json",
-            "modResource": "models\/modresource.json",
-            "modResourceGroup": "models\/modresourcegroup.json",
-            "modResourceGroupResource": "models\/modresourcegroupresource.json",
-            "modScript": "models\/modscript.json",
-            "modSession": "models\/modsession.json",
-            "modSnippet": "models\/modsnippet.json",
-            "modSystemSetting": "models\/modsystemsetting.json",
-            "modTemplate": "models\/modtemplate.json",
-            "modTemplateVar": "models\/modtemplatevar.json",
-            "modTemplateVarResource": "models\/modtemplatevarresource.json",
-            "modTemplateVarResourceGroup": "models\/modtemplatevarresourcegroup.json",
-            "modTemplateVarTemplate": "models\/modtemplatevartemplate.json",
-            "modUser": "models\/moduser.json",
-            "modUserGroup": "models\/modusergroup.json",
-            "modUserGroupMember": "models\/modusergroupmember.json",
-            "modUserGroupRole": "models\/modusergrouprole.json",
-            "modUserGroupSetting": "models\/modusergroupsetting.json",
-            "modUserMessage": "models\/modusermessage.json",
-            "modUserProfile": "models\/moduserprofile.json",
-            "modUserSetting": "models\/modusersetting.json",
-            "modWorkspace": "models\/modworkspace.json",
-            "modDbRegisterQueue": "models\/moddbregisterqueue.json",
-            "modDbRegisterTopic": "models\/moddbregistertopic.json",
-            "modDbRegisterMessage": "models\/moddbregistermessage.json",
-            "modAccessMediaSource": "models\/modaccessmediasource.json",
-            "modMediaSource": "models\/modmediasource.json",
-            "modMediaSourceContext": "models\/modmediasourcecontext.json",
-            "modMediaSourceElement": "models\/modmediasourceelement.json",
-            "modTransportProvider": "models\/modtransportprovider.json",
-            "modTransportPackage": "models\/modtransportpackage.json"
+            "modAccessCategory": {
+                "title": "Access Category",
+                "type": "object",
+                "properties": {
+                    "context_key": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modAccessNamespace": {
+                "title": "Access Namespace",
+                "type": "object",
+                "properties": {
+                    "context_key": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modAccessElement": {
+                "title": "Access Element",
+                "type": "object",
+                "properties": {
+                    "context_key": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modAccessPolicy": {
+                "title": "Access Policy",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "parent": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "template": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "class": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "string",
+                        "default": "{}"
+                    },
+                    "lexicon": {
+                        "type": "string",
+                        "default": "permissions"
+                    }
+                }
+            },
+            "modAccessPolicyTemplate": {
+                "title": "Access Policy Template",
+                "type": "object",
+                "properties": {
+                    "template_group": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "lexicon": {
+                        "type": "string",
+                        "default": "permissions"
+                    }
+                }
+            },
+            "modAccessPolicyTemplateGroup": {
+                "title": "Access Policy Template Group",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modAccessPermission": {
+                "title": "Access Permission",
+                "type": "object",
+                "properties": {
+                    "template": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "boolean",
+                        "default": true
+                    }
+                }
+            },
+            "modAccessResource": {
+                "title": "Access Resource",
+                "type": "object",
+                "properties": {
+                    "context_key": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modAccessResourceGroup": {
+                "title": "Access Resource Group",
+                "type": "object",
+                "properties": {
+                    "context_key": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modAction": {
+                "title": "Action",
+                "type": "object",
+                "properties": {
+                    "namespace": {
+                        "type": "string",
+                        "default": "core"
+                    },
+                    "controller": {
+                        "type": "string"
+                    },
+                    "haslayout": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 1
+                    },
+                    "lang_topics": {
+                        "type": "string"
+                    },
+                    "assets": {
+                        "type": "string"
+                    },
+                    "help_url": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modActionDom": {
+                "title": "Action Dom",
+                "type": "object",
+                "properties": {
+                    "set": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "action": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "xtype": {
+                        "type": "string"
+                    },
+                    "container": {
+                        "type": "string"
+                    },
+                    "rule": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "constraint": {
+                        "type": "string"
+                    },
+                    "constraint_field": {
+                        "type": "string"
+                    },
+                    "constraint_class": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "default": true
+                    },
+                    "for_parent": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modActionField": {
+                "title": "Action Field",
+                "type": "object",
+                "properties": {
+                    "action": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string",
+                        "default": "field"
+                    },
+                    "tab": {
+                        "type": "string"
+                    },
+                    "form": {
+                        "type": "string"
+                    },
+                    "other": {
+                        "type": "string"
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modActiveUser": {
+                "title": "Active User",
+                "type": "object",
+                "properties": {
+                    "internalKey": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "username": {
+                        "type": "string"
+                    },
+                    "lasthit": {
+                        "type": "string",
+                        "default": "0"
+                    },
+                    "id": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "action": {
+                        "type": "string"
+                    },
+                    "ip": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modCategory": {
+                "title": "Category",
+                "type": "object",
+                "properties": {
+                    "parent": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "category": {
+                        "type": "string"
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modCategoryClosure": {
+                "title": "Category Closure",
+                "type": "object",
+                "properties": {
+                    "ancestor": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "descendant": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "depth": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modChunk": {
+                "title": "Chunk",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string",
+                        "default": "Chunk"
+                    },
+                    "editor_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "category": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "cache_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "snippet": {
+                        "type": "string"
+                    },
+                    "locked": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "properties": {
+                        "type": "string"
+                    },
+                    "static": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "static_file": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modClassMap": {
+                "title": "Class Map",
+                "type": "object",
+                "properties": {
+                    "class": {
+                        "type": "string"
+                    },
+                    "parent_class": {
+                        "type": "string"
+                    },
+                    "name_field": {
+                        "type": "string",
+                        "default": "name"
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "lexicon": {
+                        "type": "string",
+                        "default": "core:resource"
+                    }
+                }
+            },
+            "modContentType": {
+                "title": "Content Type",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "mime_type": {
+                        "type": "string"
+                    },
+                    "file_extensions": {
+                        "type": "string"
+                    },
+                    "headers": {
+                        "type": "string"
+                    },
+                    "binary": {
+                        "type": "boolean",
+                        "default": false
+                    }
+                }
+            },
+            "modContext": {
+                "title": "Context",
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modContextSetting": {
+                "title": "Context Setting",
+                "type": "object",
+                "properties": {
+                    "context_key": {
+                        "type": "string"
+                    },
+                    "key": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "xtype": {
+                        "type": "string",
+                        "default": "textfield"
+                    },
+                    "namespace": {
+                        "type": "string",
+                        "default": "core"
+                    },
+                    "area": {
+                        "type": "string"
+                    },
+                    "editedon": {
+                        "type": "string",
+                        "default": "NULL"
+                    }
+                }
+            },
+            "modContextResource": {
+                "title": "Context Resource",
+                "type": "object",
+                "properties": {
+                    "context_key": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                }
+            },
+            "modDashboard": {
+                "title": "Dashboard",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "hide_trees": {
+                        "type": "boolean",
+                        "default": false
+                    }
+                }
+            },
+            "modDashboardWidget": {
+                "title": "Dashboard Widget",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "content": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "lexicon": {
+                        "type": "string",
+                        "default": "core:dashboards"
+                    },
+                    "size": {
+                        "type": "string",
+                        "default": "half"
+                    }
+                }
+            },
+            "modDashboardWidgetPlacement": {
+                "title": "Dashboard Widget Placement",
+                "type": "object",
+                "properties": {
+                    "dashboard": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "widget": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modElement": {
+                "title": "Element",
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "property_preprocess": {
+                        "type": "boolean",
+                        "default": false
+                    }
+                }
+            },
+            "modElementPropertySet": {
+                "title": "Element Property Set",
+                "type": "object",
+                "properties": {
+                    "element": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "element_class": {
+                        "type": "string"
+                    },
+                    "property_set": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modEvent": {
+                "title": "Event",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "service": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "groupname": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modFormCustomizationProfileUserGroup": {
+                "title": "Form Customization Profile User Group",
+                "type": "object",
+                "properties": {
+                    "usergroup": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "profile": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modFormCustomizationProfile": {
+                "title": "Form Customization Profile",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modFormCustomizationSet": {
+                "title": "Form Customization Set",
+                "type": "object",
+                "properties": {
+                    "profile": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "action": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "template": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "constraint": {
+                        "type": "string"
+                    },
+                    "constraint_field": {
+                        "type": "string"
+                    },
+                    "constraint_class": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modLexiconEntry": {
+                "title": "Lexicon Entry",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "topic": {
+                        "type": "string",
+                        "default": "default"
+                    },
+                    "namespace": {
+                        "type": "string",
+                        "default": "core"
+                    },
+                    "language": {
+                        "type": "string",
+                        "default": "en"
+                    },
+                    "createdon": {
+                        "type": "string"
+                    },
+                    "editedon": {
+                        "type": "string",
+                        "default": "NULL"
+                    }
+                }
+            },
+            "modManagerLog": {
+                "title": "Manager Log",
+                "type": "object",
+                "properties": {
+                    "user": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "occurred": {
+                        "type": "string",
+                        "default": "NULL"
+                    },
+                    "action": {
+                        "type": "string"
+                    },
+                    "classKey": {
+                        "type": "string"
+                    },
+                    "item": {
+                        "type": "string",
+                        "default": "0"
+                    }
+                }
+            },
+            "modMenu": {
+                "title": "Menu",
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    },
+                    "parent": {
+                        "type": "string"
+                    },
+                    "action": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "icon": {
+                        "type": "string"
+                    },
+                    "menuindex": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "params": {
+                        "type": "string"
+                    },
+                    "handler": {
+                        "type": "string"
+                    },
+                    "permissions": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string",
+                        "default": "core"
+                    }
+                }
+            },
+            "modNamespace": {
+                "title": "Namespace",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "assets_path": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modExtensionPackage": {
+                "title": "Extension Package",
+                "type": "object",
+                "properties": {
+                    "namespace": {
+                        "type": "string",
+                        "default": "core"
+                    },
+                    "name": {
+                        "type": "string",
+                        "default": "core"
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "table_prefix": {
+                        "type": "string"
+                    },
+                    "service_class": {
+                        "type": "string"
+                    },
+                    "service_name": {
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modPlugin": {
+                "title": "Plugin",
+                "type": "object",
+                "properties": {
+                    "cache_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "plugincode": {
+                        "type": "string"
+                    },
+                    "locked": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "properties": {
+                        "type": "string"
+                    },
+                    "disabled": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "moduleguid": {
+                        "type": "string"
+                    },
+                    "static": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "static_file": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modPluginEvent": {
+                "title": "Plugin Event",
+                "type": "object",
+                "properties": {
+                    "pluginid": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "event": {
+                        "type": "string"
+                    },
+                    "priority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "propertyset": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modPropertySet": {
+                "title": "Property Set",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "category": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "properties": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modResource": {
+                "title": "Resource",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "default": "document"
+                    },
+                    "contentType": {
+                        "type": "string",
+                        "default": "text\/html"
+                    },
+                    "pagetitle": {
+                        "type": "string"
+                    },
+                    "longtitle": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "alias": {
+                        "type": "string"
+                    },
+                    "link_attributes": {
+                        "type": "string"
+                    },
+                    "published": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "pub_date": {
+                        "type": "string",
+                        "default": "0"
+                    },
+                    "unpub_date": {
+                        "type": "string",
+                        "default": "0"
+                    },
+                    "parent": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "isfolder": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "introtext": {
+                        "type": "string"
+                    },
+                    "content": {
+                        "type": "string"
+                    },
+                    "richtext": {
+                        "type": "boolean",
+                        "default": true
+                    },
+                    "template": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "menuindex": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "searchable": {
+                        "type": "boolean",
+                        "default": true
+                    },
+                    "cacheable": {
+                        "type": "boolean",
+                        "default": true
+                    },
+                    "createdby": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "createdon": {
+                        "type": "string",
+                        "default": "0"
+                    },
+                    "editedby": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "editedon": {
+                        "type": "string",
+                        "default": "0"
+                    },
+                    "deleted": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "deletedon": {
+                        "type": "string",
+                        "default": "0"
+                    },
+                    "deletedby": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "publishedon": {
+                        "type": "string",
+                        "default": "0"
+                    },
+                    "publishedby": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "menutitle": {
+                        "type": "string"
+                    },
+                    "donthit": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "privateweb": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "privatemgr": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "content_dispo": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "hidemenu": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "class_key": {
+                        "type": "string",
+                        "default": "modDocument"
+                    },
+                    "context_key": {
+                        "type": "string",
+                        "default": "web"
+                    },
+                    "content_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 1
+                    },
+                    "uri": {
+                        "type": "string"
+                    },
+                    "uri_override": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "hide_children_in_tree": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "show_in_tree": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 1
+                    },
+                    "properties": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modResourceGroup": {
+                "title": "Resource Group",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "private_memgroup": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "private_webgroup": {
+                        "type": "boolean",
+                        "default": false
+                    }
+                }
+            },
+            "modResourceGroupResource": {
+                "title": "Resource Group Resource",
+                "type": "object",
+                "properties": {
+                    "document_group": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "document": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modScript": {
+                "title": "Script",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "editor_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "category": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modSession": {
+                "title": "Session",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "access": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modSnippet": {
+                "title": "Snippet",
+                "type": "object",
+                "properties": {
+                    "cache_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "snippet": {
+                        "type": "string"
+                    },
+                    "locked": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "properties": {
+                        "type": "string"
+                    },
+                    "moduleguid": {
+                        "type": "string"
+                    },
+                    "static": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "static_file": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modSystemSetting": {
+                "title": "System Setting",
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "xtype": {
+                        "type": "string",
+                        "default": "textfield"
+                    },
+                    "namespace": {
+                        "type": "string",
+                        "default": "core"
+                    },
+                    "area": {
+                        "type": "string"
+                    },
+                    "editedon": {
+                        "type": "string",
+                        "default": "NULL"
+                    }
+                }
+            },
+            "modTemplate": {
+                "title": "Template",
+                "type": "object",
+                "properties": {
+                    "templatename": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string",
+                        "default": "Template"
+                    },
+                    "editor_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "category": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "icon": {
+                        "type": "string"
+                    },
+                    "template_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "content": {
+                        "type": "string"
+                    },
+                    "locked": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "properties": {
+                        "type": "string"
+                    },
+                    "static": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "static_file": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modTemplateVar": {
+                "title": "Template Var",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "caption": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "editor_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "category": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "locked": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "elements": {
+                        "type": "string"
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "display": {
+                        "type": "string"
+                    },
+                    "default_text": {
+                        "type": "string"
+                    },
+                    "properties": {
+                        "type": "string"
+                    },
+                    "input_properties": {
+                        "type": "string"
+                    },
+                    "output_properties": {
+                        "type": "string"
+                    },
+                    "static": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "static_file": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modTemplateVarResource": {
+                "title": "Template Var Resource",
+                "type": "object",
+                "properties": {
+                    "tmplvarid": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "contentid": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modTemplateVarResourceGroup": {
+                "title": "Template Var Resource Group",
+                "type": "object",
+                "properties": {
+                    "tmplvarid": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "documentgroup": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modTemplateVarTemplate": {
+                "title": "Template Var Template",
+                "type": "object",
+                "properties": {
+                    "tmplvarid": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "templateid": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modUser": {
+                "title": "User",
+                "type": "object",
+                "properties": {
+                    "username": {
+                        "type": "string"
+                    },
+                    "password": {
+                        "type": "string"
+                    },
+                    "cachepwd": {
+                        "type": "string"
+                    },
+                    "class_key": {
+                        "type": "string",
+                        "default": "modUser"
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "default": true
+                    },
+                    "remote_key": {
+                        "type": "string"
+                    },
+                    "remote_data": {
+                        "type": "string"
+                    },
+                    "hash_class": {
+                        "type": "string",
+                        "default": "hashing.modPBKDF2"
+                    },
+                    "salt": {
+                        "type": "string"
+                    },
+                    "primary_group": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "session_stale": {
+                        "type": "string"
+                    },
+                    "sudo": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "createdon": {
+                        "type": "string",
+                        "default": "0"
+                    }
+                }
+            },
+            "modUserGroup": {
+                "title": "User Group",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "parent": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "dashboard": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 1
+                    }
+                }
+            },
+            "modUserGroupMember": {
+                "title": "User Group Member",
+                "type": "object",
+                "properties": {
+                    "user_group": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "member": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "role": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 1
+                    },
+                    "rank": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modUserGroupRole": {
+                "title": "User Group Role",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    }
+                }
+            },
+            "modUserGroupSetting": {
+                "title": "User Group Setting",
+                "type": "object",
+                "properties": {
+                    "group": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "key": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "xtype": {
+                        "type": "string",
+                        "default": "textfield"
+                    },
+                    "namespace": {
+                        "type": "string",
+                        "default": "core"
+                    },
+                    "area": {
+                        "type": "string"
+                    },
+                    "editedon": {
+                        "type": "string",
+                        "default": "NULL"
+                    }
+                }
+            },
+            "modUserMessage": {
+                "title": "User Message",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "sender": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "recipient": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "private": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "date_sent": {
+                        "type": "string",
+                        "default": "NULL"
+                    },
+                    "read": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modUserProfile": {
+                "title": "User Profile",
+                "type": "object",
+                "properties": {
+                    "internalKey": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "fullname": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "phone": {
+                        "type": "string"
+                    },
+                    "mobilephone": {
+                        "type": "string"
+                    },
+                    "blocked": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "blockeduntil": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "blockedafter": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "logincount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "lastlogin": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "thislogin": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "failedlogincount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "sessionid": {
+                        "type": "string"
+                    },
+                    "dob": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "gender": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "address": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "zip": {
+                        "type": "string"
+                    },
+                    "fax": {
+                        "type": "string"
+                    },
+                    "photo": {
+                        "type": "string"
+                    },
+                    "comment": {
+                        "type": "string"
+                    },
+                    "website": {
+                        "type": "string"
+                    },
+                    "extended": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modUserSetting": {
+                "title": "User Setting",
+                "type": "object",
+                "properties": {
+                    "user": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "key": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    },
+                    "xtype": {
+                        "type": "string",
+                        "default": "textfield"
+                    },
+                    "namespace": {
+                        "type": "string",
+                        "default": "core"
+                    },
+                    "area": {
+                        "type": "string"
+                    },
+                    "editedon": {
+                        "type": "string",
+                        "default": "NULL"
+                    }
+                }
+            },
+            "modWorkspace": {
+                "title": "Workspace",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "created": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "attributes": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modDbRegisterQueue": {
+                "title": "Db Register Queue",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "options": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modDbRegisterTopic": {
+                "title": "Db Register Topic",
+                "type": "object",
+                "properties": {
+                    "queue": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "created": {
+                        "type": "string"
+                    },
+                    "updated": {
+                        "type": "string"
+                    },
+                    "options": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modDbRegisterMessage": {
+                "title": "Db Register Message",
+                "type": "object",
+                "properties": {
+                    "topic": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "created": {
+                        "type": "string"
+                    },
+                    "valid": {
+                        "type": "string"
+                    },
+                    "accessed": {
+                        "type": "string"
+                    },
+                    "accesses": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "expires": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "payload": {
+                        "type": "string"
+                    },
+                    "kill": {
+                        "type": "boolean",
+                        "default": false
+                    }
+                }
+            },
+            "modAccessMediaSource": {
+                "title": "Access Media Source",
+                "type": "object",
+                "properties": {
+                    "context_key": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modMediaSource": {
+                "title": "Media Source",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "class_key": {
+                        "type": "string",
+                        "default": "sources.modFileMediaSource"
+                    },
+                    "properties": {
+                        "type": "string"
+                    },
+                    "is_stream": {
+                        "type": "boolean",
+                        "default": true
+                    }
+                }
+            },
+            "modMediaSourceContext": {
+                "title": "Media Source Context",
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "context_key": {
+                        "type": "string",
+                        "default": "web"
+                    }
+                }
+            },
+            "modMediaSourceElement": {
+                "title": "Media Source Element",
+                "type": "object",
+                "properties": {
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "object_class": {
+                        "type": "string",
+                        "default": "modTemplateVar"
+                    },
+                    "object": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "context_key": {
+                        "type": "string",
+                        "default": "web"
+                    }
+                }
+            },
+            "modTransportProvider": {
+                "title": "Transport Provider",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "service_url": {
+                        "type": "string"
+                    },
+                    "username": {
+                        "type": "string"
+                    },
+                    "api_key": {
+                        "type": "string"
+                    },
+                    "created": {
+                        "type": "string"
+                    },
+                    "updated": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "default": true
+                    },
+                    "priority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 10
+                    },
+                    "properties": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modTransportPackage": {
+                "title": "Transport Package",
+                "type": "object",
+                "properties": {
+                    "signature": {
+                        "type": "string"
+                    },
+                    "created": {
+                        "type": "string"
+                    },
+                    "updated": {
+                        "type": "string"
+                    },
+                    "installed": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 1
+                    },
+                    "workspace": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "provider": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "disabled": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "source": {
+                        "type": "string"
+                    },
+                    "manifest": {
+                        "type": "string"
+                    },
+                    "attributes": {
+                        "type": "string"
+                    },
+                    "package_name": {
+                        "type": "string"
+                    },
+                    "metadata": {
+                        "type": "string"
+                    },
+                    "version_major": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "version_minor": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "version_patch": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "release": {
+                        "type": "string"
+                    },
+                    "release_index": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            }
         },
         "responses": [],
         "parameters": [],

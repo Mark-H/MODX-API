@@ -1,9 +1,0 @@
-{
-    "title": "Access Category",
-    "type": "object",
-    "properties": {
-        "context_key": {
-            "type": "string"
-        }
-    }
-}

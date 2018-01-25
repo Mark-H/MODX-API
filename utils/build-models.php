@@ -13,10 +13,6 @@ $xmlFiles = [
     MODX_CORE_PATH . 'model/schema/modx.transport.mysql.schema.xml',
 ];
 
-if (!file_exists(SPEC_PATH . 'models/')) {
-    mkdir(SPEC_PATH . 'models/');
-}
-
 $schemas = [];
 
 foreach ($xmlFiles as $file) {
@@ -68,23 +64,27 @@ foreach ($xmlFiles as $file) {
             continue;
         }
 
-        $json = json_encode($def, JSON_PRETTY_PRINT);
-        $relModelFile = 'models/' . strtolower($class) . '.json';
-        $modelFile = SPEC_PATH . $relModelFile;
-        if (file_exists($modelFile)) {
-            unlink($modelFile);
-        }
+//        $json = json_encode($def, JSON_PRETTY_PRINT);
+//        $relModelFile = 'models/' . strtolower($class) . '.json';
+//        $modelFile = SPEC_PATH . $relModelFile;
+//        if (file_exists($modelFile)) {
+//            unlink($modelFile);
+//        }
+//
+//        if (file_put_contents($modelFile, $json)) {
+//            echo 'Wrote model definition for ' . $class . " to {$relModelFile}\n";
+//        }
 
-        if (file_put_contents($modelFile, $json)) {
-            echo 'Wrote model definition for ' . $class . " to {$relModelFile}\n";
-        }
-
-        $schemas[$class] = $relModelFile;
+        $schemas[$class] = $def;
     }
 }
+
+// Grab the existing openapi file and decode it
 $spec = file_get_contents(SPEC_PATH . 'openapi.json');
 $spec = json_decode($spec, true);
+// Update the schemas
 $spec['components']['schemas'] = $schemas;
+// Write it again
 file_put_contents(SPEC_PATH . 'openapi.json', json_encode($spec, JSON_PRETTY_PRINT));
 
 function convertPhpTypeToType($phptype) {

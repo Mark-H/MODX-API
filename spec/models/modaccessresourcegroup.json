@@ -1,9 +1,0 @@
-{
-    "title": "Access Resource Group",
-    "type": "object",
-    "properties": {
-        "context_key": {
-            "type": "string"
-        }
-    }
-}
