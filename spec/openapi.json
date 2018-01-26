@@ -4985,11 +4985,11 @@
                 }
             }
         },
-        "\/dashboard-widget-placement": {
+        "\/dashboard\/{dashboardId}\/widget": {
             "get": {
                 "description": "Returns a collection of modDashboardWidgetPlacement objects.",
                 "tags": [
-                    "Dashboard Widget Placement"
+                    "Dashboard"
                 ],
                 "parameters": [
                     {
@@ -5000,6 +5000,15 @@
                         "schema": {
                             "type": "integer",
                             "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "dashboardId",
+                        "in": "path",
+                        "description": "The ID of the dashboard that a widget is placed on.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
                         }
                     }
                 ],
@@ -5022,7 +5031,7 @@
             "post": {
                 "description": "Creates a new modDashboardWidgetPlacement object.",
                 "tags": [
-                    "Dashboard Widget Placement"
+                    "Dashboard"
                 ],
                 "requestBody": {
                     "description": "To create a new modDashboardWidgetPlacement object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
@@ -5046,20 +5055,40 @@
                             }
                         }
                     }
-                }
+                },
+                "parameters": [
+                    {
+                        "name": "dashboardId",
+                        "in": "path",
+                        "description": "The ID of the dashboard that a widget is placed on.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ]
             }
         },
-        "\/dashboard-widget-placement\/{id}": {
+        "\/dashboard\/{dashboardId}\/widget\/{id}": {
             "get": {
                 "description": "Retrieves a single modDashboardWidgetPlacement object.",
                 "tags": [
-                    "Dashboard Widget Placement"
+                    "Dashboard"
                 ],
                 "parameters": [
                     {
                         "name": "id",
                         "in": "path",
                         "description": "The ID (primary key) of the modDashboardWidgetPlacement object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "dashboardId",
+                        "in": "path",
+                        "description": "The ID of the dashboard that a widget is placed on.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5082,13 +5111,22 @@
             "put": {
                 "description": "Updates a modDashboardWidgetPlacement object.",
                 "tags": [
-                    "Dashboard Widget Placement"
+                    "Dashboard"
                 ],
                 "parameters": [
                     {
                         "name": "id",
                         "in": "path",
                         "description": "The ID (primary key) of the modDashboardWidgetPlacement object to update.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "dashboardId",
+                        "in": "path",
+                        "description": "The ID of the dashboard that a widget is placed on.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5111,13 +5149,22 @@
             "delete": {
                 "description": "Deletes a modDashboardWidgetPlacement object.",
                 "tags": [
-                    "Dashboard Widget Placement"
+                    "Dashboard"
                 ],
                 "parameters": [
                     {
                         "name": "id",
                         "in": "path",
                         "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "dashboardId",
+                        "in": "path",
+                        "description": "The ID of the dashboard that a widget is placed on.",
                         "required": true,
                         "schema": {
                             "type": "integer"

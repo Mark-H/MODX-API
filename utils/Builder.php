@@ -348,6 +348,37 @@ class Builder
         return $paths;
     }
 
+    public function generatePathsFormodDashboardWidgetPlacement($uri, $class, $classWithPackage, $meta, $title)
+    {
+        $paths = $this->generatePaths($uri, $class, $classWithPackage, $meta, $title);
+        $paths = $this->changeKey($paths, '/dashboard-widget-placement', '/dashboard/{dashboardId}/widget');
+        $paths = $this->changeKey($paths, '/dashboard-widget-placement/{id}', '/dashboard/{dashboardId}/widget/{id}');
+        $dashboardParam = [
+            'name' => 'dashboardId',
+            'in' => 'path',
+            'description' => 'The ID of the dashboard that a widget is placed on.',
+            'required' => true,
+            'schema' => [
+                'type' => 'integer'
+            ]
+        ];
+        $paths['/dashboard/{dashboardId}/widget']['get']['parameters'][] = $dashboardParam;
+        $paths['/dashboard/{dashboardId}/widget']['post']['parameters'][] = $dashboardParam;
+
+        $paths['/dashboard/{dashboardId}/widget/{id}']['get']['parameters'][] = $dashboardParam;
+        $paths['/dashboard/{dashboardId}/widget/{id}']['put']['parameters'][] = $dashboardParam;
+        $paths['/dashboard/{dashboardId}/widget/{id}']['delete']['parameters'][] = $dashboardParam;
+
+        // Update tags
+        $paths['/dashboard/{dashboardId}/widget']['get']['tags'] = ['Dashboard'];
+        $paths['/dashboard/{dashboardId}/widget']['post']['tags'] = ['Dashboard'];
+        $paths['/dashboard/{dashboardId}/widget/{id}']['get']['tags'] = ['Dashboard'];
+        $paths['/dashboard/{dashboardId}/widget/{id}']['put']['tags'] = ['Dashboard'];
+        $paths['/dashboard/{dashboardId}/widget/{id}']['delete']['tags'] = ['Dashboard'];
+
+        return $paths;
+    }
+
     private function _standardGetCollectionRequest($class, $title)
     {
         return [
