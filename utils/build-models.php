@@ -48,12 +48,14 @@ foreach ($xmlFiles as $file) {
         $def = [];
 
         // Auto generate a title
+        $title = $class;
         if (strpos($class, 'mod') === 0) {
             $title = substr($class, 3);
             $title = preg_split('/(?=[A-Z])/', lcfirst($title));
             $title = array_map('ucfirst', $title);
-            $def['title'] = implode(' ', $title);
+            $title = implode(' ', $title);
         }
+        $def['title'] = $title;
 
         $def['type'] = 'object';
         $def['properties'] = [];
@@ -112,6 +114,7 @@ foreach ($xmlFiles as $file) {
         $paths[$uri] = [
             'get' => [
                 'description' => 'Returns a collection of ' . $class . ' objects.',
+                'tags' => [$title],
                 'parameters' => [],
                 'responses' => [
                     '200' => [
@@ -131,6 +134,7 @@ foreach ($xmlFiles as $file) {
             ],
             'post' => [
                 'description' => 'Creates a new ' . $class . ' object.',
+                'tags' => [$title],
                 'responses' => [
                     '200' => [
                         'description' => 'New ' . $class . ' object successfully created.',
@@ -165,6 +169,7 @@ foreach ($xmlFiles as $file) {
         $paths[$uri . '/{id}'] = [
             'put' => [
                 'description' => 'Updates a ' . $class . ' object.',
+                'tags' => [$title],
                 'parameters' => [
                     [
                         'name' => 'id',
@@ -191,6 +196,7 @@ foreach ($xmlFiles as $file) {
             ],
             'delete' => [
                 'description' => 'Deletes a ' . $class . ' object.',
+                'tags' => [$title],
                 'parameters' => [
                     [
                         'name' => 'id',

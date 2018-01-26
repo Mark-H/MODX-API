@@ -16,6 +16,9 @@
         "\/access\/action": {
             "get": {
                 "description": "Returns a collection of modAccessAction objects.",
+                "tags": [
+                    "Access Action"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -84,6 +87,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessAction object.",
+                "tags": [
+                    "Access Action"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessAction object successfully created.",
@@ -101,6 +107,9 @@
         "\/access\/action\/{id}": {
             "put": {
                 "description": "Updates a modAccessAction object.",
+                "tags": [
+                    "Access Action"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -127,6 +136,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessAction object.",
+                "tags": [
+                    "Access Action"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -155,6 +167,9 @@
         "\/access\/action\/dom": {
             "get": {
                 "description": "Returns a collection of modAccessActionDom objects.",
+                "tags": [
+                    "Access Action Dom"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -223,6 +238,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessActionDom object.",
+                "tags": [
+                    "Access Action Dom"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessActionDom object successfully created.",
@@ -240,6 +258,9 @@
         "\/access\/action\/dom\/{id}": {
             "put": {
                 "description": "Updates a modAccessActionDom object.",
+                "tags": [
+                    "Access Action Dom"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -266,6 +287,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessActionDom object.",
+                "tags": [
+                    "Access Action Dom"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -294,6 +318,9 @@
         "\/access\/category": {
             "get": {
                 "description": "Returns a collection of modAccessCategory objects.",
+                "tags": [
+                    "Access Category"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -371,6 +398,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessCategory object.",
+                "tags": [
+                    "Access Category"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessCategory object successfully created.",
@@ -388,6 +418,9 @@
         "\/access\/category\/{id}": {
             "put": {
                 "description": "Updates a modAccessCategory object.",
+                "tags": [
+                    "Access Category"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -414,6 +447,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessCategory object.",
+                "tags": [
+                    "Access Category"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -442,6 +478,9 @@
         "\/access\/namespace": {
             "get": {
                 "description": "Returns a collection of modAccessNamespace objects.",
+                "tags": [
+                    "Access Namespace"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -519,6 +558,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessNamespace object.",
+                "tags": [
+                    "Access Namespace"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessNamespace object successfully created.",
@@ -536,6 +578,9 @@
         "\/access\/namespace\/{id}": {
             "put": {
                 "description": "Updates a modAccessNamespace object.",
+                "tags": [
+                    "Access Namespace"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -562,6 +607,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessNamespace object.",
+                "tags": [
+                    "Access Namespace"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -590,6 +638,9 @@
         "\/access\/context": {
             "get": {
                 "description": "Returns a collection of modAccessContext objects.",
+                "tags": [
+                    "Access Context"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -658,6 +709,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessContext object.",
+                "tags": [
+                    "Access Context"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessContext object successfully created.",
@@ -675,6 +729,9 @@
         "\/access\/context\/{id}": {
             "put": {
                 "description": "Updates a modAccessContext object.",
+                "tags": [
+                    "Access Context"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -701,6 +758,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessContext object.",
+                "tags": [
+                    "Access Context"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -729,6 +789,9 @@
         "\/access\/element": {
             "get": {
                 "description": "Returns a collection of modAccessElement objects.",
+                "tags": [
+                    "Access Element"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -806,6 +869,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessElement object.",
+                "tags": [
+                    "Access Element"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessElement object successfully created.",
@@ -823,6 +889,9 @@
         "\/access\/element\/{id}": {
             "put": {
                 "description": "Updates a modAccessElement object.",
+                "tags": [
+                    "Access Element"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -849,6 +918,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessElement object.",
+                "tags": [
+                    "Access Element"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -877,6 +949,9 @@
         "\/access\/template\/var": {
             "get": {
                 "description": "Returns a collection of modAccessTemplateVar objects.",
+                "tags": [
+                    "Access Template Var"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -954,6 +1029,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessTemplateVar object.",
+                "tags": [
+                    "Access Template Var"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessTemplateVar object successfully created.",
@@ -971,6 +1049,9 @@
         "\/access\/template\/var\/{id}": {
             "put": {
                 "description": "Updates a modAccessTemplateVar object.",
+                "tags": [
+                    "Access Template Var"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -997,6 +1078,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessTemplateVar object.",
+                "tags": [
+                    "Access Template Var"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1025,6 +1109,9 @@
         "\/access\/menu": {
             "get": {
                 "description": "Returns a collection of modAccessMenu objects.",
+                "tags": [
+                    "Access Menu"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -1093,6 +1180,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessMenu object.",
+                "tags": [
+                    "Access Menu"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessMenu object successfully created.",
@@ -1110,6 +1200,9 @@
         "\/access\/menu\/{id}": {
             "put": {
                 "description": "Updates a modAccessMenu object.",
+                "tags": [
+                    "Access Menu"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1136,6 +1229,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessMenu object.",
+                "tags": [
+                    "Access Menu"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1164,6 +1260,9 @@
         "\/access\/policy": {
             "get": {
                 "description": "Returns a collection of modAccessPolicy objects.",
+                "tags": [
+                    "Access Policy"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -1222,6 +1321,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessPolicy object.",
+                "tags": [
+                    "Access Policy"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessPolicy object successfully created.",
@@ -1239,6 +1341,9 @@
         "\/access\/policy\/{id}": {
             "put": {
                 "description": "Updates a modAccessPolicy object.",
+                "tags": [
+                    "Access Policy"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1265,6 +1370,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessPolicy object.",
+                "tags": [
+                    "Access Policy"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1293,6 +1401,9 @@
         "\/access\/policy\/template": {
             "get": {
                 "description": "Returns a collection of modAccessPolicyTemplate objects.",
+                "tags": [
+                    "Access Policy Template"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -1312,6 +1423,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessPolicyTemplate object.",
+                "tags": [
+                    "Access Policy Template"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessPolicyTemplate object successfully created.",
@@ -1329,6 +1443,9 @@
         "\/access\/policy\/template\/{id}": {
             "put": {
                 "description": "Updates a modAccessPolicyTemplate object.",
+                "tags": [
+                    "Access Policy Template"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1355,6 +1472,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessPolicyTemplate object.",
+                "tags": [
+                    "Access Policy Template"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1383,6 +1503,9 @@
         "\/access\/policy\/template\/group": {
             "get": {
                 "description": "Returns a collection of modAccessPolicyTemplateGroup objects.",
+                "tags": [
+                    "Access Policy Template Group"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -1402,6 +1525,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessPolicyTemplateGroup object.",
+                "tags": [
+                    "Access Policy Template Group"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessPolicyTemplateGroup object successfully created.",
@@ -1419,6 +1545,9 @@
         "\/access\/policy\/template\/group\/{id}": {
             "put": {
                 "description": "Updates a modAccessPolicyTemplateGroup object.",
+                "tags": [
+                    "Access Policy Template Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1445,6 +1574,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessPolicyTemplateGroup object.",
+                "tags": [
+                    "Access Policy Template Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1473,6 +1605,9 @@
         "\/access\/permission": {
             "get": {
                 "description": "Returns a collection of modAccessPermission objects.",
+                "tags": [
+                    "Access Permission"
+                ],
                 "parameters": [
                     {
                         "name": "template",
@@ -1512,6 +1647,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessPermission object.",
+                "tags": [
+                    "Access Permission"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessPermission object successfully created.",
@@ -1529,6 +1667,9 @@
         "\/access\/permission\/{id}": {
             "put": {
                 "description": "Updates a modAccessPermission object.",
+                "tags": [
+                    "Access Permission"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1555,6 +1696,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessPermission object.",
+                "tags": [
+                    "Access Permission"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1583,6 +1727,9 @@
         "\/access\/resource": {
             "get": {
                 "description": "Returns a collection of modAccessResource objects.",
+                "tags": [
+                    "Access Resource"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -1660,6 +1807,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessResource object.",
+                "tags": [
+                    "Access Resource"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessResource object successfully created.",
@@ -1677,6 +1827,9 @@
         "\/access\/resource\/{id}": {
             "put": {
                 "description": "Updates a modAccessResource object.",
+                "tags": [
+                    "Access Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1703,6 +1856,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessResource object.",
+                "tags": [
+                    "Access Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1731,6 +1887,9 @@
         "\/access\/resource\/group": {
             "get": {
                 "description": "Returns a collection of modAccessResourceGroup objects.",
+                "tags": [
+                    "Access Resource Group"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -1808,6 +1967,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessResourceGroup object.",
+                "tags": [
+                    "Access Resource Group"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessResourceGroup object successfully created.",
@@ -1825,6 +1987,9 @@
         "\/access\/resource\/group\/{id}": {
             "put": {
                 "description": "Updates a modAccessResourceGroup object.",
+                "tags": [
+                    "Access Resource Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1851,6 +2016,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessResourceGroup object.",
+                "tags": [
+                    "Access Resource Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1879,6 +2047,9 @@
         "\/action": {
             "get": {
                 "description": "Returns a collection of modAction objects.",
+                "tags": [
+                    "Action"
+                ],
                 "parameters": [
                     {
                         "name": "namespace",
@@ -1917,6 +2088,9 @@
             },
             "post": {
                 "description": "Creates a new modAction object.",
+                "tags": [
+                    "Action"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAction object successfully created.",
@@ -1934,6 +2108,9 @@
         "\/action\/{id}": {
             "put": {
                 "description": "Updates a modAction object.",
+                "tags": [
+                    "Action"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1960,6 +2137,9 @@
             },
             "delete": {
                 "description": "Deletes a modAction object.",
+                "tags": [
+                    "Action"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -1988,6 +2168,9 @@
         "\/action\/dom": {
             "get": {
                 "description": "Returns a collection of modActionDom objects.",
+                "tags": [
+                    "Action Dom"
+                ],
                 "parameters": [
                     {
                         "name": "set",
@@ -2064,6 +2247,9 @@
             },
             "post": {
                 "description": "Creates a new modActionDom object.",
+                "tags": [
+                    "Action Dom"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modActionDom object successfully created.",
@@ -2081,6 +2267,9 @@
         "\/action\/dom\/{id}": {
             "put": {
                 "description": "Updates a modActionDom object.",
+                "tags": [
+                    "Action Dom"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2107,6 +2296,9 @@
             },
             "delete": {
                 "description": "Deletes a modActionDom object.",
+                "tags": [
+                    "Action Dom"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2135,6 +2327,9 @@
         "\/action\/field": {
             "get": {
                 "description": "Returns a collection of modActionField objects.",
+                "tags": [
+                    "Action Field"
+                ],
                 "parameters": [
                     {
                         "name": "action",
@@ -2182,6 +2377,9 @@
             },
             "post": {
                 "description": "Creates a new modActionField object.",
+                "tags": [
+                    "Action Field"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modActionField object successfully created.",
@@ -2199,6 +2397,9 @@
         "\/action\/field\/{id}": {
             "put": {
                 "description": "Updates a modActionField object.",
+                "tags": [
+                    "Action Field"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2225,6 +2426,9 @@
             },
             "delete": {
                 "description": "Deletes a modActionField object.",
+                "tags": [
+                    "Action Field"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2253,6 +2457,9 @@
         "\/active\/user": {
             "get": {
                 "description": "Returns a collection of modActiveUser objects.",
+                "tags": [
+                    "Active User"
+                ],
                 "parameters": [
                     {
                         "name": "internalKey",
@@ -2283,6 +2490,9 @@
             },
             "post": {
                 "description": "Creates a new modActiveUser object.",
+                "tags": [
+                    "Active User"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modActiveUser object successfully created.",
@@ -2300,6 +2510,9 @@
         "\/active\/user\/{id}": {
             "put": {
                 "description": "Updates a modActiveUser object.",
+                "tags": [
+                    "Active User"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2326,6 +2539,9 @@
             },
             "delete": {
                 "description": "Deletes a modActiveUser object.",
+                "tags": [
+                    "Active User"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2354,6 +2570,9 @@
         "\/category": {
             "get": {
                 "description": "Returns a collection of modCategory objects.",
+                "tags": [
+                    "Category"
+                ],
                 "parameters": [
                     {
                         "name": "parent",
@@ -2403,6 +2622,9 @@
             },
             "post": {
                 "description": "Creates a new modCategory object.",
+                "tags": [
+                    "Category"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modCategory object successfully created.",
@@ -2420,6 +2642,9 @@
         "\/category\/{id}": {
             "put": {
                 "description": "Updates a modCategory object.",
+                "tags": [
+                    "Category"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2446,6 +2671,9 @@
             },
             "delete": {
                 "description": "Deletes a modCategory object.",
+                "tags": [
+                    "Category"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2474,6 +2702,9 @@
         "\/category\/closure": {
             "get": {
                 "description": "Returns a collection of modCategoryClosure objects.",
+                "tags": [
+                    "Category Closure"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -2493,6 +2724,9 @@
             },
             "post": {
                 "description": "Creates a new modCategoryClosure object.",
+                "tags": [
+                    "Category Closure"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modCategoryClosure object successfully created.",
@@ -2510,6 +2744,9 @@
         "\/category\/closure\/{id}": {
             "put": {
                 "description": "Updates a modCategoryClosure object.",
+                "tags": [
+                    "Category Closure"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2536,6 +2773,9 @@
             },
             "delete": {
                 "description": "Deletes a modCategoryClosure object.",
+                "tags": [
+                    "Category Closure"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2564,6 +2804,9 @@
         "\/chunk": {
             "get": {
                 "description": "Returns a collection of modChunk objects.",
+                "tags": [
+                    "Chunk"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -2621,6 +2864,9 @@
             },
             "post": {
                 "description": "Creates a new modChunk object.",
+                "tags": [
+                    "Chunk"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modChunk object successfully created.",
@@ -2638,6 +2884,9 @@
         "\/chunk\/{id}": {
             "put": {
                 "description": "Updates a modChunk object.",
+                "tags": [
+                    "Chunk"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2664,6 +2913,9 @@
             },
             "delete": {
                 "description": "Deletes a modChunk object.",
+                "tags": [
+                    "Chunk"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2692,6 +2944,9 @@
         "\/class\/map": {
             "get": {
                 "description": "Returns a collection of modClassMap objects.",
+                "tags": [
+                    "Class Map"
+                ],
                 "parameters": [
                     {
                         "name": "class",
@@ -2739,6 +2994,9 @@
             },
             "post": {
                 "description": "Creates a new modClassMap object.",
+                "tags": [
+                    "Class Map"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modClassMap object successfully created.",
@@ -2756,6 +3014,9 @@
         "\/class\/map\/{id}": {
             "put": {
                 "description": "Updates a modClassMap object.",
+                "tags": [
+                    "Class Map"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2782,6 +3043,9 @@
             },
             "delete": {
                 "description": "Deletes a modClassMap object.",
+                "tags": [
+                    "Class Map"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2810,6 +3074,9 @@
         "\/content\/type": {
             "get": {
                 "description": "Returns a collection of modContentType objects.",
+                "tags": [
+                    "Content Type"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -2839,6 +3106,9 @@
             },
             "post": {
                 "description": "Creates a new modContentType object.",
+                "tags": [
+                    "Content Type"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modContentType object successfully created.",
@@ -2856,6 +3126,9 @@
         "\/content\/type\/{id}": {
             "put": {
                 "description": "Updates a modContentType object.",
+                "tags": [
+                    "Content Type"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2882,6 +3155,9 @@
             },
             "delete": {
                 "description": "Deletes a modContentType object.",
+                "tags": [
+                    "Content Type"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2910,6 +3186,9 @@
         "\/context": {
             "get": {
                 "description": "Returns a collection of modContext objects.",
+                "tags": [
+                    "Context"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -2949,6 +3228,9 @@
             },
             "post": {
                 "description": "Creates a new modContext object.",
+                "tags": [
+                    "Context"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modContext object successfully created.",
@@ -2966,6 +3248,9 @@
         "\/context\/{id}": {
             "put": {
                 "description": "Updates a modContext object.",
+                "tags": [
+                    "Context"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -2992,6 +3277,9 @@
             },
             "delete": {
                 "description": "Deletes a modContext object.",
+                "tags": [
+                    "Context"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3020,6 +3308,9 @@
         "\/context\/setting": {
             "get": {
                 "description": "Returns a collection of modContextSetting objects.",
+                "tags": [
+                    "Context Setting"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -3039,6 +3330,9 @@
             },
             "post": {
                 "description": "Creates a new modContextSetting object.",
+                "tags": [
+                    "Context Setting"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modContextSetting object successfully created.",
@@ -3056,6 +3350,9 @@
         "\/context\/setting\/{id}": {
             "put": {
                 "description": "Updates a modContextSetting object.",
+                "tags": [
+                    "Context Setting"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3082,6 +3379,9 @@
             },
             "delete": {
                 "description": "Deletes a modContextSetting object.",
+                "tags": [
+                    "Context Setting"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3110,6 +3410,9 @@
         "\/context\/resource": {
             "get": {
                 "description": "Returns a collection of modContextResource objects.",
+                "tags": [
+                    "Context Resource"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -3129,6 +3432,9 @@
             },
             "post": {
                 "description": "Creates a new modContextResource object.",
+                "tags": [
+                    "Context Resource"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modContextResource object successfully created.",
@@ -3146,6 +3452,9 @@
         "\/context\/resource\/{id}": {
             "put": {
                 "description": "Updates a modContextResource object.",
+                "tags": [
+                    "Context Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3172,6 +3481,9 @@
             },
             "delete": {
                 "description": "Deletes a modContextResource object.",
+                "tags": [
+                    "Context Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3200,6 +3512,9 @@
         "\/dashboard": {
             "get": {
                 "description": "Returns a collection of modDashboard objects.",
+                "tags": [
+                    "Dashboard"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -3238,6 +3553,9 @@
             },
             "post": {
                 "description": "Creates a new modDashboard object.",
+                "tags": [
+                    "Dashboard"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modDashboard object successfully created.",
@@ -3255,6 +3573,9 @@
         "\/dashboard\/{id}": {
             "put": {
                 "description": "Updates a modDashboard object.",
+                "tags": [
+                    "Dashboard"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3281,6 +3602,9 @@
             },
             "delete": {
                 "description": "Deletes a modDashboard object.",
+                "tags": [
+                    "Dashboard"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3309,6 +3633,9 @@
         "\/dashboard\/widget": {
             "get": {
                 "description": "Returns a collection of modDashboardWidget objects.",
+                "tags": [
+                    "Dashboard Widget"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -3365,6 +3692,9 @@
             },
             "post": {
                 "description": "Creates a new modDashboardWidget object.",
+                "tags": [
+                    "Dashboard Widget"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modDashboardWidget object successfully created.",
@@ -3382,6 +3712,9 @@
         "\/dashboard\/widget\/{id}": {
             "put": {
                 "description": "Updates a modDashboardWidget object.",
+                "tags": [
+                    "Dashboard Widget"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3408,6 +3741,9 @@
             },
             "delete": {
                 "description": "Deletes a modDashboardWidget object.",
+                "tags": [
+                    "Dashboard Widget"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3436,6 +3772,9 @@
         "\/dashboard\/widget\/placement": {
             "get": {
                 "description": "Returns a collection of modDashboardWidgetPlacement objects.",
+                "tags": [
+                    "Dashboard Widget Placement"
+                ],
                 "parameters": [
                     {
                         "name": "rank",
@@ -3466,6 +3805,9 @@
             },
             "post": {
                 "description": "Creates a new modDashboardWidgetPlacement object.",
+                "tags": [
+                    "Dashboard Widget Placement"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modDashboardWidgetPlacement object successfully created.",
@@ -3483,6 +3825,9 @@
         "\/dashboard\/widget\/placement\/{id}": {
             "put": {
                 "description": "Updates a modDashboardWidgetPlacement object.",
+                "tags": [
+                    "Dashboard Widget Placement"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3509,6 +3854,9 @@
             },
             "delete": {
                 "description": "Deletes a modDashboardWidgetPlacement object.",
+                "tags": [
+                    "Dashboard Widget Placement"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3537,6 +3885,9 @@
         "\/element": {
             "get": {
                 "description": "Returns a collection of modElement objects.",
+                "tags": [
+                    "Element"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -3556,6 +3907,9 @@
             },
             "post": {
                 "description": "Creates a new modElement object.",
+                "tags": [
+                    "Element"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modElement object successfully created.",
@@ -3573,6 +3927,9 @@
         "\/element\/{id}": {
             "put": {
                 "description": "Updates a modElement object.",
+                "tags": [
+                    "Element"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3599,6 +3956,9 @@
             },
             "delete": {
                 "description": "Deletes a modElement object.",
+                "tags": [
+                    "Element"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3627,6 +3987,9 @@
         "\/element\/property\/set": {
             "get": {
                 "description": "Returns a collection of modElementPropertySet objects.",
+                "tags": [
+                    "Element Property Set"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -3646,6 +4009,9 @@
             },
             "post": {
                 "description": "Creates a new modElementPropertySet object.",
+                "tags": [
+                    "Element Property Set"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modElementPropertySet object successfully created.",
@@ -3663,6 +4029,9 @@
         "\/element\/property\/set\/{id}": {
             "put": {
                 "description": "Updates a modElementPropertySet object.",
+                "tags": [
+                    "Element Property Set"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3689,6 +4058,9 @@
             },
             "delete": {
                 "description": "Deletes a modElementPropertySet object.",
+                "tags": [
+                    "Element Property Set"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3717,6 +4089,9 @@
         "\/event": {
             "get": {
                 "description": "Returns a collection of modEvent objects.",
+                "tags": [
+                    "Event"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -3736,6 +4111,9 @@
             },
             "post": {
                 "description": "Creates a new modEvent object.",
+                "tags": [
+                    "Event"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modEvent object successfully created.",
@@ -3753,6 +4131,9 @@
         "\/event\/{id}": {
             "put": {
                 "description": "Updates a modEvent object.",
+                "tags": [
+                    "Event"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3779,6 +4160,9 @@
             },
             "delete": {
                 "description": "Deletes a modEvent object.",
+                "tags": [
+                    "Event"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3807,6 +4191,9 @@
         "\/form\/customization\/profile\/user\/group": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationProfileUserGroup objects.",
+                "tags": [
+                    "Form Customization Profile User Group"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -3826,6 +4213,9 @@
             },
             "post": {
                 "description": "Creates a new modFormCustomizationProfileUserGroup object.",
+                "tags": [
+                    "Form Customization Profile User Group"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modFormCustomizationProfileUserGroup object successfully created.",
@@ -3843,6 +4233,9 @@
         "\/form\/customization\/profile\/user\/group\/{id}": {
             "put": {
                 "description": "Updates a modFormCustomizationProfileUserGroup object.",
+                "tags": [
+                    "Form Customization Profile User Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3869,6 +4262,9 @@
             },
             "delete": {
                 "description": "Deletes a modFormCustomizationProfileUserGroup object.",
+                "tags": [
+                    "Form Customization Profile User Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3897,6 +4293,9 @@
         "\/form\/customization\/profile": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationProfile objects.",
+                "tags": [
+                    "Form Customization Profile"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -3946,6 +4345,9 @@
             },
             "post": {
                 "description": "Creates a new modFormCustomizationProfile object.",
+                "tags": [
+                    "Form Customization Profile"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modFormCustomizationProfile object successfully created.",
@@ -3963,6 +4365,9 @@
         "\/form\/customization\/profile\/{id}": {
             "put": {
                 "description": "Updates a modFormCustomizationProfile object.",
+                "tags": [
+                    "Form Customization Profile"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -3989,6 +4394,9 @@
             },
             "delete": {
                 "description": "Deletes a modFormCustomizationProfile object.",
+                "tags": [
+                    "Form Customization Profile"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4017,6 +4425,9 @@
         "\/form\/customization\/set": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationSet objects.",
+                "tags": [
+                    "Form Customization Set"
+                ],
                 "parameters": [
                     {
                         "name": "profile",
@@ -4076,6 +4487,9 @@
             },
             "post": {
                 "description": "Creates a new modFormCustomizationSet object.",
+                "tags": [
+                    "Form Customization Set"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modFormCustomizationSet object successfully created.",
@@ -4093,6 +4507,9 @@
         "\/form\/customization\/set\/{id}": {
             "put": {
                 "description": "Updates a modFormCustomizationSet object.",
+                "tags": [
+                    "Form Customization Set"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4119,6 +4536,9 @@
             },
             "delete": {
                 "description": "Deletes a modFormCustomizationSet object.",
+                "tags": [
+                    "Form Customization Set"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4147,6 +4567,9 @@
         "\/lexicon\/entry": {
             "get": {
                 "description": "Returns a collection of modLexiconEntry objects.",
+                "tags": [
+                    "Lexicon Entry"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -4203,6 +4626,9 @@
             },
             "post": {
                 "description": "Creates a new modLexiconEntry object.",
+                "tags": [
+                    "Lexicon Entry"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modLexiconEntry object successfully created.",
@@ -4220,6 +4646,9 @@
         "\/lexicon\/entry\/{id}": {
             "put": {
                 "description": "Updates a modLexiconEntry object.",
+                "tags": [
+                    "Lexicon Entry"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4246,6 +4675,9 @@
             },
             "delete": {
                 "description": "Deletes a modLexiconEntry object.",
+                "tags": [
+                    "Lexicon Entry"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4274,6 +4706,9 @@
         "\/manager\/log": {
             "get": {
                 "description": "Returns a collection of modManagerLog objects.",
+                "tags": [
+                    "Manager Log"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -4293,6 +4728,9 @@
             },
             "post": {
                 "description": "Creates a new modManagerLog object.",
+                "tags": [
+                    "Manager Log"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modManagerLog object successfully created.",
@@ -4310,6 +4748,9 @@
         "\/manager\/log\/{id}": {
             "put": {
                 "description": "Updates a modManagerLog object.",
+                "tags": [
+                    "Manager Log"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4336,6 +4777,9 @@
             },
             "delete": {
                 "description": "Deletes a modManagerLog object.",
+                "tags": [
+                    "Manager Log"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4364,6 +4808,9 @@
         "\/menu": {
             "get": {
                 "description": "Returns a collection of modMenu objects.",
+                "tags": [
+                    "Menu"
+                ],
                 "parameters": [
                     {
                         "name": "parent",
@@ -4411,6 +4858,9 @@
             },
             "post": {
                 "description": "Creates a new modMenu object.",
+                "tags": [
+                    "Menu"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modMenu object successfully created.",
@@ -4428,6 +4878,9 @@
         "\/menu\/{id}": {
             "put": {
                 "description": "Updates a modMenu object.",
+                "tags": [
+                    "Menu"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4454,6 +4907,9 @@
             },
             "delete": {
                 "description": "Deletes a modMenu object.",
+                "tags": [
+                    "Menu"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4482,6 +4938,9 @@
         "\/namespace": {
             "get": {
                 "description": "Returns a collection of modNamespace objects.",
+                "tags": [
+                    "Namespace"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -4501,6 +4960,9 @@
             },
             "post": {
                 "description": "Creates a new modNamespace object.",
+                "tags": [
+                    "Namespace"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modNamespace object successfully created.",
@@ -4518,6 +4980,9 @@
         "\/namespace\/{id}": {
             "put": {
                 "description": "Updates a modNamespace object.",
+                "tags": [
+                    "Namespace"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4544,6 +5009,9 @@
             },
             "delete": {
                 "description": "Deletes a modNamespace object.",
+                "tags": [
+                    "Namespace"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4572,6 +5040,9 @@
         "\/extension\/package": {
             "get": {
                 "description": "Returns a collection of modExtensionPackage objects.",
+                "tags": [
+                    "Extension Package"
+                ],
                 "parameters": [
                     {
                         "name": "namespace",
@@ -4610,6 +5081,9 @@
             },
             "post": {
                 "description": "Creates a new modExtensionPackage object.",
+                "tags": [
+                    "Extension Package"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modExtensionPackage object successfully created.",
@@ -4627,6 +5101,9 @@
         "\/extension\/package\/{id}": {
             "put": {
                 "description": "Updates a modExtensionPackage object.",
+                "tags": [
+                    "Extension Package"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4653,6 +5130,9 @@
             },
             "delete": {
                 "description": "Deletes a modExtensionPackage object.",
+                "tags": [
+                    "Extension Package"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4681,6 +5161,9 @@
         "\/plugin": {
             "get": {
                 "description": "Returns a collection of modPlugin objects.",
+                "tags": [
+                    "Plugin"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -4747,6 +5230,9 @@
             },
             "post": {
                 "description": "Creates a new modPlugin object.",
+                "tags": [
+                    "Plugin"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modPlugin object successfully created.",
@@ -4764,6 +5250,9 @@
         "\/plugin\/{id}": {
             "put": {
                 "description": "Updates a modPlugin object.",
+                "tags": [
+                    "Plugin"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4790,6 +5279,9 @@
             },
             "delete": {
                 "description": "Deletes a modPlugin object.",
+                "tags": [
+                    "Plugin"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4818,6 +5310,9 @@
         "\/plugin\/event": {
             "get": {
                 "description": "Returns a collection of modPluginEvent objects.",
+                "tags": [
+                    "Plugin Event"
+                ],
                 "parameters": [
                     {
                         "name": "priority",
@@ -4848,6 +5343,9 @@
             },
             "post": {
                 "description": "Creates a new modPluginEvent object.",
+                "tags": [
+                    "Plugin Event"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modPluginEvent object successfully created.",
@@ -4865,6 +5363,9 @@
         "\/plugin\/event\/{id}": {
             "put": {
                 "description": "Updates a modPluginEvent object.",
+                "tags": [
+                    "Plugin Event"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4891,6 +5392,9 @@
             },
             "delete": {
                 "description": "Deletes a modPluginEvent object.",
+                "tags": [
+                    "Plugin Event"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -4919,6 +5423,9 @@
         "\/property\/set": {
             "get": {
                 "description": "Returns a collection of modPropertySet objects.",
+                "tags": [
+                    "Property Set"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -4958,6 +5465,9 @@
             },
             "post": {
                 "description": "Creates a new modPropertySet object.",
+                "tags": [
+                    "Property Set"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modPropertySet object successfully created.",
@@ -4975,6 +5485,9 @@
         "\/property\/set\/{id}": {
             "put": {
                 "description": "Updates a modPropertySet object.",
+                "tags": [
+                    "Property Set"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5001,6 +5514,9 @@
             },
             "delete": {
                 "description": "Deletes a modPropertySet object.",
+                "tags": [
+                    "Property Set"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5029,6 +5545,9 @@
         "\/resource": {
             "get": {
                 "description": "Returns a collection of modResource objects.",
+                "tags": [
+                    "Resource"
+                ],
                 "parameters": [
                     {
                         "name": "alias",
@@ -5208,6 +5727,9 @@
             },
             "post": {
                 "description": "Creates a new modResource object.",
+                "tags": [
+                    "Resource"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modResource object successfully created.",
@@ -5225,6 +5747,9 @@
         "\/resource\/{id}": {
             "put": {
                 "description": "Updates a modResource object.",
+                "tags": [
+                    "Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5251,6 +5776,9 @@
             },
             "delete": {
                 "description": "Deletes a modResource object.",
+                "tags": [
+                    "Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5279,6 +5807,9 @@
         "\/resource\/group": {
             "get": {
                 "description": "Returns a collection of modResourceGroup objects.",
+                "tags": [
+                    "Resource Group"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -5308,6 +5839,9 @@
             },
             "post": {
                 "description": "Creates a new modResourceGroup object.",
+                "tags": [
+                    "Resource Group"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modResourceGroup object successfully created.",
@@ -5325,6 +5859,9 @@
         "\/resource\/group\/{id}": {
             "put": {
                 "description": "Updates a modResourceGroup object.",
+                "tags": [
+                    "Resource Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5351,6 +5888,9 @@
             },
             "delete": {
                 "description": "Deletes a modResourceGroup object.",
+                "tags": [
+                    "Resource Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5379,6 +5919,9 @@
         "\/resource\/group\/resource": {
             "get": {
                 "description": "Returns a collection of modResourceGroupResource objects.",
+                "tags": [
+                    "Resource Group Resource"
+                ],
                 "parameters": [
                     {
                         "name": "document_group",
@@ -5419,6 +5962,9 @@
             },
             "post": {
                 "description": "Creates a new modResourceGroupResource object.",
+                "tags": [
+                    "Resource Group Resource"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modResourceGroupResource object successfully created.",
@@ -5436,6 +5982,9 @@
         "\/resource\/group\/resource\/{id}": {
             "put": {
                 "description": "Updates a modResourceGroupResource object.",
+                "tags": [
+                    "Resource Group Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5462,6 +6011,9 @@
             },
             "delete": {
                 "description": "Deletes a modResourceGroupResource object.",
+                "tags": [
+                    "Resource Group Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5490,6 +6042,9 @@
         "\/script": {
             "get": {
                 "description": "Returns a collection of modScript objects.",
+                "tags": [
+                    "Script"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -5529,6 +6084,9 @@
             },
             "post": {
                 "description": "Creates a new modScript object.",
+                "tags": [
+                    "Script"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modScript object successfully created.",
@@ -5546,6 +6104,9 @@
         "\/script\/{id}": {
             "put": {
                 "description": "Updates a modScript object.",
+                "tags": [
+                    "Script"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5572,6 +6133,9 @@
             },
             "delete": {
                 "description": "Deletes a modScript object.",
+                "tags": [
+                    "Script"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5600,6 +6164,9 @@
         "\/session": {
             "get": {
                 "description": "Returns a collection of modSession objects.",
+                "tags": [
+                    "Session"
+                ],
                 "parameters": [
                     {
                         "name": "access",
@@ -5629,6 +6196,9 @@
             },
             "post": {
                 "description": "Creates a new modSession object.",
+                "tags": [
+                    "Session"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modSession object successfully created.",
@@ -5646,6 +6216,9 @@
         "\/session\/{id}": {
             "put": {
                 "description": "Updates a modSession object.",
+                "tags": [
+                    "Session"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5672,6 +6245,9 @@
             },
             "delete": {
                 "description": "Deletes a modSession object.",
+                "tags": [
+                    "Session"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5700,6 +6276,9 @@
         "\/snippet": {
             "get": {
                 "description": "Returns a collection of modSnippet objects.",
+                "tags": [
+                    "Snippet"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -5766,6 +6345,9 @@
             },
             "post": {
                 "description": "Creates a new modSnippet object.",
+                "tags": [
+                    "Snippet"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modSnippet object successfully created.",
@@ -5783,6 +6365,9 @@
         "\/snippet\/{id}": {
             "put": {
                 "description": "Updates a modSnippet object.",
+                "tags": [
+                    "Snippet"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5809,6 +6394,9 @@
             },
             "delete": {
                 "description": "Deletes a modSnippet object.",
+                "tags": [
+                    "Snippet"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5837,6 +6425,9 @@
         "\/system\/setting": {
             "get": {
                 "description": "Returns a collection of modSystemSetting objects.",
+                "tags": [
+                    "System Setting"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -5856,6 +6447,9 @@
             },
             "post": {
                 "description": "Creates a new modSystemSetting object.",
+                "tags": [
+                    "System Setting"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modSystemSetting object successfully created.",
@@ -5873,6 +6467,9 @@
         "\/system\/setting\/{id}": {
             "put": {
                 "description": "Updates a modSystemSetting object.",
+                "tags": [
+                    "System Setting"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5899,6 +6496,9 @@
             },
             "delete": {
                 "description": "Deletes a modSystemSetting object.",
+                "tags": [
+                    "System Setting"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -5927,6 +6527,9 @@
         "\/template": {
             "get": {
                 "description": "Returns a collection of modTemplate objects.",
+                "tags": [
+                    "Template"
+                ],
                 "parameters": [
                     {
                         "name": "templatename",
@@ -5984,6 +6587,9 @@
             },
             "post": {
                 "description": "Creates a new modTemplate object.",
+                "tags": [
+                    "Template"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modTemplate object successfully created.",
@@ -6001,6 +6607,9 @@
         "\/template\/{id}": {
             "put": {
                 "description": "Updates a modTemplate object.",
+                "tags": [
+                    "Template"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6027,6 +6636,9 @@
             },
             "delete": {
                 "description": "Deletes a modTemplate object.",
+                "tags": [
+                    "Template"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6055,6 +6667,9 @@
         "\/template\/var": {
             "get": {
                 "description": "Returns a collection of modTemplateVar objects.",
+                "tags": [
+                    "Template Var"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -6122,6 +6737,9 @@
             },
             "post": {
                 "description": "Creates a new modTemplateVar object.",
+                "tags": [
+                    "Template Var"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modTemplateVar object successfully created.",
@@ -6139,6 +6757,9 @@
         "\/template\/var\/{id}": {
             "put": {
                 "description": "Updates a modTemplateVar object.",
+                "tags": [
+                    "Template Var"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6165,6 +6786,9 @@
             },
             "delete": {
                 "description": "Deletes a modTemplateVar object.",
+                "tags": [
+                    "Template Var"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6193,6 +6817,9 @@
         "\/template\/var\/resource": {
             "get": {
                 "description": "Returns a collection of modTemplateVarResource objects.",
+                "tags": [
+                    "Template Var Resource"
+                ],
                 "parameters": [
                     {
                         "name": "tmplvarid",
@@ -6233,6 +6860,9 @@
             },
             "post": {
                 "description": "Creates a new modTemplateVarResource object.",
+                "tags": [
+                    "Template Var Resource"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modTemplateVarResource object successfully created.",
@@ -6250,6 +6880,9 @@
         "\/template\/var\/resource\/{id}": {
             "put": {
                 "description": "Updates a modTemplateVarResource object.",
+                "tags": [
+                    "Template Var Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6276,6 +6909,9 @@
             },
             "delete": {
                 "description": "Deletes a modTemplateVarResource object.",
+                "tags": [
+                    "Template Var Resource"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6304,6 +6940,9 @@
         "\/template\/var\/resource\/group": {
             "get": {
                 "description": "Returns a collection of modTemplateVarResourceGroup objects.",
+                "tags": [
+                    "Template Var Resource Group"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -6323,6 +6962,9 @@
             },
             "post": {
                 "description": "Creates a new modTemplateVarResourceGroup object.",
+                "tags": [
+                    "Template Var Resource Group"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modTemplateVarResourceGroup object successfully created.",
@@ -6340,6 +6982,9 @@
         "\/template\/var\/resource\/group\/{id}": {
             "put": {
                 "description": "Updates a modTemplateVarResourceGroup object.",
+                "tags": [
+                    "Template Var Resource Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6366,6 +7011,9 @@
             },
             "delete": {
                 "description": "Deletes a modTemplateVarResourceGroup object.",
+                "tags": [
+                    "Template Var Resource Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6394,6 +7042,9 @@
         "\/template\/var\/template": {
             "get": {
                 "description": "Returns a collection of modTemplateVarTemplate objects.",
+                "tags": [
+                    "Template Var Template"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -6413,6 +7064,9 @@
             },
             "post": {
                 "description": "Creates a new modTemplateVarTemplate object.",
+                "tags": [
+                    "Template Var Template"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modTemplateVarTemplate object successfully created.",
@@ -6430,6 +7084,9 @@
         "\/template\/var\/template\/{id}": {
             "put": {
                 "description": "Updates a modTemplateVarTemplate object.",
+                "tags": [
+                    "Template Var Template"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6456,6 +7113,9 @@
             },
             "delete": {
                 "description": "Deletes a modTemplateVarTemplate object.",
+                "tags": [
+                    "Template Var Template"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6484,6 +7144,9 @@
         "\/user": {
             "get": {
                 "description": "Returns a collection of modUser objects.",
+                "tags": [
+                    "User"
+                ],
                 "parameters": [
                     {
                         "name": "username",
@@ -6541,6 +7204,9 @@
             },
             "post": {
                 "description": "Creates a new modUser object.",
+                "tags": [
+                    "User"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modUser object successfully created.",
@@ -6558,6 +7224,9 @@
         "\/user\/{id}": {
             "put": {
                 "description": "Updates a modUser object.",
+                "tags": [
+                    "User"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6584,6 +7253,9 @@
             },
             "delete": {
                 "description": "Deletes a modUser object.",
+                "tags": [
+                    "User"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6612,6 +7284,9 @@
         "\/user\/group": {
             "get": {
                 "description": "Returns a collection of modUserGroup objects.",
+                "tags": [
+                    "User Group"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -6671,6 +7346,9 @@
             },
             "post": {
                 "description": "Creates a new modUserGroup object.",
+                "tags": [
+                    "User Group"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modUserGroup object successfully created.",
@@ -6688,6 +7366,9 @@
         "\/user\/group\/{id}": {
             "put": {
                 "description": "Updates a modUserGroup object.",
+                "tags": [
+                    "User Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6714,6 +7395,9 @@
             },
             "delete": {
                 "description": "Deletes a modUserGroup object.",
+                "tags": [
+                    "User Group"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6742,6 +7426,9 @@
         "\/user\/group\/member": {
             "get": {
                 "description": "Returns a collection of modUserGroupMember objects.",
+                "tags": [
+                    "User Group Member"
+                ],
                 "parameters": [
                     {
                         "name": "role",
@@ -6782,6 +7469,9 @@
             },
             "post": {
                 "description": "Creates a new modUserGroupMember object.",
+                "tags": [
+                    "User Group Member"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modUserGroupMember object successfully created.",
@@ -6799,6 +7489,9 @@
         "\/user\/group\/member\/{id}": {
             "put": {
                 "description": "Updates a modUserGroupMember object.",
+                "tags": [
+                    "User Group Member"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6825,6 +7518,9 @@
             },
             "delete": {
                 "description": "Deletes a modUserGroupMember object.",
+                "tags": [
+                    "User Group Member"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6853,6 +7549,9 @@
         "\/user\/group\/role": {
             "get": {
                 "description": "Returns a collection of modUserGroupRole objects.",
+                "tags": [
+                    "User Group Role"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -6892,6 +7591,9 @@
             },
             "post": {
                 "description": "Creates a new modUserGroupRole object.",
+                "tags": [
+                    "User Group Role"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modUserGroupRole object successfully created.",
@@ -6909,6 +7611,9 @@
         "\/user\/group\/role\/{id}": {
             "put": {
                 "description": "Updates a modUserGroupRole object.",
+                "tags": [
+                    "User Group Role"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6935,6 +7640,9 @@
             },
             "delete": {
                 "description": "Deletes a modUserGroupRole object.",
+                "tags": [
+                    "User Group Role"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -6963,6 +7671,9 @@
         "\/user\/group\/setting": {
             "get": {
                 "description": "Returns a collection of modUserGroupSetting objects.",
+                "tags": [
+                    "User Group Setting"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -6982,6 +7693,9 @@
             },
             "post": {
                 "description": "Creates a new modUserGroupSetting object.",
+                "tags": [
+                    "User Group Setting"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modUserGroupSetting object successfully created.",
@@ -6999,6 +7713,9 @@
         "\/user\/group\/setting\/{id}": {
             "put": {
                 "description": "Updates a modUserGroupSetting object.",
+                "tags": [
+                    "User Group Setting"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7025,6 +7742,9 @@
             },
             "delete": {
                 "description": "Deletes a modUserGroupSetting object.",
+                "tags": [
+                    "User Group Setting"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7053,6 +7773,9 @@
         "\/user\/message": {
             "get": {
                 "description": "Returns a collection of modUserMessage objects.",
+                "tags": [
+                    "User Message"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -7072,6 +7795,9 @@
             },
             "post": {
                 "description": "Creates a new modUserMessage object.",
+                "tags": [
+                    "User Message"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modUserMessage object successfully created.",
@@ -7089,6 +7815,9 @@
         "\/user\/message\/{id}": {
             "put": {
                 "description": "Updates a modUserMessage object.",
+                "tags": [
+                    "User Message"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7115,6 +7844,9 @@
             },
             "delete": {
                 "description": "Deletes a modUserMessage object.",
+                "tags": [
+                    "User Message"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7143,6 +7875,9 @@
         "\/user\/profile": {
             "get": {
                 "description": "Returns a collection of modUserProfile objects.",
+                "tags": [
+                    "User Profile"
+                ],
                 "parameters": [
                     {
                         "name": "internalKey",
@@ -7173,6 +7908,9 @@
             },
             "post": {
                 "description": "Creates a new modUserProfile object.",
+                "tags": [
+                    "User Profile"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modUserProfile object successfully created.",
@@ -7190,6 +7928,9 @@
         "\/user\/profile\/{id}": {
             "put": {
                 "description": "Updates a modUserProfile object.",
+                "tags": [
+                    "User Profile"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7216,6 +7957,9 @@
             },
             "delete": {
                 "description": "Deletes a modUserProfile object.",
+                "tags": [
+                    "User Profile"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7244,6 +7988,9 @@
         "\/user\/setting": {
             "get": {
                 "description": "Returns a collection of modUserSetting objects.",
+                "tags": [
+                    "User Setting"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -7263,6 +8010,9 @@
             },
             "post": {
                 "description": "Creates a new modUserSetting object.",
+                "tags": [
+                    "User Setting"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modUserSetting object successfully created.",
@@ -7280,6 +8030,9 @@
         "\/user\/setting\/{id}": {
             "put": {
                 "description": "Updates a modUserSetting object.",
+                "tags": [
+                    "User Setting"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7306,6 +8059,9 @@
             },
             "delete": {
                 "description": "Deletes a modUserSetting object.",
+                "tags": [
+                    "User Setting"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7334,6 +8090,9 @@
         "\/workspace": {
             "get": {
                 "description": "Returns a collection of modWorkspace objects.",
+                "tags": [
+                    "Workspace"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -7381,6 +8140,9 @@
             },
             "post": {
                 "description": "Creates a new modWorkspace object.",
+                "tags": [
+                    "Workspace"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modWorkspace object successfully created.",
@@ -7398,6 +8160,9 @@
         "\/workspace\/{id}": {
             "put": {
                 "description": "Updates a modWorkspace object.",
+                "tags": [
+                    "Workspace"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7424,6 +8189,9 @@
             },
             "delete": {
                 "description": "Deletes a modWorkspace object.",
+                "tags": [
+                    "Workspace"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7452,6 +8220,9 @@
         "\/registry\/db\/db\/register\/queue": {
             "get": {
                 "description": "Returns a collection of modDbRegisterQueue objects.",
+                "tags": [
+                    "Db Register Queue"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -7481,6 +8252,9 @@
             },
             "post": {
                 "description": "Creates a new modDbRegisterQueue object.",
+                "tags": [
+                    "Db Register Queue"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modDbRegisterQueue object successfully created.",
@@ -7498,6 +8272,9 @@
         "\/registry\/db\/db\/register\/queue\/{id}": {
             "put": {
                 "description": "Updates a modDbRegisterQueue object.",
+                "tags": [
+                    "Db Register Queue"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7524,6 +8301,9 @@
             },
             "delete": {
                 "description": "Deletes a modDbRegisterQueue object.",
+                "tags": [
+                    "Db Register Queue"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7552,6 +8332,9 @@
         "\/registry\/db\/db\/register\/topic": {
             "get": {
                 "description": "Returns a collection of modDbRegisterTopic objects.",
+                "tags": [
+                    "Db Register Topic"
+                ],
                 "parameters": [
                     {
                         "name": "queue",
@@ -7591,6 +8374,9 @@
             },
             "post": {
                 "description": "Creates a new modDbRegisterTopic object.",
+                "tags": [
+                    "Db Register Topic"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modDbRegisterTopic object successfully created.",
@@ -7608,6 +8394,9 @@
         "\/registry\/db\/db\/register\/topic\/{id}": {
             "put": {
                 "description": "Updates a modDbRegisterTopic object.",
+                "tags": [
+                    "Db Register Topic"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7634,6 +8423,9 @@
             },
             "delete": {
                 "description": "Deletes a modDbRegisterTopic object.",
+                "tags": [
+                    "Db Register Topic"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7662,6 +8454,9 @@
         "\/registry\/db\/db\/register\/message": {
             "get": {
                 "description": "Returns a collection of modDbRegisterMessage objects.",
+                "tags": [
+                    "Db Register Message"
+                ],
                 "parameters": [
                     {
                         "name": "created",
@@ -7729,6 +8524,9 @@
             },
             "post": {
                 "description": "Creates a new modDbRegisterMessage object.",
+                "tags": [
+                    "Db Register Message"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modDbRegisterMessage object successfully created.",
@@ -7746,6 +8544,9 @@
         "\/registry\/db\/db\/register\/message\/{id}": {
             "put": {
                 "description": "Updates a modDbRegisterMessage object.",
+                "tags": [
+                    "Db Register Message"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7772,6 +8573,9 @@
             },
             "delete": {
                 "description": "Deletes a modDbRegisterMessage object.",
+                "tags": [
+                    "Db Register Message"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7800,6 +8604,9 @@
         "\/sources\/access\/media\/source": {
             "get": {
                 "description": "Returns a collection of modAccessMediaSource objects.",
+                "tags": [
+                    "Access Media Source"
+                ],
                 "parameters": [
                     {
                         "name": "target",
@@ -7877,6 +8684,9 @@
             },
             "post": {
                 "description": "Creates a new modAccessMediaSource object.",
+                "tags": [
+                    "Access Media Source"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modAccessMediaSource object successfully created.",
@@ -7894,6 +8704,9 @@
         "\/sources\/access\/media\/source\/{id}": {
             "put": {
                 "description": "Updates a modAccessMediaSource object.",
+                "tags": [
+                    "Access Media Source"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7920,6 +8733,9 @@
             },
             "delete": {
                 "description": "Deletes a modAccessMediaSource object.",
+                "tags": [
+                    "Access Media Source"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -7948,6 +8764,9 @@
         "\/sources\/media\/source": {
             "get": {
                 "description": "Returns a collection of modMediaSource objects.",
+                "tags": [
+                    "Media Source"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -7995,6 +8814,9 @@
             },
             "post": {
                 "description": "Creates a new modMediaSource object.",
+                "tags": [
+                    "Media Source"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modMediaSource object successfully created.",
@@ -8012,6 +8834,9 @@
         "\/sources\/media\/source\/{id}": {
             "put": {
                 "description": "Updates a modMediaSource object.",
+                "tags": [
+                    "Media Source"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8038,6 +8863,9 @@
             },
             "delete": {
                 "description": "Deletes a modMediaSource object.",
+                "tags": [
+                    "Media Source"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8066,6 +8894,9 @@
         "\/sources\/media\/source\/context": {
             "get": {
                 "description": "Returns a collection of modMediaSourceContext objects.",
+                "tags": [
+                    "Media Source Context"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -8085,6 +8916,9 @@
             },
             "post": {
                 "description": "Creates a new modMediaSourceContext object.",
+                "tags": [
+                    "Media Source Context"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modMediaSourceContext object successfully created.",
@@ -8102,6 +8936,9 @@
         "\/sources\/media\/source\/context\/{id}": {
             "put": {
                 "description": "Updates a modMediaSourceContext object.",
+                "tags": [
+                    "Media Source Context"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8128,6 +8965,9 @@
             },
             "delete": {
                 "description": "Deletes a modMediaSourceContext object.",
+                "tags": [
+                    "Media Source Context"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8156,6 +8996,9 @@
         "\/sources\/media\/source\/element": {
             "get": {
                 "description": "Returns a collection of modMediaSourceElement objects.",
+                "tags": [
+                    "Media Source Element"
+                ],
                 "parameters": [],
                 "responses": {
                     "200": {
@@ -8175,6 +9018,9 @@
             },
             "post": {
                 "description": "Creates a new modMediaSourceElement object.",
+                "tags": [
+                    "Media Source Element"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modMediaSourceElement object successfully created.",
@@ -8192,6 +9038,9 @@
         "\/sources\/media\/source\/element\/{id}": {
             "put": {
                 "description": "Updates a modMediaSourceElement object.",
+                "tags": [
+                    "Media Source Element"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8218,6 +9067,9 @@
             },
             "delete": {
                 "description": "Deletes a modMediaSourceElement object.",
+                "tags": [
+                    "Media Source Element"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8246,6 +9098,9 @@
         "\/transport\/transport\/provider": {
             "get": {
                 "description": "Returns a collection of modTransportProvider objects.",
+                "tags": [
+                    "Transport Provider"
+                ],
                 "parameters": [
                     {
                         "name": "name",
@@ -8312,6 +9167,9 @@
             },
             "post": {
                 "description": "Creates a new modTransportProvider object.",
+                "tags": [
+                    "Transport Provider"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modTransportProvider object successfully created.",
@@ -8329,6 +9187,9 @@
         "\/transport\/transport\/provider\/{id}": {
             "put": {
                 "description": "Updates a modTransportProvider object.",
+                "tags": [
+                    "Transport Provider"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8355,6 +9216,9 @@
             },
             "delete": {
                 "description": "Deletes a modTransportProvider object.",
+                "tags": [
+                    "Transport Provider"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8383,6 +9247,9 @@
         "\/transport\/transport\/package": {
             "get": {
                 "description": "Returns a collection of modTransportPackage objects.",
+                "tags": [
+                    "Transport Package"
+                ],
                 "parameters": [
                     {
                         "name": "workspace",
@@ -8490,6 +9357,9 @@
             },
             "post": {
                 "description": "Creates a new modTransportPackage object.",
+                "tags": [
+                    "Transport Package"
+                ],
                 "responses": {
                     "200": {
                         "description": "New modTransportPackage object successfully created.",
@@ -8507,6 +9377,9 @@
         "\/transport\/transport\/package\/{id}": {
             "put": {
                 "description": "Updates a modTransportPackage object.",
+                "tags": [
+                    "Transport Package"
+                ],
                 "parameters": [
                     {
                         "name": "id",
@@ -8533,6 +9406,9 @@
             },
             "delete": {
                 "description": "Deletes a modTransportPackage object.",
+                "tags": [
+                    "Transport Package"
+                ],
                 "parameters": [
                     {
                         "name": "id",
