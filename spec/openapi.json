@@ -13,7 +13,7 @@
         }
     },
     "paths": {
-        "\/access\/action": {
+        "\/access-action": {
             "get": {
                 "description": "Returns a collection of modAccessAction objects.",
                 "tags": [
@@ -104,7 +104,36 @@
                 }
             }
         },
-        "\/access\/action\/{id}": {
+        "\/access-action\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessAction object.",
+                "tags": [
+                    "Access Action"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessAction object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessAction object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessAction object.",
                 "tags": [
@@ -114,7 +143,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessAction object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -164,7 +193,7 @@
                 }
             }
         },
-        "\/access\/action\/dom": {
+        "\/access-action-dom": {
             "get": {
                 "description": "Returns a collection of modAccessActionDom objects.",
                 "tags": [
@@ -255,7 +284,36 @@
                 }
             }
         },
-        "\/access\/action\/dom\/{id}": {
+        "\/access-action-dom\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessActionDom object.",
+                "tags": [
+                    "Access Action Dom"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessActionDom object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessActionDom object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessActionDom"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessActionDom object.",
                 "tags": [
@@ -265,7 +323,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessActionDom object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -315,7 +373,7 @@
                 }
             }
         },
-        "\/access\/category": {
+        "\/access-category": {
             "get": {
                 "description": "Returns a collection of modAccessCategory objects.",
                 "tags": [
@@ -415,7 +473,36 @@
                 }
             }
         },
-        "\/access\/category\/{id}": {
+        "\/access-category\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessCategory object.",
+                "tags": [
+                    "Access Category"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessCategory object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessCategory"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessCategory object.",
                 "tags": [
@@ -475,7 +562,7 @@
                 }
             }
         },
-        "\/access\/namespace": {
+        "\/access-namespace": {
             "get": {
                 "description": "Returns a collection of modAccessNamespace objects.",
                 "tags": [
@@ -575,7 +662,36 @@
                 }
             }
         },
-        "\/access\/namespace\/{id}": {
+        "\/access-namespace\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessNamespace object.",
+                "tags": [
+                    "Access Namespace"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessNamespace object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessNamespace object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessNamespace"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessNamespace object.",
                 "tags": [
@@ -585,7 +701,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessNamespace object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -635,7 +751,7 @@
                 }
             }
         },
-        "\/access\/context": {
+        "\/access-context": {
             "get": {
                 "description": "Returns a collection of modAccessContext objects.",
                 "tags": [
@@ -726,7 +842,36 @@
                 }
             }
         },
-        "\/access\/context\/{id}": {
+        "\/access-context\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessContext object.",
+                "tags": [
+                    "Access Context"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessContext object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessContext object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessContext"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessContext object.",
                 "tags": [
@@ -736,7 +881,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessContext object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -786,7 +931,7 @@
                 }
             }
         },
-        "\/access\/element": {
+        "\/access-element": {
             "get": {
                 "description": "Returns a collection of modAccessElement objects.",
                 "tags": [
@@ -886,7 +1031,36 @@
                 }
             }
         },
-        "\/access\/element\/{id}": {
+        "\/access-element\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessElement object.",
+                "tags": [
+                    "Access Element"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessElement object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessElement object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessElement"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessElement object.",
                 "tags": [
@@ -896,7 +1070,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessElement object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -946,7 +1120,7 @@
                 }
             }
         },
-        "\/access\/template\/var": {
+        "\/access-template-var": {
             "get": {
                 "description": "Returns a collection of modAccessTemplateVar objects.",
                 "tags": [
@@ -1046,7 +1220,36 @@
                 }
             }
         },
-        "\/access\/template\/var\/{id}": {
+        "\/access-template-var\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessTemplateVar object.",
+                "tags": [
+                    "Access Template Var"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessTemplateVar object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessTemplateVar object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessTemplateVar"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessTemplateVar object.",
                 "tags": [
@@ -1056,7 +1259,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessTemplateVar object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -1106,7 +1309,7 @@
                 }
             }
         },
-        "\/access\/menu": {
+        "\/access-menu": {
             "get": {
                 "description": "Returns a collection of modAccessMenu objects.",
                 "tags": [
@@ -1197,7 +1400,36 @@
                 }
             }
         },
-        "\/access\/menu\/{id}": {
+        "\/access-menu\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessMenu object.",
+                "tags": [
+                    "Access Menu"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessMenu object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessMenu object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessMenu"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessMenu object.",
                 "tags": [
@@ -1207,7 +1439,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessMenu object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -1257,7 +1489,7 @@
                 }
             }
         },
-        "\/access\/policy": {
+        "\/access-policy": {
             "get": {
                 "description": "Returns a collection of modAccessPolicy objects.",
                 "tags": [
@@ -1338,7 +1570,36 @@
                 }
             }
         },
-        "\/access\/policy\/{id}": {
+        "\/access-policy\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessPolicy object.",
+                "tags": [
+                    "Access Policy"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessPolicy object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessPolicy object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessPolicy"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessPolicy object.",
                 "tags": [
@@ -1348,7 +1609,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessPolicy object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -1398,7 +1659,7 @@
                 }
             }
         },
-        "\/access\/policy\/template": {
+        "\/access-policy-template": {
             "get": {
                 "description": "Returns a collection of modAccessPolicyTemplate objects.",
                 "tags": [
@@ -1440,7 +1701,36 @@
                 }
             }
         },
-        "\/access\/policy\/template\/{id}": {
+        "\/access-policy-template\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessPolicyTemplate object.",
+                "tags": [
+                    "Access Policy Template"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessPolicyTemplate object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessPolicyTemplate object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessPolicyTemplate"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessPolicyTemplate object.",
                 "tags": [
@@ -1450,7 +1740,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessPolicyTemplate object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -1500,7 +1790,7 @@
                 }
             }
         },
-        "\/access\/policy\/template\/group": {
+        "\/access-policy-template-group": {
             "get": {
                 "description": "Returns a collection of modAccessPolicyTemplateGroup objects.",
                 "tags": [
@@ -1542,7 +1832,36 @@
                 }
             }
         },
-        "\/access\/policy\/template\/group\/{id}": {
+        "\/access-policy-template-group\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessPolicyTemplateGroup object.",
+                "tags": [
+                    "Access Policy Template Group"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessPolicyTemplateGroup object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessPolicyTemplateGroup object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessPolicyTemplateGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessPolicyTemplateGroup object.",
                 "tags": [
@@ -1552,7 +1871,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessPolicyTemplateGroup object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -1602,7 +1921,7 @@
                 }
             }
         },
-        "\/access\/permission": {
+        "\/access-permission": {
             "get": {
                 "description": "Returns a collection of modAccessPermission objects.",
                 "tags": [
@@ -1664,7 +1983,36 @@
                 }
             }
         },
-        "\/access\/permission\/{id}": {
+        "\/access-permission\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessPermission object.",
+                "tags": [
+                    "Access Permission"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessPermission object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessPermission object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessPermission"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessPermission object.",
                 "tags": [
@@ -1674,7 +2022,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessPermission object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -1724,7 +2072,7 @@
                 }
             }
         },
-        "\/access\/resource": {
+        "\/access-resource": {
             "get": {
                 "description": "Returns a collection of modAccessResource objects.",
                 "tags": [
@@ -1824,7 +2172,36 @@
                 }
             }
         },
-        "\/access\/resource\/{id}": {
+        "\/access-resource\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessResource object.",
+                "tags": [
+                    "Access Resource"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessResource object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessResource object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessResource"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessResource object.",
                 "tags": [
@@ -1834,7 +2211,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessResource object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -1884,7 +2261,7 @@
                 }
             }
         },
-        "\/access\/resource\/group": {
+        "\/access-resource-group": {
             "get": {
                 "description": "Returns a collection of modAccessResourceGroup objects.",
                 "tags": [
@@ -1984,7 +2361,36 @@
                 }
             }
         },
-        "\/access\/resource\/group\/{id}": {
+        "\/access-resource-group\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessResourceGroup object.",
+                "tags": [
+                    "Access Resource Group"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessResourceGroup object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessResourceGroup object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessResourceGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessResourceGroup object.",
                 "tags": [
@@ -1994,7 +2400,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessResourceGroup object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -2106,6 +2512,35 @@
             }
         },
         "\/action\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAction object.",
+                "tags": [
+                    "Action"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAction object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAction object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAction object.",
                 "tags": [
@@ -2115,7 +2550,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAction object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -2165,7 +2600,7 @@
                 }
             }
         },
-        "\/action\/dom": {
+        "\/action-dom": {
             "get": {
                 "description": "Returns a collection of modActionDom objects.",
                 "tags": [
@@ -2264,7 +2699,36 @@
                 }
             }
         },
-        "\/action\/dom\/{id}": {
+        "\/action-dom\/{id}": {
+            "get": {
+                "description": "Retrieves a single modActionDom object.",
+                "tags": [
+                    "Action Dom"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modActionDom object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modActionDom object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modActionDom"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modActionDom object.",
                 "tags": [
@@ -2274,7 +2738,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modActionDom object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -2324,7 +2788,7 @@
                 }
             }
         },
-        "\/action\/field": {
+        "\/action-field": {
             "get": {
                 "description": "Returns a collection of modActionField objects.",
                 "tags": [
@@ -2394,7 +2858,36 @@
                 }
             }
         },
-        "\/action\/field\/{id}": {
+        "\/action-field\/{id}": {
+            "get": {
+                "description": "Retrieves a single modActionField object.",
+                "tags": [
+                    "Action Field"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modActionField object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modActionField object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modActionField"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modActionField object.",
                 "tags": [
@@ -2404,7 +2897,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modActionField object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -2454,7 +2947,7 @@
                 }
             }
         },
-        "\/active\/user": {
+        "\/active-user": {
             "get": {
                 "description": "Returns a collection of modActiveUser objects.",
                 "tags": [
@@ -2507,7 +3000,36 @@
                 }
             }
         },
-        "\/active\/user\/{id}": {
+        "\/active-user\/{id}": {
+            "get": {
+                "description": "Retrieves a single modActiveUser object.",
+                "tags": [
+                    "Active User"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modActiveUser object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modActiveUser object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modActiveUser"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modActiveUser object.",
                 "tags": [
@@ -2517,7 +3039,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modActiveUser object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -2640,6 +3162,35 @@
             }
         },
         "\/category\/{id}": {
+            "get": {
+                "description": "Retrieves a single modCategory object.",
+                "tags": [
+                    "Category"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modCategory object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modCategory object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modCategory"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modCategory object.",
                 "tags": [
@@ -2649,7 +3200,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modCategory object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -2699,7 +3250,7 @@
                 }
             }
         },
-        "\/category\/closure": {
+        "\/category-closure": {
             "get": {
                 "description": "Returns a collection of modCategoryClosure objects.",
                 "tags": [
@@ -2741,7 +3292,36 @@
                 }
             }
         },
-        "\/category\/closure\/{id}": {
+        "\/category-closure\/{id}": {
+            "get": {
+                "description": "Retrieves a single modCategoryClosure object.",
+                "tags": [
+                    "Category Closure"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modCategoryClosure object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modCategoryClosure object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modCategoryClosure"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modCategoryClosure object.",
                 "tags": [
@@ -2751,7 +3331,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modCategoryClosure object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -2882,6 +3462,35 @@
             }
         },
         "\/chunk\/{id}": {
+            "get": {
+                "description": "Retrieves a single modChunk object.",
+                "tags": [
+                    "Chunk"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modChunk object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modChunk object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modChunk"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modChunk object.",
                 "tags": [
@@ -2891,7 +3500,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modChunk object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -2941,7 +3550,7 @@
                 }
             }
         },
-        "\/class\/map": {
+        "\/class": {
             "get": {
                 "description": "Returns a collection of modClassMap objects.",
                 "tags": [
@@ -3011,7 +3620,36 @@
                 }
             }
         },
-        "\/class\/map\/{id}": {
+        "\/class\/{id}": {
+            "get": {
+                "description": "Retrieves a single modClassMap object.",
+                "tags": [
+                    "Class Map"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modClassMap object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modClassMap object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modClassMap"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modClassMap object.",
                 "tags": [
@@ -3021,7 +3659,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modClassMap object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3071,7 +3709,7 @@
                 }
             }
         },
-        "\/content\/type": {
+        "\/content-type": {
             "get": {
                 "description": "Returns a collection of modContentType objects.",
                 "tags": [
@@ -3123,7 +3761,36 @@
                 }
             }
         },
-        "\/content\/type\/{id}": {
+        "\/content-type\/{id}": {
+            "get": {
+                "description": "Retrieves a single modContentType object.",
+                "tags": [
+                    "Content Type"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modContentType object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modContentType object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modContentType"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modContentType object.",
                 "tags": [
@@ -3133,7 +3800,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modContentType object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3245,7 +3912,36 @@
                 }
             }
         },
-        "\/context\/{id}": {
+        "\/context\/{contextKey}": {
+            "get": {
+                "description": "Retrieves a single modContext object.",
+                "tags": [
+                    "Context"
+                ],
+                "parameters": [
+                    {
+                        "name": "contextKey",
+                        "in": "path",
+                        "description": "The key of the context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modContext object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modContext"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modContext object.",
                 "tags": [
@@ -3253,9 +3949,9 @@
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "contextKey",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The key of the context.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3282,9 +3978,9 @@
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "contextKey",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "description": "The key of the context.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3305,13 +4001,23 @@
                 }
             }
         },
-        "\/context\/setting": {
+        "\/context\/{contextKey}\/setting": {
             "get": {
                 "description": "Returns a collection of modContextSetting objects.",
                 "tags": [
                     "Context Setting"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "name": "contextKey",
+                        "in": "path",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modContextSetting objects.",
@@ -3344,10 +4050,59 @@
                             }
                         }
                     }
-                }
+                },
+                "parameters": [
+                    {
+                        "name": "contextKey",
+                        "in": "path",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ]
             }
         },
-        "\/context\/setting\/{id}": {
+        "\/context\/{contextKey}\/setting\/{settingKey}": {
+            "get": {
+                "description": "Retrieves a single modContextSetting object.",
+                "tags": [
+                    "Context Setting"
+                ],
+                "parameters": [
+                    {
+                        "name": "contextKey",
+                        "in": "path",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "settingKey",
+                        "in": "path",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modContextSetting object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modContextSetting"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modContextSetting object.",
                 "tags": [
@@ -3355,9 +4110,18 @@
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "contextKey",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "settingKey",
+                        "in": "path",
+                        "description": "The key of the associated context.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3384,9 +4148,18 @@
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "contextKey",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "settingKey",
+                        "in": "path",
+                        "description": "The key of the associated context.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3407,7 +4180,7 @@
                 }
             }
         },
-        "\/context\/resource": {
+        "\/context-resource": {
             "get": {
                 "description": "Returns a collection of modContextResource objects.",
                 "tags": [
@@ -3449,7 +4222,36 @@
                 }
             }
         },
-        "\/context\/resource\/{id}": {
+        "\/context-resource\/{id}": {
+            "get": {
+                "description": "Retrieves a single modContextResource object.",
+                "tags": [
+                    "Context Resource"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modContextResource object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modContextResource object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modContextResource"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modContextResource object.",
                 "tags": [
@@ -3459,7 +4261,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modContextResource object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3571,6 +4373,35 @@
             }
         },
         "\/dashboard\/{id}": {
+            "get": {
+                "description": "Retrieves a single modDashboard object.",
+                "tags": [
+                    "Dashboard"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modDashboard object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modDashboard object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modDashboard"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modDashboard object.",
                 "tags": [
@@ -3580,7 +4411,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modDashboard object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3630,7 +4461,7 @@
                 }
             }
         },
-        "\/dashboard\/widget": {
+        "\/dashboard-widget": {
             "get": {
                 "description": "Returns a collection of modDashboardWidget objects.",
                 "tags": [
@@ -3709,7 +4540,36 @@
                 }
             }
         },
-        "\/dashboard\/widget\/{id}": {
+        "\/dashboard-widget\/{id}": {
+            "get": {
+                "description": "Retrieves a single modDashboardWidget object.",
+                "tags": [
+                    "Dashboard Widget"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modDashboardWidget object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modDashboardWidget object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modDashboardWidget"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modDashboardWidget object.",
                 "tags": [
@@ -3719,7 +4579,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modDashboardWidget object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3769,7 +4629,7 @@
                 }
             }
         },
-        "\/dashboard\/widget\/placement": {
+        "\/dashboard-widget-placement": {
             "get": {
                 "description": "Returns a collection of modDashboardWidgetPlacement objects.",
                 "tags": [
@@ -3822,7 +4682,36 @@
                 }
             }
         },
-        "\/dashboard\/widget\/placement\/{id}": {
+        "\/dashboard-widget-placement\/{id}": {
+            "get": {
+                "description": "Retrieves a single modDashboardWidgetPlacement object.",
+                "tags": [
+                    "Dashboard Widget Placement"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modDashboardWidgetPlacement object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modDashboardWidgetPlacement object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modDashboardWidgetPlacement"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modDashboardWidgetPlacement object.",
                 "tags": [
@@ -3832,7 +4721,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modDashboardWidgetPlacement object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3925,6 +4814,35 @@
             }
         },
         "\/element\/{id}": {
+            "get": {
+                "description": "Retrieves a single modElement object.",
+                "tags": [
+                    "Element"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modElement object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modElement object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modElement"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modElement object.",
                 "tags": [
@@ -3934,7 +4852,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modElement object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -3984,7 +4902,7 @@
                 }
             }
         },
-        "\/element\/property\/set": {
+        "\/element-property-set": {
             "get": {
                 "description": "Returns a collection of modElementPropertySet objects.",
                 "tags": [
@@ -4026,7 +4944,36 @@
                 }
             }
         },
-        "\/element\/property\/set\/{id}": {
+        "\/element-property-set\/{id}": {
+            "get": {
+                "description": "Retrieves a single modElementPropertySet object.",
+                "tags": [
+                    "Element Property Set"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modElementPropertySet object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modElementPropertySet object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modElementPropertySet"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modElementPropertySet object.",
                 "tags": [
@@ -4036,7 +4983,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modElementPropertySet object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4129,6 +5076,35 @@
             }
         },
         "\/event\/{id}": {
+            "get": {
+                "description": "Retrieves a single modEvent object.",
+                "tags": [
+                    "Event"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modEvent object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modEvent object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modEvent"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modEvent object.",
                 "tags": [
@@ -4138,7 +5114,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modEvent object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4188,7 +5164,7 @@
                 }
             }
         },
-        "\/form\/customization\/profile\/user\/group": {
+        "\/form-customization-profile-user-group": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationProfileUserGroup objects.",
                 "tags": [
@@ -4230,7 +5206,36 @@
                 }
             }
         },
-        "\/form\/customization\/profile\/user\/group\/{id}": {
+        "\/form-customization-profile-user-group\/{id}": {
+            "get": {
+                "description": "Retrieves a single modFormCustomizationProfileUserGroup object.",
+                "tags": [
+                    "Form Customization Profile User Group"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modFormCustomizationProfileUserGroup object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modFormCustomizationProfileUserGroup object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modFormCustomizationProfileUserGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modFormCustomizationProfileUserGroup object.",
                 "tags": [
@@ -4240,7 +5245,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modFormCustomizationProfileUserGroup object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4290,7 +5295,7 @@
                 }
             }
         },
-        "\/form\/customization\/profile": {
+        "\/form-customization-profile": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationProfile objects.",
                 "tags": [
@@ -4362,7 +5367,36 @@
                 }
             }
         },
-        "\/form\/customization\/profile\/{id}": {
+        "\/form-customization-profile\/{id}": {
+            "get": {
+                "description": "Retrieves a single modFormCustomizationProfile object.",
+                "tags": [
+                    "Form Customization Profile"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modFormCustomizationProfile object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modFormCustomizationProfile object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modFormCustomizationProfile"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modFormCustomizationProfile object.",
                 "tags": [
@@ -4372,7 +5406,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modFormCustomizationProfile object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4422,7 +5456,7 @@
                 }
             }
         },
-        "\/form\/customization\/set": {
+        "\/form-customization-set": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationSet objects.",
                 "tags": [
@@ -4504,7 +5538,36 @@
                 }
             }
         },
-        "\/form\/customization\/set\/{id}": {
+        "\/form-customization-set\/{id}": {
+            "get": {
+                "description": "Retrieves a single modFormCustomizationSet object.",
+                "tags": [
+                    "Form Customization Set"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modFormCustomizationSet object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modFormCustomizationSet object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modFormCustomizationSet"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modFormCustomizationSet object.",
                 "tags": [
@@ -4514,7 +5577,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modFormCustomizationSet object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4564,7 +5627,7 @@
                 }
             }
         },
-        "\/lexicon\/entry": {
+        "\/lexicon-entry": {
             "get": {
                 "description": "Returns a collection of modLexiconEntry objects.",
                 "tags": [
@@ -4643,7 +5706,36 @@
                 }
             }
         },
-        "\/lexicon\/entry\/{id}": {
+        "\/lexicon-entry\/{id}": {
+            "get": {
+                "description": "Retrieves a single modLexiconEntry object.",
+                "tags": [
+                    "Lexicon Entry"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modLexiconEntry object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modLexiconEntry object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modLexiconEntry"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modLexiconEntry object.",
                 "tags": [
@@ -4653,7 +5745,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modLexiconEntry object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4703,7 +5795,7 @@
                 }
             }
         },
-        "\/manager\/log": {
+        "\/manager-log": {
             "get": {
                 "description": "Returns a collection of modManagerLog objects.",
                 "tags": [
@@ -4745,7 +5837,36 @@
                 }
             }
         },
-        "\/manager\/log\/{id}": {
+        "\/manager-log\/{id}": {
+            "get": {
+                "description": "Retrieves a single modManagerLog object.",
+                "tags": [
+                    "Manager Log"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modManagerLog object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modManagerLog object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modManagerLog"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modManagerLog object.",
                 "tags": [
@@ -4755,7 +5876,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modManagerLog object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4876,6 +5997,35 @@
             }
         },
         "\/menu\/{id}": {
+            "get": {
+                "description": "Retrieves a single modMenu object.",
+                "tags": [
+                    "Menu"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modMenu object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modMenu object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modMenu"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modMenu object.",
                 "tags": [
@@ -4885,7 +6035,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modMenu object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4978,6 +6128,35 @@
             }
         },
         "\/namespace\/{id}": {
+            "get": {
+                "description": "Retrieves a single modNamespace object.",
+                "tags": [
+                    "Namespace"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modNamespace object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modNamespace object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modNamespace"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modNamespace object.",
                 "tags": [
@@ -4987,7 +6166,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modNamespace object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5037,7 +6216,7 @@
                 }
             }
         },
-        "\/extension\/package": {
+        "\/extension-package": {
             "get": {
                 "description": "Returns a collection of modExtensionPackage objects.",
                 "tags": [
@@ -5098,7 +6277,36 @@
                 }
             }
         },
-        "\/extension\/package\/{id}": {
+        "\/extension-package\/{id}": {
+            "get": {
+                "description": "Retrieves a single modExtensionPackage object.",
+                "tags": [
+                    "Extension Package"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modExtensionPackage object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modExtensionPackage object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modExtensionPackage"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modExtensionPackage object.",
                 "tags": [
@@ -5108,7 +6316,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modExtensionPackage object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5248,6 +6456,35 @@
             }
         },
         "\/plugin\/{id}": {
+            "get": {
+                "description": "Retrieves a single modPlugin object.",
+                "tags": [
+                    "Plugin"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modPlugin object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modPlugin object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modPlugin"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modPlugin object.",
                 "tags": [
@@ -5257,7 +6494,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modPlugin object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5307,7 +6544,7 @@
                 }
             }
         },
-        "\/plugin\/event": {
+        "\/plugin-event": {
             "get": {
                 "description": "Returns a collection of modPluginEvent objects.",
                 "tags": [
@@ -5360,7 +6597,36 @@
                 }
             }
         },
-        "\/plugin\/event\/{id}": {
+        "\/plugin-event\/{id}": {
+            "get": {
+                "description": "Retrieves a single modPluginEvent object.",
+                "tags": [
+                    "Plugin Event"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modPluginEvent object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modPluginEvent object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modPluginEvent"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modPluginEvent object.",
                 "tags": [
@@ -5370,7 +6636,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modPluginEvent object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5420,7 +6686,7 @@
                 }
             }
         },
-        "\/property\/set": {
+        "\/property-set": {
             "get": {
                 "description": "Returns a collection of modPropertySet objects.",
                 "tags": [
@@ -5482,7 +6748,36 @@
                 }
             }
         },
-        "\/property\/set\/{id}": {
+        "\/property-set\/{id}": {
+            "get": {
+                "description": "Retrieves a single modPropertySet object.",
+                "tags": [
+                    "Property Set"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modPropertySet object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modPropertySet object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modPropertySet"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modPropertySet object.",
                 "tags": [
@@ -5492,7 +6787,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modPropertySet object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5745,6 +7040,35 @@
             }
         },
         "\/resource\/{id}": {
+            "get": {
+                "description": "Retrieves a single modResource object.",
+                "tags": [
+                    "Resource"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modResource object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modResource object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modResource"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modResource object.",
                 "tags": [
@@ -5754,7 +7078,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modResource object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5804,7 +7128,7 @@
                 }
             }
         },
-        "\/resource\/group": {
+        "\/resource-group": {
             "get": {
                 "description": "Returns a collection of modResourceGroup objects.",
                 "tags": [
@@ -5856,7 +7180,36 @@
                 }
             }
         },
-        "\/resource\/group\/{id}": {
+        "\/resource-group\/{id}": {
+            "get": {
+                "description": "Retrieves a single modResourceGroup object.",
+                "tags": [
+                    "Resource Group"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modResourceGroup object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modResourceGroup object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modResourceGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modResourceGroup object.",
                 "tags": [
@@ -5866,7 +7219,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modResourceGroup object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -5916,7 +7269,7 @@
                 }
             }
         },
-        "\/resource\/group\/resource": {
+        "\/resource-group-resource": {
             "get": {
                 "description": "Returns a collection of modResourceGroupResource objects.",
                 "tags": [
@@ -5979,7 +7332,36 @@
                 }
             }
         },
-        "\/resource\/group\/resource\/{id}": {
+        "\/resource-group-resource\/{id}": {
+            "get": {
+                "description": "Retrieves a single modResourceGroupResource object.",
+                "tags": [
+                    "Resource Group Resource"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modResourceGroupResource object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modResourceGroupResource object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modResourceGroupResource"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modResourceGroupResource object.",
                 "tags": [
@@ -5989,7 +7371,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modResourceGroupResource object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -6102,6 +7484,35 @@
             }
         },
         "\/script\/{id}": {
+            "get": {
+                "description": "Retrieves a single modScript object.",
+                "tags": [
+                    "Script"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modScript object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modScript object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modScript"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modScript object.",
                 "tags": [
@@ -6111,7 +7522,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modScript object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -6214,6 +7625,35 @@
             }
         },
         "\/session\/{id}": {
+            "get": {
+                "description": "Retrieves a single modSession object.",
+                "tags": [
+                    "Session"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modSession object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modSession object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modSession"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modSession object.",
                 "tags": [
@@ -6223,7 +7663,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modSession object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -6363,6 +7803,35 @@
             }
         },
         "\/snippet\/{id}": {
+            "get": {
+                "description": "Retrieves a single modSnippet object.",
+                "tags": [
+                    "Snippet"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modSnippet object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modSnippet object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modSnippet"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modSnippet object.",
                 "tags": [
@@ -6372,7 +7841,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modSnippet object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -6422,7 +7891,7 @@
                 }
             }
         },
-        "\/system\/setting": {
+        "\/system-setting": {
             "get": {
                 "description": "Returns a collection of modSystemSetting objects.",
                 "tags": [
@@ -6464,7 +7933,36 @@
                 }
             }
         },
-        "\/system\/setting\/{id}": {
+        "\/system-setting\/{id}": {
+            "get": {
+                "description": "Retrieves a single modSystemSetting object.",
+                "tags": [
+                    "System Setting"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modSystemSetting object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modSystemSetting object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modSystemSetting"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modSystemSetting object.",
                 "tags": [
@@ -6474,7 +7972,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modSystemSetting object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -6605,6 +8103,35 @@
             }
         },
         "\/template\/{id}": {
+            "get": {
+                "description": "Retrieves a single modTemplate object.",
+                "tags": [
+                    "Template"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modTemplate object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modTemplate object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modTemplate"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modTemplate object.",
                 "tags": [
@@ -6614,7 +8141,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modTemplate object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -6664,7 +8191,7 @@
                 }
             }
         },
-        "\/template\/var": {
+        "\/template-var": {
             "get": {
                 "description": "Returns a collection of modTemplateVar objects.",
                 "tags": [
@@ -6754,7 +8281,36 @@
                 }
             }
         },
-        "\/template\/var\/{id}": {
+        "\/template-var\/{id}": {
+            "get": {
+                "description": "Retrieves a single modTemplateVar object.",
+                "tags": [
+                    "Template Var"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modTemplateVar object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modTemplateVar object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modTemplateVar"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modTemplateVar object.",
                 "tags": [
@@ -6764,7 +8320,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modTemplateVar object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -6814,7 +8370,7 @@
                 }
             }
         },
-        "\/template\/var\/resource": {
+        "\/template-var-resource": {
             "get": {
                 "description": "Returns a collection of modTemplateVarResource objects.",
                 "tags": [
@@ -6877,7 +8433,36 @@
                 }
             }
         },
-        "\/template\/var\/resource\/{id}": {
+        "\/template-var-resource\/{id}": {
+            "get": {
+                "description": "Retrieves a single modTemplateVarResource object.",
+                "tags": [
+                    "Template Var Resource"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modTemplateVarResource object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modTemplateVarResource object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modTemplateVarResource"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modTemplateVarResource object.",
                 "tags": [
@@ -6887,7 +8472,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modTemplateVarResource object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -6937,7 +8522,7 @@
                 }
             }
         },
-        "\/template\/var\/resource\/group": {
+        "\/template-var-resource-group": {
             "get": {
                 "description": "Returns a collection of modTemplateVarResourceGroup objects.",
                 "tags": [
@@ -6979,7 +8564,36 @@
                 }
             }
         },
-        "\/template\/var\/resource\/group\/{id}": {
+        "\/template-var-resource-group\/{id}": {
+            "get": {
+                "description": "Retrieves a single modTemplateVarResourceGroup object.",
+                "tags": [
+                    "Template Var Resource Group"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modTemplateVarResourceGroup object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modTemplateVarResourceGroup object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modTemplateVarResourceGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modTemplateVarResourceGroup object.",
                 "tags": [
@@ -6989,7 +8603,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modTemplateVarResourceGroup object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7039,7 +8653,7 @@
                 }
             }
         },
-        "\/template\/var\/template": {
+        "\/template-var-template": {
             "get": {
                 "description": "Returns a collection of modTemplateVarTemplate objects.",
                 "tags": [
@@ -7081,7 +8695,36 @@
                 }
             }
         },
-        "\/template\/var\/template\/{id}": {
+        "\/template-var-template\/{id}": {
+            "get": {
+                "description": "Retrieves a single modTemplateVarTemplate object.",
+                "tags": [
+                    "Template Var Template"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modTemplateVarTemplate object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modTemplateVarTemplate object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modTemplateVarTemplate"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modTemplateVarTemplate object.",
                 "tags": [
@@ -7091,7 +8734,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modTemplateVarTemplate object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7222,6 +8865,35 @@
             }
         },
         "\/user\/{id}": {
+            "get": {
+                "description": "Retrieves a single modUser object.",
+                "tags": [
+                    "User"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modUser object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modUser object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modUser"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modUser object.",
                 "tags": [
@@ -7231,7 +8903,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modUser object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7281,7 +8953,7 @@
                 }
             }
         },
-        "\/user\/group": {
+        "\/user-group": {
             "get": {
                 "description": "Returns a collection of modUserGroup objects.",
                 "tags": [
@@ -7363,7 +9035,36 @@
                 }
             }
         },
-        "\/user\/group\/{id}": {
+        "\/user-group\/{id}": {
+            "get": {
+                "description": "Retrieves a single modUserGroup object.",
+                "tags": [
+                    "User Group"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modUserGroup object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modUserGroup object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modUserGroup"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modUserGroup object.",
                 "tags": [
@@ -7373,7 +9074,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modUserGroup object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7423,7 +9124,7 @@
                 }
             }
         },
-        "\/user\/group\/member": {
+        "\/user-group-member": {
             "get": {
                 "description": "Returns a collection of modUserGroupMember objects.",
                 "tags": [
@@ -7486,7 +9187,36 @@
                 }
             }
         },
-        "\/user\/group\/member\/{id}": {
+        "\/user-group-member\/{id}": {
+            "get": {
+                "description": "Retrieves a single modUserGroupMember object.",
+                "tags": [
+                    "User Group Member"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modUserGroupMember object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modUserGroupMember object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modUserGroupMember"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modUserGroupMember object.",
                 "tags": [
@@ -7496,7 +9226,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modUserGroupMember object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7546,7 +9276,7 @@
                 }
             }
         },
-        "\/user\/group\/role": {
+        "\/user-group-role": {
             "get": {
                 "description": "Returns a collection of modUserGroupRole objects.",
                 "tags": [
@@ -7608,7 +9338,36 @@
                 }
             }
         },
-        "\/user\/group\/role\/{id}": {
+        "\/user-group-role\/{id}": {
+            "get": {
+                "description": "Retrieves a single modUserGroupRole object.",
+                "tags": [
+                    "User Group Role"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modUserGroupRole object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modUserGroupRole object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modUserGroupRole"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modUserGroupRole object.",
                 "tags": [
@@ -7618,7 +9377,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modUserGroupRole object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7668,7 +9427,7 @@
                 }
             }
         },
-        "\/user\/group\/setting": {
+        "\/user-group-setting": {
             "get": {
                 "description": "Returns a collection of modUserGroupSetting objects.",
                 "tags": [
@@ -7710,7 +9469,36 @@
                 }
             }
         },
-        "\/user\/group\/setting\/{id}": {
+        "\/user-group-setting\/{id}": {
+            "get": {
+                "description": "Retrieves a single modUserGroupSetting object.",
+                "tags": [
+                    "User Group Setting"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modUserGroupSetting object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modUserGroupSetting object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modUserGroupSetting"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modUserGroupSetting object.",
                 "tags": [
@@ -7720,7 +9508,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modUserGroupSetting object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7770,7 +9558,7 @@
                 }
             }
         },
-        "\/user\/message": {
+        "\/user-message": {
             "get": {
                 "description": "Returns a collection of modUserMessage objects.",
                 "tags": [
@@ -7812,7 +9600,36 @@
                 }
             }
         },
-        "\/user\/message\/{id}": {
+        "\/user-message\/{id}": {
+            "get": {
+                "description": "Retrieves a single modUserMessage object.",
+                "tags": [
+                    "User Message"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modUserMessage object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modUserMessage object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modUserMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modUserMessage object.",
                 "tags": [
@@ -7822,7 +9639,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modUserMessage object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7872,7 +9689,7 @@
                 }
             }
         },
-        "\/user\/profile": {
+        "\/user-profile": {
             "get": {
                 "description": "Returns a collection of modUserProfile objects.",
                 "tags": [
@@ -7925,7 +9742,36 @@
                 }
             }
         },
-        "\/user\/profile\/{id}": {
+        "\/user-profile\/{id}": {
+            "get": {
+                "description": "Retrieves a single modUserProfile object.",
+                "tags": [
+                    "User Profile"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modUserProfile object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modUserProfile object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modUserProfile"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modUserProfile object.",
                 "tags": [
@@ -7935,7 +9781,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modUserProfile object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -7985,7 +9831,7 @@
                 }
             }
         },
-        "\/user\/setting": {
+        "\/user-setting": {
             "get": {
                 "description": "Returns a collection of modUserSetting objects.",
                 "tags": [
@@ -8027,7 +9873,36 @@
                 }
             }
         },
-        "\/user\/setting\/{id}": {
+        "\/user-setting\/{id}": {
+            "get": {
+                "description": "Retrieves a single modUserSetting object.",
+                "tags": [
+                    "User Setting"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modUserSetting object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modUserSetting object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modUserSetting"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modUserSetting object.",
                 "tags": [
@@ -8037,7 +9912,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modUserSetting object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -8158,6 +10033,35 @@
             }
         },
         "\/workspace\/{id}": {
+            "get": {
+                "description": "Retrieves a single modWorkspace object.",
+                "tags": [
+                    "Workspace"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modWorkspace object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modWorkspace object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modWorkspace"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modWorkspace object.",
                 "tags": [
@@ -8167,7 +10071,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modWorkspace object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -8217,7 +10121,7 @@
                 }
             }
         },
-        "\/registry\/db\/db\/register\/queue": {
+        "\/registry\/db\/db-register-queue": {
             "get": {
                 "description": "Returns a collection of modDbRegisterQueue objects.",
                 "tags": [
@@ -8269,7 +10173,36 @@
                 }
             }
         },
-        "\/registry\/db\/db\/register\/queue\/{id}": {
+        "\/registry\/db\/db-register-queue\/{id}": {
+            "get": {
+                "description": "Retrieves a single modDbRegisterQueue object.",
+                "tags": [
+                    "Db Register Queue"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modDbRegisterQueue object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modDbRegisterQueue object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modDbRegisterQueue"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modDbRegisterQueue object.",
                 "tags": [
@@ -8279,7 +10212,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modDbRegisterQueue object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -8329,7 +10262,7 @@
                 }
             }
         },
-        "\/registry\/db\/db\/register\/topic": {
+        "\/registry\/db\/db-register-topic": {
             "get": {
                 "description": "Returns a collection of modDbRegisterTopic objects.",
                 "tags": [
@@ -8391,7 +10324,36 @@
                 }
             }
         },
-        "\/registry\/db\/db\/register\/topic\/{id}": {
+        "\/registry\/db\/db-register-topic\/{id}": {
+            "get": {
+                "description": "Retrieves a single modDbRegisterTopic object.",
+                "tags": [
+                    "Db Register Topic"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modDbRegisterTopic object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modDbRegisterTopic object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modDbRegisterTopic"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modDbRegisterTopic object.",
                 "tags": [
@@ -8401,7 +10363,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modDbRegisterTopic object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -8451,7 +10413,7 @@
                 }
             }
         },
-        "\/registry\/db\/db\/register\/message": {
+        "\/registry\/db\/db-register-message": {
             "get": {
                 "description": "Returns a collection of modDbRegisterMessage objects.",
                 "tags": [
@@ -8541,7 +10503,36 @@
                 }
             }
         },
-        "\/registry\/db\/db\/register\/message\/{id}": {
+        "\/registry\/db\/db-register-message\/{id}": {
+            "get": {
+                "description": "Retrieves a single modDbRegisterMessage object.",
+                "tags": [
+                    "Db Register Message"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modDbRegisterMessage object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modDbRegisterMessage object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modDbRegisterMessage"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modDbRegisterMessage object.",
                 "tags": [
@@ -8551,7 +10542,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modDbRegisterMessage object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -8601,7 +10592,7 @@
                 }
             }
         },
-        "\/sources\/access\/media\/source": {
+        "\/sources\/access-media-source": {
             "get": {
                 "description": "Returns a collection of modAccessMediaSource objects.",
                 "tags": [
@@ -8701,7 +10692,36 @@
                 }
             }
         },
-        "\/sources\/access\/media\/source\/{id}": {
+        "\/sources\/access-media-source\/{id}": {
+            "get": {
+                "description": "Retrieves a single modAccessMediaSource object.",
+                "tags": [
+                    "Access Media Source"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessMediaSource object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modAccessMediaSource object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessMediaSource"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modAccessMediaSource object.",
                 "tags": [
@@ -8711,7 +10731,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modAccessMediaSource object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -8761,7 +10781,7 @@
                 }
             }
         },
-        "\/sources\/media\/source": {
+        "\/sources\/media-source": {
             "get": {
                 "description": "Returns a collection of modMediaSource objects.",
                 "tags": [
@@ -8831,7 +10851,36 @@
                 }
             }
         },
-        "\/sources\/media\/source\/{id}": {
+        "\/sources\/media-source\/{id}": {
+            "get": {
+                "description": "Retrieves a single modMediaSource object.",
+                "tags": [
+                    "Media Source"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modMediaSource object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modMediaSource object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modMediaSource"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modMediaSource object.",
                 "tags": [
@@ -8841,7 +10890,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modMediaSource object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -8891,7 +10940,7 @@
                 }
             }
         },
-        "\/sources\/media\/source\/context": {
+        "\/sources\/media-source-context": {
             "get": {
                 "description": "Returns a collection of modMediaSourceContext objects.",
                 "tags": [
@@ -8933,7 +10982,36 @@
                 }
             }
         },
-        "\/sources\/media\/source\/context\/{id}": {
+        "\/sources\/media-source-context\/{id}": {
+            "get": {
+                "description": "Retrieves a single modMediaSourceContext object.",
+                "tags": [
+                    "Media Source Context"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modMediaSourceContext object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modMediaSourceContext object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modMediaSourceContext"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modMediaSourceContext object.",
                 "tags": [
@@ -8943,7 +11021,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modMediaSourceContext object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -8993,7 +11071,7 @@
                 }
             }
         },
-        "\/sources\/media\/source\/element": {
+        "\/sources\/media-source-element": {
             "get": {
                 "description": "Returns a collection of modMediaSourceElement objects.",
                 "tags": [
@@ -9035,7 +11113,36 @@
                 }
             }
         },
-        "\/sources\/media\/source\/element\/{id}": {
+        "\/sources\/media-source-element\/{id}": {
+            "get": {
+                "description": "Retrieves a single modMediaSourceElement object.",
+                "tags": [
+                    "Media Source Element"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modMediaSourceElement object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modMediaSourceElement object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modMediaSourceElement"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modMediaSourceElement object.",
                 "tags": [
@@ -9045,7 +11152,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modMediaSourceElement object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -9095,7 +11202,7 @@
                 }
             }
         },
-        "\/transport\/transport\/provider": {
+        "\/transport\/transport-provider": {
             "get": {
                 "description": "Returns a collection of modTransportProvider objects.",
                 "tags": [
@@ -9184,7 +11291,36 @@
                 }
             }
         },
-        "\/transport\/transport\/provider\/{id}": {
+        "\/transport\/transport-provider\/{id}": {
+            "get": {
+                "description": "Retrieves a single modTransportProvider object.",
+                "tags": [
+                    "Transport Provider"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modTransportProvider object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modTransportProvider object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modTransportProvider"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modTransportProvider object.",
                 "tags": [
@@ -9194,7 +11330,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modTransportProvider object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -9244,7 +11380,7 @@
                 }
             }
         },
-        "\/transport\/transport\/package": {
+        "\/transport\/transport-package": {
             "get": {
                 "description": "Returns a collection of modTransportPackage objects.",
                 "tags": [
@@ -9374,7 +11510,36 @@
                 }
             }
         },
-        "\/transport\/transport\/package\/{id}": {
+        "\/transport\/transport-package\/{id}": {
+            "get": {
+                "description": "Retrieves a single modTransportPackage object.",
+                "tags": [
+                    "Transport Package"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modTransportPackage object to retrieve.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The requested modTransportPackage object.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modTransportPackage"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
             "put": {
                 "description": "Updates a modTransportPackage object.",
                 "tags": [
@@ -9384,7 +11549,7 @@
                     {
                         "name": "id",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "description": "The ID (primary key) of the modTransportPackage object to update.",
                         "required": true,
                         "schema": {
                             "type": "integer"
