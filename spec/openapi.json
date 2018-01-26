@@ -164,6 +164,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessAction object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessAction"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessAction object updated.",
@@ -358,6 +369,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessActionDom object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessActionDom"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessActionDom object updated.",
@@ -561,6 +583,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessCategory object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessCategory"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessCategory object updated.",
@@ -764,6 +797,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessNamespace object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessNamespace"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessNamespace object updated.",
@@ -958,6 +1002,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessContext object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessContext"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessContext object updated.",
@@ -1161,6 +1216,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessElement object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessElement"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessElement object updated.",
@@ -1364,6 +1430,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessTemplateVar object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessTemplateVar"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessTemplateVar object updated.",
@@ -1558,6 +1635,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessMenu object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessMenu"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessMenu object updated.",
@@ -1742,6 +1830,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessPolicy object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessPolicy"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessPolicy object updated.",
@@ -1888,6 +1987,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessPolicyTemplate object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessPolicyTemplate"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessPolicyTemplate object updated.",
@@ -2034,6 +2144,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessPolicyTemplateGroup object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessPolicyTemplateGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessPolicyTemplateGroup object updated.",
@@ -2199,6 +2320,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessPermission object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessPermission"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessPermission object updated.",
@@ -2402,6 +2534,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessResource object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessResource object updated.",
@@ -2605,6 +2748,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessResourceGroup object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessResourceGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessResourceGroup object updated.",
@@ -2769,6 +2923,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAction object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAction"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAction object updated.",
@@ -2971,6 +3136,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modActionDom object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modActionDom"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modActionDom object updated.",
@@ -3144,6 +3320,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modActionField object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modActionField"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modActionField object updated.",
@@ -3300,6 +3487,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modActiveUser object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modActiveUser"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modActiveUser object updated.",
@@ -3475,6 +3673,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modCategory object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modCategory"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modCategory object updated.",
@@ -3621,6 +3830,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modCategoryClosure object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modCategoryClosure"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modCategoryClosure object updated.",
@@ -3804,6 +4024,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modChunk object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modChunk"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modChunk object updated.",
@@ -3977,6 +4208,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modClassMap object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modClassMap"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modClassMap object updated.",
@@ -4132,6 +4374,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modContentType object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modContentType"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modContentType object updated.",
@@ -4297,6 +4550,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modContext object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modContext"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modContext object updated.",
@@ -4481,6 +4745,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modContextSetting object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modContextSetting"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modContextSetting object updated.",
@@ -4674,6 +4949,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modContextResource object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modContextResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modContextResource object updated.",
@@ -4847,6 +5133,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modDashboard object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDashboard"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modDashboard object updated.",
@@ -5029,6 +5326,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modDashboardWidget object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDashboardWidget"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modDashboardWidget object updated.",
@@ -5223,6 +5531,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modDashboardWidgetPlacement object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDashboardWidgetPlacement"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modDashboardWidgetPlacement object updated.",
@@ -5378,6 +5697,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modElementPropertySet object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modElementPropertySet"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modElementPropertySet object updated.",
@@ -5524,6 +5854,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modEvent object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modEvent"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modEvent object updated.",
@@ -5670,6 +6011,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modFormCustomizationProfileUserGroup object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modFormCustomizationProfileUserGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modFormCustomizationProfileUserGroup object updated.",
@@ -5845,6 +6197,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modFormCustomizationProfile object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modFormCustomizationProfile"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modFormCustomizationProfile object updated.",
@@ -6030,6 +6393,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modFormCustomizationSet object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modFormCustomizationSet"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modFormCustomizationSet object updated.",
@@ -6212,6 +6586,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modLexiconEntry object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modLexiconEntry"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modLexiconEntry object updated.",
@@ -6358,6 +6743,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modManagerLog object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modManagerLog"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modManagerLog object updated.",
@@ -6531,6 +6927,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modMenu object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modMenu"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modMenu object updated.",
@@ -6677,6 +7084,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modNamespace object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modNamespace"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modNamespace object updated.",
@@ -6841,6 +7259,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modExtensionPackage object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modExtensionPackage"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modExtensionPackage object updated.",
@@ -7033,6 +7462,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modPlugin object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modPlugin"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modPlugin object updated.",
@@ -7189,6 +7629,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modPluginEvent object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modPluginEvent"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modPluginEvent object updated.",
@@ -7354,6 +7805,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modPropertySet object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modPropertySet"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modPropertySet object updated.",
@@ -7659,6 +8121,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modResource object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modResource object updated.",
@@ -7814,6 +8287,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modResourceGroup object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modResourceGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modResourceGroup object updated.",
@@ -7980,6 +8464,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modResourceGroupResource object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modResourceGroupResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modResourceGroupResource object updated.",
@@ -8172,6 +8667,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modSnippet object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modSnippet"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modSnippet object updated.",
@@ -8318,6 +8824,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modSystemSetting object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modSystemSetting"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modSystemSetting object updated.",
@@ -8501,6 +9018,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modTemplate object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplate"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modTemplate object updated.",
@@ -8694,6 +9222,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modTemplateVar object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplateVar"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modTemplateVar object updated.",
@@ -8860,6 +9399,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modTemplateVarResource object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplateVarResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modTemplateVarResource object updated.",
@@ -9006,6 +9556,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modTemplateVarResourceGroup object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplateVarResourceGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modTemplateVarResourceGroup object updated.",
@@ -9152,6 +9713,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modTemplateVarTemplate object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplateVarTemplate"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modTemplateVarTemplate object updated.",
@@ -9335,6 +9907,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modUser object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUser"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modUser object updated.",
@@ -9520,6 +10103,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modUserGroup object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modUserGroup object updated.",
@@ -9686,6 +10280,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modUserGroupMember object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserGroupMember"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modUserGroupMember object updated.",
@@ -9851,6 +10456,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modUserGroupRole object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserGroupRole"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modUserGroupRole object updated.",
@@ -9997,6 +10613,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modUserGroupSetting object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserGroupSetting"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modUserGroupSetting object updated.",
@@ -10143,6 +10770,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modUserMessage object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserMessage"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modUserMessage object updated.",
@@ -10299,6 +10937,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modUserProfile object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserProfile"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modUserProfile object updated.",
@@ -10445,6 +11094,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modUserSetting object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserSetting"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modUserSetting object updated.",
@@ -10618,6 +11278,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modWorkspace object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modWorkspace"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modWorkspace object updated.",
@@ -10773,6 +11444,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modDbRegisterQueue object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDbRegisterQueue"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modDbRegisterQueue object updated.",
@@ -10938,6 +11620,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modDbRegisterTopic object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDbRegisterTopic"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modDbRegisterTopic object updated.",
@@ -11131,6 +11824,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modDbRegisterMessage object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDbRegisterMessage"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modDbRegisterMessage object updated.",
@@ -11334,6 +12038,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modAccessMediaSource object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessMediaSource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modAccessMediaSource object updated.",
@@ -11507,6 +12222,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modMediaSource object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modMediaSource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modMediaSource object updated.",
@@ -11653,6 +12379,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modMediaSourceContext object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modMediaSourceContext"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modMediaSourceContext object updated.",
@@ -11799,6 +12536,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modMediaSourceElement object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modMediaSourceElement"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modMediaSourceElement object updated.",
@@ -11991,6 +12739,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modTransportProvider object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTransportProvider"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modTransportProvider object updated.",
@@ -12224,6 +12983,17 @@
                         }
                     }
                 ],
+                "requestBody": {
+                    "description": "To update a modTransportPackage object, send a PUT request with all object fields.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTransportPackage"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "modTransportPackage object updated.",

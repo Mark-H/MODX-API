@@ -513,6 +513,17 @@ class Builder
                     ]
                 ]
             ],
+            'requestBody' => [
+                'description' => 'To update a ' . $class . ' object, send a PUT request with all object fields.',
+                'required' => true,
+                'content' => [
+                    'application/x-www-form-urlencoded' => [
+                        'schema' => [
+                            '$ref' => '#/components/schemas/' . $class
+                        ]
+                    ]
+                ]
+            ],
             'responses' => [
                 '200' => [
                     'description' => $class . ' object updated.',
