@@ -323,6 +323,17 @@ class Builder
         return [
             'description' => 'Creates a new ' . $class . ' object.',
             'tags' => [$title],
+            'requestBody' => [
+                'description' => 'To create a new ' . $class . ' object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.',
+                'required' => true,
+                'content' => [
+                    'application/x-www-form-urlencoded' => [
+                        'schema' => [
+                            '$ref' => '#/components/schemas/' . $class
+                        ]
+                    ]
+                ]
+            ],
             'responses' => [
                 '200' => [
                     'description' => 'New ' . $class . ' object successfully created.',

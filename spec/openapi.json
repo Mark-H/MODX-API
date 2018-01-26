@@ -90,6 +90,17 @@
                 "tags": [
                     "Access Action"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessAction object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessAction"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessAction object successfully created.",
@@ -270,6 +281,17 @@
                 "tags": [
                     "Access Action Dom"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessActionDom object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessActionDom"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessActionDom object successfully created.",
@@ -459,6 +481,17 @@
                 "tags": [
                     "Access Category"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessCategory object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessCategory"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessCategory object successfully created.",
@@ -648,6 +681,17 @@
                 "tags": [
                     "Access Namespace"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessNamespace object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessNamespace"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessNamespace object successfully created.",
@@ -828,6 +872,17 @@
                 "tags": [
                     "Access Context"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessContext object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessContext"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessContext object successfully created.",
@@ -1017,6 +1072,17 @@
                 "tags": [
                     "Access Element"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessElement object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessElement"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessElement object successfully created.",
@@ -1206,6 +1272,17 @@
                 "tags": [
                     "Access Template Var"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessTemplateVar object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessTemplateVar"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessTemplateVar object successfully created.",
@@ -1386,6 +1463,17 @@
                 "tags": [
                     "Access Menu"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessMenu object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessMenu"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessMenu object successfully created.",
@@ -1556,6 +1644,17 @@
                 "tags": [
                     "Access Policy"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessPolicy object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessPolicy"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessPolicy object successfully created.",
@@ -1687,6 +1786,17 @@
                 "tags": [
                     "Access Policy Template"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessPolicyTemplate object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessPolicyTemplate"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessPolicyTemplate object successfully created.",
@@ -1818,6 +1928,17 @@
                 "tags": [
                     "Access Policy Template Group"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessPolicyTemplateGroup object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessPolicyTemplateGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessPolicyTemplateGroup object successfully created.",
@@ -1969,6 +2090,17 @@
                 "tags": [
                     "Access Permission"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessPermission object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessPermission"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessPermission object successfully created.",
@@ -2158,6 +2290,17 @@
                 "tags": [
                     "Access Resource"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessResource object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessResource object successfully created.",
@@ -2347,6 +2490,17 @@
                 "tags": [
                     "Access Resource Group"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessResourceGroup object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessResourceGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessResourceGroup object successfully created.",
@@ -2497,6 +2651,17 @@
                 "tags": [
                     "Action"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAction object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAction"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAction object successfully created.",
@@ -2685,6 +2850,17 @@
                 "tags": [
                     "Action Dom"
                 ],
+                "requestBody": {
+                    "description": "To create a new modActionDom object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modActionDom"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modActionDom object successfully created.",
@@ -2844,6 +3020,17 @@
                 "tags": [
                     "Action Field"
                 ],
+                "requestBody": {
+                    "description": "To create a new modActionField object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modActionField"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modActionField object successfully created.",
@@ -2986,6 +3173,17 @@
                 "tags": [
                     "Active User"
                 ],
+                "requestBody": {
+                    "description": "To create a new modActiveUser object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modActiveUser"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modActiveUser object successfully created.",
@@ -3147,6 +3345,17 @@
                 "tags": [
                     "Category"
                 ],
+                "requestBody": {
+                    "description": "To create a new modCategory object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modCategory"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modCategory object successfully created.",
@@ -3278,6 +3487,17 @@
                 "tags": [
                     "Category Closure"
                 ],
+                "requestBody": {
+                    "description": "To create a new modCategoryClosure object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modCategoryClosure"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modCategoryClosure object successfully created.",
@@ -3447,6 +3667,17 @@
                 "tags": [
                     "Chunk"
                 ],
+                "requestBody": {
+                    "description": "To create a new modChunk object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modChunk"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modChunk object successfully created.",
@@ -3606,6 +3837,17 @@
                 "tags": [
                     "Class Map"
                 ],
+                "requestBody": {
+                    "description": "To create a new modClassMap object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modClassMap"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modClassMap object successfully created.",
@@ -3747,6 +3989,17 @@
                 "tags": [
                     "Content Type"
                 ],
+                "requestBody": {
+                    "description": "To create a new modContentType object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modContentType"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modContentType object successfully created.",
@@ -3898,6 +4151,17 @@
                 "tags": [
                     "Context"
                 ],
+                "requestBody": {
+                    "description": "To create a new modContext object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modContext"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modContext object successfully created.",
@@ -4039,6 +4303,17 @@
                 "tags": [
                     "Context Setting"
                 ],
+                "requestBody": {
+                    "description": "To create a new modContextSetting object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modContextSetting"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modContextSetting object successfully created.",
@@ -4208,6 +4483,17 @@
                 "tags": [
                     "Context Resource"
                 ],
+                "requestBody": {
+                    "description": "To create a new modContextResource object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modContextResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modContextResource object successfully created.",
@@ -4358,6 +4644,17 @@
                 "tags": [
                     "Dashboard"
                 ],
+                "requestBody": {
+                    "description": "To create a new modDashboard object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDashboard"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modDashboard object successfully created.",
@@ -4526,6 +4823,17 @@
                 "tags": [
                     "Dashboard Widget"
                 ],
+                "requestBody": {
+                    "description": "To create a new modDashboardWidget object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDashboardWidget"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modDashboardWidget object successfully created.",
@@ -4668,6 +4976,17 @@
                 "tags": [
                     "Dashboard Widget Placement"
                 ],
+                "requestBody": {
+                    "description": "To create a new modDashboardWidgetPlacement object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDashboardWidgetPlacement"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modDashboardWidgetPlacement object successfully created.",
@@ -4799,6 +5118,17 @@
                 "tags": [
                     "Element"
                 ],
+                "requestBody": {
+                    "description": "To create a new modElement object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modElement"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modElement object successfully created.",
@@ -4930,6 +5260,17 @@
                 "tags": [
                     "Element Property Set"
                 ],
+                "requestBody": {
+                    "description": "To create a new modElementPropertySet object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modElementPropertySet"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modElementPropertySet object successfully created.",
@@ -5061,6 +5402,17 @@
                 "tags": [
                     "Event"
                 ],
+                "requestBody": {
+                    "description": "To create a new modEvent object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modEvent"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modEvent object successfully created.",
@@ -5192,6 +5544,17 @@
                 "tags": [
                     "Form Customization Profile User Group"
                 ],
+                "requestBody": {
+                    "description": "To create a new modFormCustomizationProfileUserGroup object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modFormCustomizationProfileUserGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modFormCustomizationProfileUserGroup object successfully created.",
@@ -5353,6 +5716,17 @@
                 "tags": [
                     "Form Customization Profile"
                 ],
+                "requestBody": {
+                    "description": "To create a new modFormCustomizationProfile object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modFormCustomizationProfile"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modFormCustomizationProfile object successfully created.",
@@ -5524,6 +5898,17 @@
                 "tags": [
                     "Form Customization Set"
                 ],
+                "requestBody": {
+                    "description": "To create a new modFormCustomizationSet object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modFormCustomizationSet"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modFormCustomizationSet object successfully created.",
@@ -5692,6 +6077,17 @@
                 "tags": [
                     "Lexicon Entry"
                 ],
+                "requestBody": {
+                    "description": "To create a new modLexiconEntry object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modLexiconEntry"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modLexiconEntry object successfully created.",
@@ -5823,6 +6219,17 @@
                 "tags": [
                     "Manager Log"
                 ],
+                "requestBody": {
+                    "description": "To create a new modManagerLog object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modManagerLog"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modManagerLog object successfully created.",
@@ -5982,6 +6389,17 @@
                 "tags": [
                     "Menu"
                 ],
+                "requestBody": {
+                    "description": "To create a new modMenu object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modMenu"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modMenu object successfully created.",
@@ -6113,6 +6531,17 @@
                 "tags": [
                     "Namespace"
                 ],
+                "requestBody": {
+                    "description": "To create a new modNamespace object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modNamespace"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modNamespace object successfully created.",
@@ -6263,6 +6692,17 @@
                 "tags": [
                     "Extension Package"
                 ],
+                "requestBody": {
+                    "description": "To create a new modExtensionPackage object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modExtensionPackage"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modExtensionPackage object successfully created.",
@@ -6441,6 +6881,17 @@
                 "tags": [
                     "Plugin"
                 ],
+                "requestBody": {
+                    "description": "To create a new modPlugin object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modPlugin"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modPlugin object successfully created.",
@@ -6583,6 +7034,17 @@
                 "tags": [
                     "Plugin Event"
                 ],
+                "requestBody": {
+                    "description": "To create a new modPluginEvent object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modPluginEvent"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modPluginEvent object successfully created.",
@@ -6734,6 +7196,17 @@
                 "tags": [
                     "Property Set"
                 ],
+                "requestBody": {
+                    "description": "To create a new modPropertySet object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modPropertySet"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modPropertySet object successfully created.",
@@ -7025,6 +7498,17 @@
                 "tags": [
                     "Resource"
                 ],
+                "requestBody": {
+                    "description": "To create a new modResource object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modResource object successfully created.",
@@ -7166,6 +7650,17 @@
                 "tags": [
                     "Resource Group"
                 ],
+                "requestBody": {
+                    "description": "To create a new modResourceGroup object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modResourceGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modResourceGroup object successfully created.",
@@ -7318,6 +7813,17 @@
                 "tags": [
                     "Resource Group Resource"
                 ],
+                "requestBody": {
+                    "description": "To create a new modResourceGroupResource object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modResourceGroupResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modResourceGroupResource object successfully created.",
@@ -7469,6 +7975,17 @@
                 "tags": [
                     "Script"
                 ],
+                "requestBody": {
+                    "description": "To create a new modScript object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modScript"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modScript object successfully created.",
@@ -7610,6 +8127,17 @@
                 "tags": [
                     "Session"
                 ],
+                "requestBody": {
+                    "description": "To create a new modSession object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modSession"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modSession object successfully created.",
@@ -7788,6 +8316,17 @@
                 "tags": [
                     "Snippet"
                 ],
+                "requestBody": {
+                    "description": "To create a new modSnippet object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modSnippet"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modSnippet object successfully created.",
@@ -7919,6 +8458,17 @@
                 "tags": [
                     "System Setting"
                 ],
+                "requestBody": {
+                    "description": "To create a new modSystemSetting object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modSystemSetting"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modSystemSetting object successfully created.",
@@ -8088,6 +8638,17 @@
                 "tags": [
                     "Template"
                 ],
+                "requestBody": {
+                    "description": "To create a new modTemplate object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplate"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modTemplate object successfully created.",
@@ -8267,6 +8828,17 @@
                 "tags": [
                     "Template Var"
                 ],
+                "requestBody": {
+                    "description": "To create a new modTemplateVar object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplateVar"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modTemplateVar object successfully created.",
@@ -8419,6 +8991,17 @@
                 "tags": [
                     "Template Var Resource"
                 ],
+                "requestBody": {
+                    "description": "To create a new modTemplateVarResource object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplateVarResource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modTemplateVarResource object successfully created.",
@@ -8550,6 +9133,17 @@
                 "tags": [
                     "Template Var Resource Group"
                 ],
+                "requestBody": {
+                    "description": "To create a new modTemplateVarResourceGroup object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplateVarResourceGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modTemplateVarResourceGroup object successfully created.",
@@ -8681,6 +9275,17 @@
                 "tags": [
                     "Template Var Template"
                 ],
+                "requestBody": {
+                    "description": "To create a new modTemplateVarTemplate object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTemplateVarTemplate"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modTemplateVarTemplate object successfully created.",
@@ -8850,6 +9455,17 @@
                 "tags": [
                     "User"
                 ],
+                "requestBody": {
+                    "description": "To create a new modUser object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUser"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modUser object successfully created.",
@@ -9021,6 +9637,17 @@
                 "tags": [
                     "User Group"
                 ],
+                "requestBody": {
+                    "description": "To create a new modUserGroup object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserGroup"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modUserGroup object successfully created.",
@@ -9173,6 +9800,17 @@
                 "tags": [
                     "User Group Member"
                 ],
+                "requestBody": {
+                    "description": "To create a new modUserGroupMember object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserGroupMember"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modUserGroupMember object successfully created.",
@@ -9324,6 +9962,17 @@
                 "tags": [
                     "User Group Role"
                 ],
+                "requestBody": {
+                    "description": "To create a new modUserGroupRole object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserGroupRole"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modUserGroupRole object successfully created.",
@@ -9455,6 +10104,17 @@
                 "tags": [
                     "User Group Setting"
                 ],
+                "requestBody": {
+                    "description": "To create a new modUserGroupSetting object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserGroupSetting"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modUserGroupSetting object successfully created.",
@@ -9586,6 +10246,17 @@
                 "tags": [
                     "User Message"
                 ],
+                "requestBody": {
+                    "description": "To create a new modUserMessage object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserMessage"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modUserMessage object successfully created.",
@@ -9728,6 +10399,17 @@
                 "tags": [
                     "User Profile"
                 ],
+                "requestBody": {
+                    "description": "To create a new modUserProfile object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserProfile"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modUserProfile object successfully created.",
@@ -9859,6 +10541,17 @@
                 "tags": [
                     "User Setting"
                 ],
+                "requestBody": {
+                    "description": "To create a new modUserSetting object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modUserSetting"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modUserSetting object successfully created.",
@@ -10018,6 +10711,17 @@
                 "tags": [
                     "Workspace"
                 ],
+                "requestBody": {
+                    "description": "To create a new modWorkspace object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modWorkspace"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modWorkspace object successfully created.",
@@ -10159,6 +10863,17 @@
                 "tags": [
                     "Db Register Queue"
                 ],
+                "requestBody": {
+                    "description": "To create a new modDbRegisterQueue object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDbRegisterQueue"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modDbRegisterQueue object successfully created.",
@@ -10310,6 +11025,17 @@
                 "tags": [
                     "Db Register Topic"
                 ],
+                "requestBody": {
+                    "description": "To create a new modDbRegisterTopic object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDbRegisterTopic"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modDbRegisterTopic object successfully created.",
@@ -10489,6 +11215,17 @@
                 "tags": [
                     "Db Register Message"
                 ],
+                "requestBody": {
+                    "description": "To create a new modDbRegisterMessage object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modDbRegisterMessage"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modDbRegisterMessage object successfully created.",
@@ -10678,6 +11415,17 @@
                 "tags": [
                     "Access Media Source"
                 ],
+                "requestBody": {
+                    "description": "To create a new modAccessMediaSource object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modAccessMediaSource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modAccessMediaSource object successfully created.",
@@ -10837,6 +11585,17 @@
                 "tags": [
                     "Media Source"
                 ],
+                "requestBody": {
+                    "description": "To create a new modMediaSource object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modMediaSource"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modMediaSource object successfully created.",
@@ -10968,6 +11727,17 @@
                 "tags": [
                     "Media Source Context"
                 ],
+                "requestBody": {
+                    "description": "To create a new modMediaSourceContext object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modMediaSourceContext"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modMediaSourceContext object successfully created.",
@@ -11099,6 +11869,17 @@
                 "tags": [
                     "Media Source Element"
                 ],
+                "requestBody": {
+                    "description": "To create a new modMediaSourceElement object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modMediaSourceElement"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modMediaSourceElement object successfully created.",
@@ -11277,6 +12058,17 @@
                 "tags": [
                     "Transport Provider"
                 ],
+                "requestBody": {
+                    "description": "To create a new modTransportProvider object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTransportProvider"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modTransportProvider object successfully created.",
@@ -11496,6 +12288,17 @@
                 "tags": [
                     "Transport Package"
                 ],
+                "requestBody": {
+                    "description": "To create a new modTransportPackage object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
+                    "required": true,
+                    "content": {
+                        "application\/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#\/components\/schemas\/modTransportPackage"
+                            }
+                        }
+                    }
+                },
                 "responses": {
                     "200": {
                         "description": "New modTransportPackage object successfully created.",
