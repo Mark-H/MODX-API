@@ -5808,7 +5808,7 @@
                 }
             }
         },
-        "\/event\/{id}": {
+        "\/event\/{name}": {
             "get": {
                 "description": "Retrieves a single modEvent object.",
                 "tags": [
@@ -5816,12 +5816,12 @@
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "name",
                         "in": "path",
-                        "description": "The ID (primary key) of the modEvent object to retrieve.",
+                        "description": "The name (case sensitive) of the modEvent instance.",
                         "required": true,
                         "schema": {
-                            "type": "integer"
+                            "type": "string"
                         }
                     }
                 ],
@@ -5845,12 +5845,12 @@
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "name",
                         "in": "path",
-                        "description": "The ID (primary key) of the modEvent object to update.",
+                        "description": "The name (case sensitive) of the modEvent instance.",
                         "required": true,
                         "schema": {
-                            "type": "integer"
+                            "type": "string"
                         }
                     }
                 ],
@@ -5885,12 +5885,12 @@
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "name",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "description": "The name (case sensitive) of the modEvent instance.",
                         "required": true,
                         "schema": {
-                            "type": "integer"
+                            "type": "string"
                         }
                     }
                 ],

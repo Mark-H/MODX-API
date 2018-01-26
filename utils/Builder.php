@@ -408,6 +408,27 @@ class Builder
         return $paths;
     }
 
+
+    public function generatePathsFormodEvent($uri, $class, $classWithPackage, $meta, $title)
+    {
+        $paths = $this->generatePaths($uri, $class, $classWithPackage, $meta, $title);
+        $paths = $this->changeKey($paths, '/event/{id}', '/event/{name}');
+        $nameParam = [
+            'name' => 'name',
+            'in' => 'path',
+            'description' => 'The name (case sensitive) of the modEvent instance.',
+            'required' => true,
+            'schema' => [
+                'type' => 'string'
+            ]
+        ];
+        $paths['/event/{name}']['get']['parameters'] = [$nameParam];
+        $paths['/event/{name}']['put']['parameters'] = [$nameParam];
+        $paths['/event/{name}']['delete']['parameters'] = [$nameParam];
+
+        return $paths;
+    }
+
     private function _standardGetCollectionRequest($class, $title)
     {
         return [
