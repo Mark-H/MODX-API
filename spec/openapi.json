@@ -13,6 +13,184 @@
         }
     },
     "paths": {
+        "\/access\/action": {
+            "get": {
+                "description": "Returns a collection of modAccessAction objects.",
+                "responses": {
+                    "200": {
+                        "description": "Collection of modAccessAction objects.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#\/components\/schemas\/modAccessAction"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Creates a new modAccessAction object.",
+                "responses": {
+                    "200": {
+                        "description": "New modAccessAction object successfully created.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/access\/action\/{id}": {
+            "put": {
+                "description": "Updates a modAccessAction object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessAction object updated.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Deletes a modAccessAction object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessAction object removed.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessAction"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/access\/action\/dom": {
+            "get": {
+                "description": "Returns a collection of modAccessActionDom objects.",
+                "responses": {
+                    "200": {
+                        "description": "Collection of modAccessActionDom objects.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#\/components\/schemas\/modAccessActionDom"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Creates a new modAccessActionDom object.",
+                "responses": {
+                    "200": {
+                        "description": "New modAccessActionDom object successfully created.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessActionDom"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/access\/action\/dom\/{id}": {
+            "put": {
+                "description": "Updates a modAccessActionDom object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessActionDom object updated.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessActionDom"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Deletes a modAccessActionDom object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessActionDom object removed.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessActionDom"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "\/access\/category": {
             "get": {
                 "description": "Returns a collection of modAccessCategory objects.",
@@ -191,6 +369,95 @@
                 }
             }
         },
+        "\/access\/context": {
+            "get": {
+                "description": "Returns a collection of modAccessContext objects.",
+                "responses": {
+                    "200": {
+                        "description": "Collection of modAccessContext objects.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#\/components\/schemas\/modAccessContext"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Creates a new modAccessContext object.",
+                "responses": {
+                    "200": {
+                        "description": "New modAccessContext object successfully created.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessContext"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/access\/context\/{id}": {
+            "put": {
+                "description": "Updates a modAccessContext object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessContext object updated.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessContext"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Deletes a modAccessContext object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessContext object removed.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessContext"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "\/access\/element": {
             "get": {
                 "description": "Returns a collection of modAccessElement objects.",
@@ -273,6 +540,184 @@
                             "application\/json": {
                                 "schema": {
                                     "$ref": "#\/components\/schemas\/modAccessElement"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/access\/template\/var": {
+            "get": {
+                "description": "Returns a collection of modAccessTemplateVar objects.",
+                "responses": {
+                    "200": {
+                        "description": "Collection of modAccessTemplateVar objects.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#\/components\/schemas\/modAccessTemplateVar"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Creates a new modAccessTemplateVar object.",
+                "responses": {
+                    "200": {
+                        "description": "New modAccessTemplateVar object successfully created.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessTemplateVar"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/access\/template\/var\/{id}": {
+            "put": {
+                "description": "Updates a modAccessTemplateVar object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessTemplateVar object updated.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessTemplateVar"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Deletes a modAccessTemplateVar object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessTemplateVar object removed.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessTemplateVar"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/access\/menu": {
+            "get": {
+                "description": "Returns a collection of modAccessMenu objects.",
+                "responses": {
+                    "200": {
+                        "description": "Collection of modAccessMenu objects.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#\/components\/schemas\/modAccessMenu"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Creates a new modAccessMenu object.",
+                "responses": {
+                    "200": {
+                        "description": "New modAccessMenu object successfully created.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessMenu"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/access\/menu\/{id}": {
+            "put": {
+                "description": "Updates a modAccessMenu object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object to update.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessMenu object updated.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessMenu"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Deletes a modAccessMenu object.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "modAccessMenu object removed.",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$ref": "#\/components\/schemas\/modAccessMenu"
                                 }
                             }
                         }
@@ -6068,10 +6513,103 @@
     },
     "components": {
         "schemas": {
+            "modAccessAction": {
+                "title": "Access Action",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
+            "modAccessActionDom": {
+                "title": "Access Action Dom",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    }
+                }
+            },
             "modAccessCategory": {
                 "title": "Access Category",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "context_key": {
                         "type": "string"
                     }
@@ -6081,8 +6619,68 @@
                 "title": "Access Namespace",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "context_key": {
                         "type": "string"
+                    }
+                }
+            },
+            "modAccessContext": {
+                "title": "Access Context",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
                     }
                 }
             },
@@ -6090,8 +6688,104 @@
                 "title": "Access Element",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "context_key": {
                         "type": "string"
+                    }
+                }
+            },
+            "modAccessTemplateVar": {
+                "title": "Access Template Var",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "context_key": {
+                        "type": "string"
+                    }
+                }
+            },
+            "modAccessMenu": {
+                "title": "Access Menu",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
                     }
                 }
             },
@@ -6099,11 +6793,18 @@
                 "title": "Access Policy",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "parent": {
                         "type": "integer",
@@ -6132,6 +6833,11 @@
                 "title": "Access Policy Template",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "template_group": {
                         "type": "integer",
                         "format": "int32",
@@ -6141,7 +6847,8 @@
                         "type": "string"
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "lexicon": {
                         "type": "string",
@@ -6153,11 +6860,17 @@
                 "title": "Access Policy Template Group",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -6165,6 +6878,11 @@
                 "title": "Access Permission",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "template": {
                         "type": "integer",
                         "format": "int32",
@@ -6186,6 +6904,33 @@
                 "title": "Access Resource",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "context_key": {
                         "type": "string"
                     }
@@ -6195,6 +6940,33 @@
                 "title": "Access Resource Group",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "context_key": {
                         "type": "string"
                     }
@@ -6204,12 +6976,18 @@
                 "title": "Action",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "namespace": {
                         "type": "string",
                         "default": "core"
                     },
                     "controller": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "haslayout": {
                         "type": "integer",
@@ -6217,7 +6995,8 @@
                         "default": 1
                     },
                     "lang_topics": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "assets": {
                         "type": "string"
@@ -6231,6 +7010,11 @@
                 "title": "Action Dom",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "set": {
                         "type": "integer",
                         "format": "int32",
@@ -6243,7 +7027,8 @@
                         "type": "string"
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "xtype": {
                         "type": "string"
@@ -6285,6 +7070,11 @@
                 "title": "Action Field",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "action": {
                         "type": "string"
                     },
@@ -6325,11 +7115,12 @@
                     },
                     "lasthit": {
                         "type": "string",
-                        "default": "0"
+                        "default": 0
                     },
                     "id": {
                         "type": "integer",
-                        "format": "int32"
+                        "format": "int32",
+                        "default": 0
                     },
                     "action": {
                         "type": "string"
@@ -6343,6 +7134,11 @@
                 "title": "Category",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "parent": {
                         "type": "integer",
                         "format": "int32",
@@ -6383,6 +7179,20 @@
                 "title": "Chunk",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "property_preprocess": {
+                        "type": "boolean",
+                        "default": false
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -6406,14 +7216,16 @@
                         "default": 0
                     },
                     "snippet": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "locked": {
                         "type": "boolean",
                         "default": false
                     },
                     "properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "static": {
                         "type": "boolean",
@@ -6428,6 +7240,11 @@
                 "title": "Class Map",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "class": {
                         "type": "string"
                     },
@@ -6451,20 +7268,30 @@
                 "title": "Content Type",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "mime_type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "file_extensions": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "headers": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "binary": {
                         "type": "boolean",
@@ -6477,13 +7304,16 @@
                 "type": "object",
                 "properties": {
                     "key": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "rank": {
                         "type": "integer",
@@ -6497,13 +7327,16 @@
                 "type": "object",
                 "properties": {
                     "context_key": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "key": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "value": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "xtype": {
                         "type": "string",
@@ -6518,7 +7351,7 @@
                     },
                     "editedon": {
                         "type": "string",
-                        "default": "NULL"
+                        "default": null
                     }
                 }
             },
@@ -6527,11 +7360,13 @@
                 "type": "object",
                 "properties": {
                     "context_key": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "resource": {
                         "type": "integer",
-                        "format": "int32"
+                        "format": "int32",
+                        "default": 0
                     }
                 }
             },
@@ -6539,11 +7374,17 @@
                 "title": "Dashboard",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "hide_trees": {
                         "type": "boolean",
@@ -6555,17 +7396,25 @@
                 "title": "Dashboard Widget",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "content": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "namespace": {
                         "type": "string"
@@ -6605,6 +7454,11 @@
                 "title": "Element",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "source": {
                         "type": "integer",
                         "format": "int32",
@@ -6640,7 +7494,8 @@
                 "type": "object",
                 "properties": {
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "service": {
                         "type": "integer",
@@ -6672,6 +7527,11 @@
                 "title": "Form Customization Profile",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -6694,6 +7554,11 @@
                 "title": "Form Customization Set",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "profile": {
                         "type": "integer",
                         "format": "int32",
@@ -6730,6 +7595,11 @@
                 "title": "Lexicon Entry",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -6749,11 +7619,12 @@
                         "default": "en"
                     },
                     "createdon": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "editedon": {
                         "type": "string",
-                        "default": "NULL"
+                        "default": null
                     }
                 }
             },
@@ -6761,6 +7632,11 @@
                 "title": "Manager Log",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "user": {
                         "type": "integer",
                         "format": "int32",
@@ -6768,7 +7644,7 @@
                     },
                     "occurred": {
                         "type": "string",
-                        "default": "NULL"
+                        "default": null
                     },
                     "action": {
                         "type": "string"
@@ -6840,6 +7716,11 @@
                 "title": "Extension Package",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "namespace": {
                         "type": "string",
                         "default": "core"
@@ -6849,7 +7730,8 @@
                         "default": "core"
                     },
                     "path": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "table_prefix": {
                         "type": "string"
@@ -6861,10 +7743,12 @@
                         "type": "string"
                     },
                     "created_at": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "updated_at": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -6872,6 +7756,36 @@
                 "title": "Plugin",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "property_preprocess": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "editor_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "category": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "cache_type": {
                         "type": "integer",
                         "format": "int32",
@@ -6885,7 +7799,8 @@
                         "default": false
                     },
                     "properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "disabled": {
                         "type": "boolean",
@@ -6931,6 +7846,11 @@
                 "title": "Property Set",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -6943,7 +7863,8 @@
                         "type": "string"
                     },
                     "properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -6951,6 +7872,11 @@
                 "title": "Resource",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "type": {
                         "type": "string",
                         "default": "document"
@@ -6980,11 +7906,11 @@
                     },
                     "pub_date": {
                         "type": "string",
-                        "default": "0"
+                        "default": 0
                     },
                     "unpub_date": {
                         "type": "string",
-                        "default": "0"
+                        "default": 0
                     },
                     "parent": {
                         "type": "integer",
@@ -6996,10 +7922,12 @@
                         "default": false
                     },
                     "introtext": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "content": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "richtext": {
                         "type": "boolean",
@@ -7030,7 +7958,7 @@
                     },
                     "createdon": {
                         "type": "string",
-                        "default": "0"
+                        "default": 0
                     },
                     "editedby": {
                         "type": "integer",
@@ -7039,7 +7967,7 @@
                     },
                     "editedon": {
                         "type": "string",
-                        "default": "0"
+                        "default": 0
                     },
                     "deleted": {
                         "type": "boolean",
@@ -7047,7 +7975,7 @@
                     },
                     "deletedon": {
                         "type": "string",
-                        "default": "0"
+                        "default": 0
                     },
                     "deletedby": {
                         "type": "integer",
@@ -7056,7 +7984,7 @@
                     },
                     "publishedon": {
                         "type": "string",
-                        "default": "0"
+                        "default": 0
                     },
                     "publishedby": {
                         "type": "integer",
@@ -7101,7 +8029,8 @@
                         "default": 1
                     },
                     "uri": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "uri_override": {
                         "type": "integer",
@@ -7119,7 +8048,8 @@
                         "default": 1
                     },
                     "properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -7127,6 +8057,11 @@
                 "title": "Resource Group",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -7144,6 +8079,11 @@
                 "title": "Resource Group Resource",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "document_group": {
                         "type": "integer",
                         "format": "int32",
@@ -7160,6 +8100,20 @@
                 "title": "Script",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "property_preprocess": {
+                        "type": "boolean",
+                        "default": false
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -7186,10 +8140,12 @@
                         "type": "string"
                     },
                     "access": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "data": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -7197,20 +8153,52 @@
                 "title": "Snippet",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "property_preprocess": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "editor_type": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "category": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "cache_type": {
                         "type": "integer",
                         "format": "int32",
                         "default": 0
                     },
                     "snippet": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "locked": {
                         "type": "boolean",
                         "default": false
                     },
                     "properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "moduleguid": {
                         "type": "string"
@@ -7247,7 +8235,7 @@
                     },
                     "editedon": {
                         "type": "string",
-                        "default": "NULL"
+                        "default": null
                     }
                 }
             },
@@ -7255,6 +8243,20 @@
                 "title": "Template",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "property_preprocess": {
+                        "type": "boolean",
+                        "default": false
+                    },
                     "templatename": {
                         "type": "string"
                     },
@@ -7288,7 +8290,8 @@
                         "default": false
                     },
                     "properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "static": {
                         "type": "boolean",
@@ -7303,6 +8306,20 @@
                 "title": "Template Var",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "source": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "property_preprocess": {
+                        "type": "boolean",
+                        "default": false
+                    },
                     "type": {
                         "type": "string"
                     },
@@ -7330,7 +8347,8 @@
                         "default": false
                     },
                     "elements": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "rank": {
                         "type": "integer",
@@ -7341,16 +8359,20 @@
                         "type": "string"
                     },
                     "default_text": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "input_properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "output_properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "static": {
                         "type": "boolean",
@@ -7365,6 +8387,11 @@
                 "title": "Template Var Resource",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "tmplvarid": {
                         "type": "integer",
                         "format": "int32",
@@ -7376,7 +8403,8 @@
                         "default": 0
                     },
                     "value": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -7384,6 +8412,11 @@
                 "title": "Template Var Resource Group",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "tmplvarid": {
                         "type": "integer",
                         "format": "int32",
@@ -7421,6 +8454,11 @@
                 "title": "User",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "username": {
                         "type": "string"
                     },
@@ -7439,10 +8477,12 @@
                         "default": true
                     },
                     "remote_key": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "remote_data": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "hash_class": {
                         "type": "string",
@@ -7457,7 +8497,8 @@
                         "default": 0
                     },
                     "session_stale": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "sudo": {
                         "type": "boolean",
@@ -7465,7 +8506,7 @@
                     },
                     "createdon": {
                         "type": "string",
-                        "default": "0"
+                        "default": 0
                     }
                 }
             },
@@ -7473,11 +8514,17 @@
                 "title": "User Group",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "parent": {
                         "type": "integer",
@@ -7500,6 +8547,11 @@
                 "title": "User Group Member",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "user_group": {
                         "type": "integer",
                         "format": "int32",
@@ -7526,11 +8578,18 @@
                 "title": "User Group Role",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "authority": {
                         "type": "integer",
@@ -7549,10 +8608,12 @@
                         "default": 0
                     },
                     "key": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "value": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "xtype": {
                         "type": "string",
@@ -7567,7 +8628,7 @@
                     },
                     "editedon": {
                         "type": "string",
-                        "default": "NULL"
+                        "default": null
                     }
                 }
             },
@@ -7575,6 +8636,11 @@
                 "title": "User Message",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "type": {
                         "type": "string"
                     },
@@ -7601,7 +8667,7 @@
                     },
                     "date_sent": {
                         "type": "string",
-                        "default": "NULL"
+                        "default": null
                     },
                     "read": {
                         "type": "integer",
@@ -7614,9 +8680,15 @@
                 "title": "User Profile",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "internalKey": {
                         "type": "integer",
-                        "format": "int32"
+                        "format": "int32",
+                        "default": 0
                     },
                     "fullname": {
                         "type": "string"
@@ -7705,7 +8777,8 @@
                         "type": "string"
                     },
                     "extended": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -7722,7 +8795,8 @@
                         "type": "string"
                     },
                     "value": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "xtype": {
                         "type": "string",
@@ -7737,7 +8811,7 @@
                     },
                     "editedon": {
                         "type": "string",
-                        "default": "NULL"
+                        "default": null
                     }
                 }
             },
@@ -7745,6 +8819,11 @@
                 "title": "Workspace",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
@@ -7752,14 +8831,16 @@
                         "type": "string"
                     },
                     "created": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "active": {
                         "type": "boolean",
                         "default": false
                     },
                     "attributes": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -7767,11 +8848,18 @@
                 "title": "Db Register Queue",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "options": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -7779,21 +8867,31 @@
                 "title": "Db Register Topic",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "queue": {
                         "type": "integer",
-                        "format": "int32"
+                        "format": "int32",
+                        "default": 0
                     },
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "created": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "updated": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "options": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     }
                 }
             },
@@ -7803,19 +8901,24 @@
                 "properties": {
                     "topic": {
                         "type": "integer",
-                        "format": "int32"
+                        "format": "int32",
+                        "default": 0
                     },
                     "id": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "created": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "valid": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "accessed": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "accesses": {
                         "type": "integer",
@@ -7828,7 +8931,8 @@
                         "default": 0
                     },
                     "payload": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "kill": {
                         "type": "boolean",
@@ -7840,6 +8944,33 @@
                 "title": "Access Media Source",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "target": {
+                        "type": "string"
+                    },
+                    "principal_class": {
+                        "type": "string",
+                        "default": "modPrincipal"
+                    },
+                    "principal": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
+                    "authority": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 9999
+                    },
+                    "policy": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "context_key": {
                         "type": "string"
                     }
@@ -7849,18 +8980,25 @@
                 "title": "Media Source",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
                         "type": "string"
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "class_key": {
                         "type": "string",
                         "default": "sources.modFileMediaSource"
                     },
                     "properties": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "is_stream": {
                         "type": "boolean",
@@ -7911,14 +9049,22 @@
                 "title": "Transport Provider",
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "default": 0
+                    },
                     "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "description": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "service_url": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "username": {
                         "type": "string"
@@ -7927,10 +9073,12 @@
                         "type": "string"
                     },
                     "created": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "updated": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "active": {
                         "type": "boolean",
@@ -7951,16 +9099,20 @@
                 "type": "object",
                 "properties": {
                     "signature": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "created": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "updated": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "installed": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "state": {
                         "type": "integer",
@@ -7982,19 +9134,24 @@
                         "default": false
                     },
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "manifest": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "attributes": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "package_name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "metadata": {
-                        "type": "string"
+                        "type": "string",
+                        "default": null
                     },
                     "version_major": {
                         "type": "integer",

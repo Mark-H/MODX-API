@@ -5,6 +5,9 @@ require_once MODX_CORE_PATH.'model/modx/modx.class.php';
 $modx = new modX();
 $modx->initialize('web');
 $modx->getService('error','error.modError', '', '');
+$modx->addPackage('modx.registry');
+$modx->addPackage('modx.sources');
+$modx->addPackage('modx.transport');
 
 $xmlFiles = [
     MODX_CORE_PATH . 'model/schema/modx.mysql.schema.xml',
@@ -19,6 +22,11 @@ $paths = [];
 foreach ($xmlFiles as $file) {
     $xml = simplexml_load_file($file);
     $rootAttribs = $xml->attributes();
+    $pkg = '';
+    if ((string)$rootAttribs->package !== 'modx') {
+        $pkg = (string)$rootAttribs->package;
+        $pkg = strpos($pkg, 'modx.') === 0 ? substr($pkg, strlen('modx.')) : $pkg;
+    }
     foreach ($xml as $object) {
         $attributes = $object->attributes(); // can have class, extends, table
         $class = (string)$attributes['class'];
@@ -27,6 +35,15 @@ foreach ($xmlFiles as $file) {
             echo "Skipping model definition for {$class} as it has no table\n";
             continue;
         }
+
+        // Grab the field meta through xPDO so we get all info from descendants too
+        $meta = $modx->getFieldMeta(!empty($pkg) ? $pkg.'.'.$class : $class);
+        if (empty($meta)) {
+            echo "Couldn't find field meta for $class (package $pkg), skipping\n";
+            continue;
+        }
+
+        // Start preparing the OAS3 definition for the field
         $def = [];
 
         // Auto generate a title
@@ -40,14 +57,11 @@ foreach ($xmlFiles as $file) {
         $def['type'] = 'object';
         $def['properties'] = [];
 
-        foreach ($object->field as $fld) {
-            $fldAttributes = $fld->attributes();
-            $property = convertPhpTypeToType((string)$fldAttributes['phptype']);
-
-            $key = (string)$fldAttributes['key'];
+        foreach ($meta as $key => $fld) {
+            $property = convertPhpTypeToType($fld['phptype']);
 
             // Check for a default
-            $default = (string)$fldAttributes['default'];
+            $default = $fld['default'];
             if ($default !== '') {
                 if ($property['type'] === 'boolean') {
                     $default = (bool)$default;
@@ -89,9 +103,7 @@ foreach ($xmlFiles as $file) {
         }
         $uri = '/' . $uri;
 
-        if ((string)$rootAttribs->package !== 'modx') {
-            $pkg = (string)$rootAttribs->package;
-            $pkg = strpos($pkg, 'modx.') === 0 ? substr($pkg, strlen('modx.')) : $pkg;
+        if (!empty($pkg)) {
             $pkg = str_replace('.', '/', $pkg);
             $uri = '/' . $pkg . $uri;
         }
