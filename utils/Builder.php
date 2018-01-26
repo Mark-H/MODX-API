@@ -60,6 +60,12 @@ class Builder
         foreach ($xml as $object) {
             $attributes = $object->attributes(); // can have class, extends, table
             $class = (string)$attributes['class'];
+
+            if (in_array($class, ['modElement', 'modScript', 'modSession'], true)) {
+                echo "Skipping model definition for {$class} as it is on the ignore list\n";
+                continue;
+            }
+
             $table = isset($attributes['table']) ? (string)$attributes['table'] : '';
             if ($table === '') {
                 echo "Skipping model definition for {$class} as it has no table\n";
