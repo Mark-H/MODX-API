@@ -37,7 +37,8 @@ foreach ($xmlFiles as $file) {
         }
 
         // Grab the field meta through xPDO so we get all info from descendants too
-        $meta = $modx->getFieldMeta(!empty($pkg) ? $pkg.'.'.$class : $class);
+        $classWithPackage = !empty($pkg) ? $pkg.'.'.$class : $class;
+        $meta = $modx->getFieldMeta($classWithPackage);
         if (empty($meta)) {
             echo "Couldn't find field meta for $class (package $pkg), skipping\n";
             continue;
@@ -111,6 +112,7 @@ foreach ($xmlFiles as $file) {
         $paths[$uri] = [
             'get' => [
                 'description' => 'Returns a collection of ' . $class . ' objects.',
+                'parameters' => [],
                 'responses' => [
                     '200' => [
                         'description' => 'Collection of ' . $class . ' objects.',
@@ -143,6 +145,23 @@ foreach ($xmlFiles as $file) {
                 ]
             ]
         ];
+        $indices = $modx->getIndexMeta($classWithPackage);
+        foreach ($indices as $index) {
+            // Don't create a parameter for the primary
+            if ($index['alias'] === 'PRIMARY') {
+                continue;
+            }
+
+            if (array_key_exists($index['alias'], $meta)) {
+                $paths[$uri]['get']['parameters'][] = [
+                    'name' => $index['alias'],
+                    'in' => 'query',
+                    'description' => 'Filter on ' . $index['alias'],
+                    'required' => false,
+                    'schema' => convertPhpTypeToType($meta[$index['alias']]['phptype']),
+                ];
+            }
+        }
         $paths[$uri . '/{id}'] = [
             'put' => [
                 'description' => 'Updates a ' . $class . ' object.',

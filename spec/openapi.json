@@ -16,6 +16,56 @@
         "\/access\/action": {
             "get": {
                 "description": "Returns a collection of modAccessAction objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessAction objects.",
@@ -105,6 +155,56 @@
         "\/access\/action\/dom": {
             "get": {
                 "description": "Returns a collection of modAccessActionDom objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessActionDom objects.",
@@ -194,6 +294,65 @@
         "\/access\/category": {
             "get": {
                 "description": "Returns a collection of modAccessCategory objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "context_key",
+                        "in": "query",
+                        "description": "Filter on context_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessCategory objects.",
@@ -283,6 +442,65 @@
         "\/access\/namespace": {
             "get": {
                 "description": "Returns a collection of modAccessNamespace objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "context_key",
+                        "in": "query",
+                        "description": "Filter on context_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessNamespace objects.",
@@ -372,6 +590,56 @@
         "\/access\/context": {
             "get": {
                 "description": "Returns a collection of modAccessContext objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessContext objects.",
@@ -461,6 +729,65 @@
         "\/access\/element": {
             "get": {
                 "description": "Returns a collection of modAccessElement objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "context_key",
+                        "in": "query",
+                        "description": "Filter on context_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessElement objects.",
@@ -550,6 +877,65 @@
         "\/access\/template\/var": {
             "get": {
                 "description": "Returns a collection of modAccessTemplateVar objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "context_key",
+                        "in": "query",
+                        "description": "Filter on context_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessTemplateVar objects.",
@@ -639,6 +1025,56 @@
         "\/access\/menu": {
             "get": {
                 "description": "Returns a collection of modAccessMenu objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessMenu objects.",
@@ -728,6 +1164,46 @@
         "\/access\/policy": {
             "get": {
                 "description": "Returns a collection of modAccessPolicy objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "parent",
+                        "in": "query",
+                        "description": "Filter on parent",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "class",
+                        "in": "query",
+                        "description": "Filter on class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "template",
+                        "in": "query",
+                        "description": "Filter on template",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessPolicy objects.",
@@ -817,6 +1293,7 @@
         "\/access\/policy\/template": {
             "get": {
                 "description": "Returns a collection of modAccessPolicyTemplate objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessPolicyTemplate objects.",
@@ -906,6 +1383,7 @@
         "\/access\/policy\/template\/group": {
             "get": {
                 "description": "Returns a collection of modAccessPolicyTemplateGroup objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessPolicyTemplateGroup objects.",
@@ -995,6 +1473,27 @@
         "\/access\/permission": {
             "get": {
                 "description": "Returns a collection of modAccessPermission objects.",
+                "parameters": [
+                    {
+                        "name": "template",
+                        "in": "query",
+                        "description": "Filter on template",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessPermission objects.",
@@ -1084,6 +1583,65 @@
         "\/access\/resource": {
             "get": {
                 "description": "Returns a collection of modAccessResource objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "context_key",
+                        "in": "query",
+                        "description": "Filter on context_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessResource objects.",
@@ -1173,6 +1731,65 @@
         "\/access\/resource\/group": {
             "get": {
                 "description": "Returns a collection of modAccessResourceGroup objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "context_key",
+                        "in": "query",
+                        "description": "Filter on context_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessResourceGroup objects.",
@@ -1262,6 +1879,26 @@
         "\/action": {
             "get": {
                 "description": "Returns a collection of modAction objects.",
+                "parameters": [
+                    {
+                        "name": "namespace",
+                        "in": "query",
+                        "description": "Filter on namespace",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "controller",
+                        "in": "query",
+                        "description": "Filter on controller",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAction objects.",
@@ -1351,6 +1988,64 @@
         "\/action\/dom": {
             "get": {
                 "description": "Returns a collection of modActionDom objects.",
+                "parameters": [
+                    {
+                        "name": "set",
+                        "in": "query",
+                        "description": "Filter on set",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": "Filter on action",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "active",
+                        "in": "query",
+                        "description": "Filter on active",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "for_parent",
+                        "in": "query",
+                        "description": "Filter on for_parent",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "Filter on rank",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modActionDom objects.",
@@ -1440,6 +2135,35 @@
         "\/action\/field": {
             "get": {
                 "description": "Returns a collection of modActionField objects.",
+                "parameters": [
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": "Filter on action",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Filter on type",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "tab",
+                        "in": "query",
+                        "description": "Filter on tab",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modActionField objects.",
@@ -1529,6 +2253,18 @@
         "\/active\/user": {
             "get": {
                 "description": "Returns a collection of modActiveUser objects.",
+                "parameters": [
+                    {
+                        "name": "internalKey",
+                        "in": "query",
+                        "description": "Filter on internalKey",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modActiveUser objects.",
@@ -1618,6 +2354,37 @@
         "\/category": {
             "get": {
                 "description": "Returns a collection of modCategory objects.",
+                "parameters": [
+                    {
+                        "name": "parent",
+                        "in": "query",
+                        "description": "Filter on parent",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Filter on category",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "Filter on rank",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modCategory objects.",
@@ -1707,6 +2474,7 @@
         "\/category\/closure": {
             "get": {
                 "description": "Returns a collection of modCategoryClosure objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modCategoryClosure objects.",
@@ -1796,6 +2564,45 @@
         "\/chunk": {
             "get": {
                 "description": "Returns a collection of modChunk objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Filter on category",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "locked",
+                        "in": "query",
+                        "description": "Filter on locked",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "static",
+                        "in": "query",
+                        "description": "Filter on static",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modChunk objects.",
@@ -1885,6 +2692,35 @@
         "\/class\/map": {
             "get": {
                 "description": "Returns a collection of modClassMap objects.",
+                "parameters": [
+                    {
+                        "name": "class",
+                        "in": "query",
+                        "description": "Filter on class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "parent_class",
+                        "in": "query",
+                        "description": "Filter on parent_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "name_field",
+                        "in": "query",
+                        "description": "Filter on name_field",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modClassMap objects.",
@@ -1974,6 +2810,17 @@
         "\/content\/type": {
             "get": {
                 "description": "Returns a collection of modContentType objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modContentType objects.",
@@ -2063,6 +2910,27 @@
         "\/context": {
             "get": {
                 "description": "Returns a collection of modContext objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "Filter on rank",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modContext objects.",
@@ -2152,6 +3020,7 @@
         "\/context\/setting": {
             "get": {
                 "description": "Returns a collection of modContextSetting objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modContextSetting objects.",
@@ -2241,6 +3110,7 @@
         "\/context\/resource": {
             "get": {
                 "description": "Returns a collection of modContextResource objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modContextResource objects.",
@@ -2330,6 +3200,26 @@
         "\/dashboard": {
             "get": {
                 "description": "Returns a collection of modDashboard objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "hide_trees",
+                        "in": "query",
+                        "description": "Filter on hide_trees",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modDashboard objects.",
@@ -2419,6 +3309,44 @@
         "\/dashboard\/widget": {
             "get": {
                 "description": "Returns a collection of modDashboardWidget objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Filter on type",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "in": "query",
+                        "description": "Filter on namespace",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "lexicon",
+                        "in": "query",
+                        "description": "Filter on lexicon",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modDashboardWidget objects.",
@@ -2508,6 +3436,18 @@
         "\/dashboard\/widget\/placement": {
             "get": {
                 "description": "Returns a collection of modDashboardWidgetPlacement objects.",
+                "parameters": [
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "Filter on rank",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modDashboardWidgetPlacement objects.",
@@ -2597,6 +3537,7 @@
         "\/element": {
             "get": {
                 "description": "Returns a collection of modElement objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modElement objects.",
@@ -2686,6 +3627,7 @@
         "\/element\/property\/set": {
             "get": {
                 "description": "Returns a collection of modElementPropertySet objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modElementPropertySet objects.",
@@ -2775,6 +3717,7 @@
         "\/event": {
             "get": {
                 "description": "Returns a collection of modEvent objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modEvent objects.",
@@ -2864,6 +3807,7 @@
         "\/form\/customization\/profile\/user\/group": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationProfileUserGroup objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modFormCustomizationProfileUserGroup objects.",
@@ -2953,6 +3897,37 @@
         "\/form\/customization\/profile": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationProfile objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "Filter on rank",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "active",
+                        "in": "query",
+                        "description": "Filter on active",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modFormCustomizationProfile objects.",
@@ -3042,6 +4017,47 @@
         "\/form\/customization\/set": {
             "get": {
                 "description": "Returns a collection of modFormCustomizationSet objects.",
+                "parameters": [
+                    {
+                        "name": "profile",
+                        "in": "query",
+                        "description": "Filter on profile",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": "Filter on action",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "active",
+                        "in": "query",
+                        "description": "Filter on active",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "template",
+                        "in": "query",
+                        "description": "Filter on template",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modFormCustomizationSet objects.",
@@ -3131,6 +4147,44 @@
         "\/lexicon\/entry": {
             "get": {
                 "description": "Returns a collection of modLexiconEntry objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "topic",
+                        "in": "query",
+                        "description": "Filter on topic",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "in": "query",
+                        "description": "Filter on namespace",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "Filter on language",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modLexiconEntry objects.",
@@ -3220,6 +4274,7 @@
         "\/manager\/log": {
             "get": {
                 "description": "Returns a collection of modManagerLog objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modManagerLog objects.",
@@ -3309,6 +4364,35 @@
         "\/menu": {
             "get": {
                 "description": "Returns a collection of modMenu objects.",
+                "parameters": [
+                    {
+                        "name": "parent",
+                        "in": "query",
+                        "description": "Filter on parent",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": "Filter on action",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "in": "query",
+                        "description": "Filter on namespace",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modMenu objects.",
@@ -3398,6 +4482,7 @@
         "\/namespace": {
             "get": {
                 "description": "Returns a collection of modNamespace objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modNamespace objects.",
@@ -3487,6 +4572,26 @@
         "\/extension\/package": {
             "get": {
                 "description": "Returns a collection of modExtensionPackage objects.",
+                "parameters": [
+                    {
+                        "name": "namespace",
+                        "in": "query",
+                        "description": "Filter on namespace",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modExtensionPackage objects.",
@@ -3576,6 +4681,54 @@
         "\/plugin": {
             "get": {
                 "description": "Returns a collection of modPlugin objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Filter on category",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "locked",
+                        "in": "query",
+                        "description": "Filter on locked",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "disabled",
+                        "in": "query",
+                        "description": "Filter on disabled",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "static",
+                        "in": "query",
+                        "description": "Filter on static",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modPlugin objects.",
@@ -3665,6 +4818,18 @@
         "\/plugin\/event": {
             "get": {
                 "description": "Returns a collection of modPluginEvent objects.",
+                "parameters": [
+                    {
+                        "name": "priority",
+                        "in": "query",
+                        "description": "Filter on priority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modPluginEvent objects.",
@@ -3754,6 +4919,27 @@
         "\/property\/set": {
             "get": {
                 "description": "Returns a collection of modPropertySet objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Filter on category",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modPropertySet objects.",
@@ -3843,6 +5029,167 @@
         "\/resource": {
             "get": {
                 "description": "Returns a collection of modResource objects.",
+                "parameters": [
+                    {
+                        "name": "alias",
+                        "in": "query",
+                        "description": "Filter on alias",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "published",
+                        "in": "query",
+                        "description": "Filter on published",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "pub_date",
+                        "in": "query",
+                        "description": "Filter on pub_date",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "unpub_date",
+                        "in": "query",
+                        "description": "Filter on unpub_date",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "parent",
+                        "in": "query",
+                        "description": "Filter on parent",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "isfolder",
+                        "in": "query",
+                        "description": "Filter on isfolder",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "template",
+                        "in": "query",
+                        "description": "Filter on template",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "menuindex",
+                        "in": "query",
+                        "description": "Filter on menuindex",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "searchable",
+                        "in": "query",
+                        "description": "Filter on searchable",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "cacheable",
+                        "in": "query",
+                        "description": "Filter on cacheable",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "hidemenu",
+                        "in": "query",
+                        "description": "Filter on hidemenu",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "class_key",
+                        "in": "query",
+                        "description": "Filter on class_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "context_key",
+                        "in": "query",
+                        "description": "Filter on context_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "uri",
+                        "in": "query",
+                        "description": "Filter on uri",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "uri_override",
+                        "in": "query",
+                        "description": "Filter on uri_override",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "hide_children_in_tree",
+                        "in": "query",
+                        "description": "Filter on hide_children_in_tree",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "show_in_tree",
+                        "in": "query",
+                        "description": "Filter on show_in_tree",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modResource objects.",
@@ -3932,6 +5279,17 @@
         "\/resource\/group": {
             "get": {
                 "description": "Returns a collection of modResourceGroup objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modResourceGroup objects.",
@@ -4021,6 +5379,28 @@
         "\/resource\/group\/resource": {
             "get": {
                 "description": "Returns a collection of modResourceGroupResource objects.",
+                "parameters": [
+                    {
+                        "name": "document_group",
+                        "in": "query",
+                        "description": "Filter on document_group",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "document",
+                        "in": "query",
+                        "description": "Filter on document",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modResourceGroupResource objects.",
@@ -4110,6 +5490,27 @@
         "\/script": {
             "get": {
                 "description": "Returns a collection of modScript objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Filter on category",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modScript objects.",
@@ -4199,6 +5600,17 @@
         "\/session": {
             "get": {
                 "description": "Returns a collection of modSession objects.",
+                "parameters": [
+                    {
+                        "name": "access",
+                        "in": "query",
+                        "description": "Filter on access",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modSession objects.",
@@ -4288,6 +5700,54 @@
         "\/snippet": {
             "get": {
                 "description": "Returns a collection of modSnippet objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Filter on category",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "locked",
+                        "in": "query",
+                        "description": "Filter on locked",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "moduleguid",
+                        "in": "query",
+                        "description": "Filter on moduleguid",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "static",
+                        "in": "query",
+                        "description": "Filter on static",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modSnippet objects.",
@@ -4377,6 +5837,7 @@
         "\/system\/setting": {
             "get": {
                 "description": "Returns a collection of modSystemSetting objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modSystemSetting objects.",
@@ -4466,6 +5927,45 @@
         "\/template": {
             "get": {
                 "description": "Returns a collection of modTemplate objects.",
+                "parameters": [
+                    {
+                        "name": "templatename",
+                        "in": "query",
+                        "description": "Filter on templatename",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Filter on category",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "locked",
+                        "in": "query",
+                        "description": "Filter on locked",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "static",
+                        "in": "query",
+                        "description": "Filter on static",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modTemplate objects.",
@@ -4555,6 +6055,55 @@
         "\/template\/var": {
             "get": {
                 "description": "Returns a collection of modTemplateVar objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Filter on category",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "locked",
+                        "in": "query",
+                        "description": "Filter on locked",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "Filter on rank",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "static",
+                        "in": "query",
+                        "description": "Filter on static",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modTemplateVar objects.",
@@ -4644,6 +6193,28 @@
         "\/template\/var\/resource": {
             "get": {
                 "description": "Returns a collection of modTemplateVarResource objects.",
+                "parameters": [
+                    {
+                        "name": "tmplvarid",
+                        "in": "query",
+                        "description": "Filter on tmplvarid",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "contentid",
+                        "in": "query",
+                        "description": "Filter on contentid",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modTemplateVarResource objects.",
@@ -4733,6 +6304,7 @@
         "\/template\/var\/resource\/group": {
             "get": {
                 "description": "Returns a collection of modTemplateVarResourceGroup objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modTemplateVarResourceGroup objects.",
@@ -4822,6 +6394,7 @@
         "\/template\/var\/template": {
             "get": {
                 "description": "Returns a collection of modTemplateVarTemplate objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modTemplateVarTemplate objects.",
@@ -4911,6 +6484,45 @@
         "\/user": {
             "get": {
                 "description": "Returns a collection of modUser objects.",
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Filter on username",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "class_key",
+                        "in": "query",
+                        "description": "Filter on class_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "remote_key",
+                        "in": "query",
+                        "description": "Filter on remote_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "primary_group",
+                        "in": "query",
+                        "description": "Filter on primary_group",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modUser objects.",
@@ -5000,6 +6612,47 @@
         "\/user\/group": {
             "get": {
                 "description": "Returns a collection of modUserGroup objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "parent",
+                        "in": "query",
+                        "description": "Filter on parent",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "Filter on rank",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "dashboard",
+                        "in": "query",
+                        "description": "Filter on dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserGroup objects.",
@@ -5089,6 +6742,28 @@
         "\/user\/group\/member": {
             "get": {
                 "description": "Returns a collection of modUserGroupMember objects.",
+                "parameters": [
+                    {
+                        "name": "role",
+                        "in": "query",
+                        "description": "Filter on role",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "rank",
+                        "in": "query",
+                        "description": "Filter on rank",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserGroupMember objects.",
@@ -5178,6 +6853,27 @@
         "\/user\/group\/role": {
             "get": {
                 "description": "Returns a collection of modUserGroupRole objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserGroupRole objects.",
@@ -5267,6 +6963,7 @@
         "\/user\/group\/setting": {
             "get": {
                 "description": "Returns a collection of modUserGroupSetting objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserGroupSetting objects.",
@@ -5356,6 +7053,7 @@
         "\/user\/message": {
             "get": {
                 "description": "Returns a collection of modUserMessage objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserMessage objects.",
@@ -5445,6 +7143,18 @@
         "\/user\/profile": {
             "get": {
                 "description": "Returns a collection of modUserProfile objects.",
+                "parameters": [
+                    {
+                        "name": "internalKey",
+                        "in": "query",
+                        "description": "Filter on internalKey",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserProfile objects.",
@@ -5534,6 +7244,7 @@
         "\/user\/setting": {
             "get": {
                 "description": "Returns a collection of modUserSetting objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserSetting objects.",
@@ -5623,6 +7334,35 @@
         "\/workspace": {
             "get": {
                 "description": "Returns a collection of modWorkspace objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "path",
+                        "in": "query",
+                        "description": "Filter on path",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "active",
+                        "in": "query",
+                        "description": "Filter on active",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modWorkspace objects.",
@@ -5712,6 +7452,17 @@
         "\/registry\/db\/db\/register\/queue": {
             "get": {
                 "description": "Returns a collection of modDbRegisterQueue objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modDbRegisterQueue objects.",
@@ -5801,6 +7552,27 @@
         "\/registry\/db\/db\/register\/topic": {
             "get": {
                 "description": "Returns a collection of modDbRegisterTopic objects.",
+                "parameters": [
+                    {
+                        "name": "queue",
+                        "in": "query",
+                        "description": "Filter on queue",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modDbRegisterTopic objects.",
@@ -5890,6 +7662,55 @@
         "\/registry\/db\/db\/register\/message": {
             "get": {
                 "description": "Returns a collection of modDbRegisterMessage objects.",
+                "parameters": [
+                    {
+                        "name": "created",
+                        "in": "query",
+                        "description": "Filter on created",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "valid",
+                        "in": "query",
+                        "description": "Filter on valid",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "accessed",
+                        "in": "query",
+                        "description": "Filter on accessed",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "accesses",
+                        "in": "query",
+                        "description": "Filter on accesses",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "expires",
+                        "in": "query",
+                        "description": "Filter on expires",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modDbRegisterMessage objects.",
@@ -5979,6 +7800,65 @@
         "\/sources\/access\/media\/source": {
             "get": {
                 "description": "Returns a collection of modAccessMediaSource objects.",
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "query",
+                        "description": "Filter on target",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal_class",
+                        "in": "query",
+                        "description": "Filter on principal_class",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "principal",
+                        "in": "query",
+                        "description": "Filter on principal",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "authority",
+                        "in": "query",
+                        "description": "Filter on authority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "policy",
+                        "in": "query",
+                        "description": "Filter on policy",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "context_key",
+                        "in": "query",
+                        "description": "Filter on context_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessMediaSource objects.",
@@ -6068,6 +7948,35 @@
         "\/sources\/media\/source": {
             "get": {
                 "description": "Returns a collection of modMediaSource objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "class_key",
+                        "in": "query",
+                        "description": "Filter on class_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "is_stream",
+                        "in": "query",
+                        "description": "Filter on is_stream",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modMediaSource objects.",
@@ -6157,6 +8066,7 @@
         "\/sources\/media\/source\/context": {
             "get": {
                 "description": "Returns a collection of modMediaSourceContext objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modMediaSourceContext objects.",
@@ -6246,6 +8156,7 @@
         "\/sources\/media\/source\/element": {
             "get": {
                 "description": "Returns a collection of modMediaSourceElement objects.",
+                "parameters": [],
                 "responses": {
                     "200": {
                         "description": "Collection of modMediaSourceElement objects.",
@@ -6335,6 +8246,54 @@
         "\/transport\/transport\/provider": {
             "get": {
                 "description": "Returns a collection of modTransportProvider objects.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Filter on name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "api_key",
+                        "in": "query",
+                        "description": "Filter on api_key",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Filter on username",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "active",
+                        "in": "query",
+                        "description": "Filter on active",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "priority",
+                        "in": "query",
+                        "description": "Filter on priority",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modTransportProvider objects.",
@@ -6424,6 +8383,95 @@
         "\/transport\/transport\/package": {
             "get": {
                 "description": "Returns a collection of modTransportPackage objects.",
+                "parameters": [
+                    {
+                        "name": "workspace",
+                        "in": "query",
+                        "description": "Filter on workspace",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "provider",
+                        "in": "query",
+                        "description": "Filter on provider",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "disabled",
+                        "in": "query",
+                        "description": "Filter on disabled",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "package_name",
+                        "in": "query",
+                        "description": "Filter on package_name",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "version_major",
+                        "in": "query",
+                        "description": "Filter on version_major",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "version_minor",
+                        "in": "query",
+                        "description": "Filter on version_minor",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "version_patch",
+                        "in": "query",
+                        "description": "Filter on version_patch",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    },
+                    {
+                        "name": "release",
+                        "in": "query",
+                        "description": "Filter on release",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "release_index",
+                        "in": "query",
+                        "description": "Filter on release_index",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modTransportPackage objects.",
