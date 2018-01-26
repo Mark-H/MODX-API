@@ -81,6 +81,7 @@ class Builder
             }
 
             $schemas[$class] = $this->defineModel($class, $meta);
+            $schemas[$class.'Collection'] = $this->defineCollectionModel($class, $meta);
 
             // Auto generate the URI from the class by turning something like modTemplateVar into template/var
             $uri = $this->getUriFromClass($class, $pkg);
@@ -140,6 +141,28 @@ class Builder
 //        if (file_put_contents($modelFile, $json)) {
 //            echo 'Wrote model definition for ' . $class . " to {$relModelFile}\n";
 //        }
+
+        return $def;
+    }
+
+    public function defineCollectionModel($class, $meta)
+    {
+        $def = [
+            'title' => 'Collection of ' . $class . ' objects.',
+            'type' => 'object',
+            'properties' => [
+                'total' => [
+                    'type' => 'integer',
+                    'description' => 'The total number of results for the request, including applied filters if any.'
+                ],
+                'data' => [
+                    'type' => 'array',
+                    'items' => [
+                        '$ref' => '#/components/schemas/' . $class
+                    ]
+                ]
+            ]
+        ];
 
         return $def;
     }
@@ -390,17 +413,20 @@ class Builder
         return [
             'description' => 'Returns a collection of ' . $class . ' objects.',
             'tags' => [$title],
-            'parameters' => [],
+            'parameters' => [
+                [
+                    '$ref' => '#/components/parameters/LimitParam'
+                ],[
+                    '$ref' => '#/components/parameters/OffsetParam'
+                ]
+            ],
             'responses' => [
                 '200' => [
                     'description' => 'Collection of ' . $class . ' objects.',
                     'content' => [
                         'application/json' => [
                             'schema' => [
-                                'type' => 'array',
-                                'items' => [
-                                    '$ref' => '#/components/schemas/' . $class
-                                ]
+                                '$ref' => '#/components/schemas/' . $class . 'Collection'
                             ]
                         ]
                     ]

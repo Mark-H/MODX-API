@@ -21,6 +21,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -75,10 +81,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessAction"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessActionCollection"
                                 }
                             }
                         }
@@ -212,6 +215,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -266,10 +275,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessActionDom"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessActionDomCollection"
                                 }
                             }
                         }
@@ -403,6 +409,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -466,10 +478,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessCategory"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessCategoryCollection"
                                 }
                             }
                         }
@@ -603,6 +612,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -666,10 +681,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessNamespace"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessNamespaceCollection"
                                 }
                             }
                         }
@@ -803,6 +815,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -857,10 +875,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessContext"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessContextCollection"
                                 }
                             }
                         }
@@ -994,6 +1009,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -1057,10 +1078,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessElement"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessElementCollection"
                                 }
                             }
                         }
@@ -1194,6 +1212,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -1257,10 +1281,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessTemplateVar"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessTemplateVarCollection"
                                 }
                             }
                         }
@@ -1394,6 +1415,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -1448,10 +1475,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessMenu"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessMenuCollection"
                                 }
                             }
                         }
@@ -1585,6 +1609,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -1629,10 +1659,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessPolicy"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessPolicyCollection"
                                 }
                             }
                         }
@@ -1764,17 +1791,21 @@
                 "tags": [
                     "Access Policy Template"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessPolicyTemplate objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessPolicyTemplate"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessPolicyTemplateCollection"
                                 }
                             }
                         }
@@ -1906,17 +1937,21 @@
                 "tags": [
                     "Access Policy Template Group"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modAccessPolicyTemplateGroup objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessPolicyTemplateGroup"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessPolicyTemplateGroupCollection"
                                 }
                             }
                         }
@@ -2050,6 +2085,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "template",
                         "in": "query",
                         "description": "Filter on template",
@@ -2075,10 +2116,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessPermission"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessPermissionCollection"
                                 }
                             }
                         }
@@ -2212,6 +2250,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -2275,10 +2319,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessResource"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessResourceCollection"
                                 }
                             }
                         }
@@ -2412,6 +2453,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -2475,10 +2522,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessResourceGroup"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessResourceGroupCollection"
                                 }
                             }
                         }
@@ -2612,6 +2656,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "namespace",
                         "in": "query",
                         "description": "Filter on namespace",
@@ -2636,10 +2686,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAction"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modActionCollection"
                                 }
                             }
                         }
@@ -2773,6 +2820,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "set",
                         "in": "query",
                         "description": "Filter on set",
@@ -2835,10 +2888,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modActionDom"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modActionDomCollection"
                                 }
                             }
                         }
@@ -2972,6 +3022,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "action",
                         "in": "query",
                         "description": "Filter on action",
@@ -3005,10 +3061,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modActionField"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modActionFieldCollection"
                                 }
                             }
                         }
@@ -3142,6 +3195,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "internalKey",
                         "in": "query",
                         "description": "Filter on internalKey",
@@ -3158,10 +3217,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modActiveUser"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modActiveUserCollection"
                                 }
                             }
                         }
@@ -3295,6 +3351,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "parent",
                         "in": "query",
                         "description": "Filter on parent",
@@ -3330,10 +3392,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modCategory"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modCategoryCollection"
                                 }
                             }
                         }
@@ -3465,17 +3524,21 @@
                 "tags": [
                     "Category Closure"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modCategoryClosure objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modCategoryClosure"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modCategoryClosureCollection"
                                 }
                             }
                         }
@@ -3609,6 +3672,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -3652,10 +3721,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modChunk"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modChunkCollection"
                                 }
                             }
                         }
@@ -3789,6 +3855,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "class",
                         "in": "query",
                         "description": "Filter on class",
@@ -3822,10 +3894,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modClassMap"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modClassMapCollection"
                                 }
                             }
                         }
@@ -3959,6 +4028,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -3974,10 +4049,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modContentType"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modContentTypeCollection"
                                 }
                             }
                         }
@@ -4111,6 +4183,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -4136,10 +4214,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modContext"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modContextCollection"
                                 }
                             }
                         }
@@ -4273,6 +4348,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "contextKey",
                         "in": "path",
                         "description": "The key of the associated context.",
@@ -4288,10 +4369,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modContextSetting"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modContextSettingCollection"
                                 }
                             }
                         }
@@ -4463,6 +4541,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "contextKey",
                         "in": "path",
                         "description": "The key of the associated context.",
@@ -4478,10 +4562,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modContextResource"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modContextResourceCollection"
                                 }
                             }
                         }
@@ -4653,6 +4734,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -4677,10 +4764,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modDashboard"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modDashboardCollection"
                                 }
                             }
                         }
@@ -4814,6 +4898,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -4856,10 +4946,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modDashboardWidget"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modDashboardWidgetCollection"
                                 }
                             }
                         }
@@ -4993,6 +5080,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "rank",
                         "in": "query",
                         "description": "Filter on rank",
@@ -5018,10 +5111,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modDashboardWidgetPlacement"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modDashboardWidgetPlacementCollection"
                                 }
                             }
                         }
@@ -5191,17 +5281,21 @@
                 "tags": [
                     "Element Property Set"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modElementPropertySet objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modElementPropertySet"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modElementPropertySetCollection"
                                 }
                             }
                         }
@@ -5333,17 +5427,21 @@
                 "tags": [
                     "Event"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modEvent objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modEvent"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modEventCollection"
                                 }
                             }
                         }
@@ -5475,17 +5573,21 @@
                 "tags": [
                     "Form Customization Profile User Group"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modFormCustomizationProfileUserGroup objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modFormCustomizationProfileUserGroup"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modFormCustomizationProfileUserGroupCollection"
                                 }
                             }
                         }
@@ -5619,6 +5721,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -5654,10 +5762,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modFormCustomizationProfile"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modFormCustomizationProfileCollection"
                                 }
                             }
                         }
@@ -5791,6 +5896,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "profile",
                         "in": "query",
                         "description": "Filter on profile",
@@ -5836,10 +5947,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modFormCustomizationSet"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modFormCustomizationSetCollection"
                                 }
                             }
                         }
@@ -5973,6 +6081,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -6015,10 +6129,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modLexiconEntry"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modLexiconEntryCollection"
                                 }
                             }
                         }
@@ -6150,17 +6261,21 @@
                 "tags": [
                     "Manager Log"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modManagerLog objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modManagerLog"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modManagerLogCollection"
                                 }
                             }
                         }
@@ -6294,6 +6409,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "parent",
                         "in": "query",
                         "description": "Filter on parent",
@@ -6327,10 +6448,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modMenu"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modMenuCollection"
                                 }
                             }
                         }
@@ -6462,17 +6580,21 @@
                 "tags": [
                     "Namespace"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modNamespace objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modNamespace"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modNamespaceCollection"
                                 }
                             }
                         }
@@ -6606,6 +6728,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "namespace",
                         "in": "query",
                         "description": "Filter on namespace",
@@ -6630,10 +6758,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modExtensionPackage"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modExtensionPackageCollection"
                                 }
                             }
                         }
@@ -6767,6 +6892,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -6819,10 +6950,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modPlugin"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modPluginCollection"
                                 }
                             }
                         }
@@ -6956,6 +7084,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "priority",
                         "in": "query",
                         "description": "Filter on priority",
@@ -6972,10 +7106,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modPluginEvent"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modPluginEventCollection"
                                 }
                             }
                         }
@@ -7109,6 +7240,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -7134,10 +7271,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modPropertySet"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modPropertySetCollection"
                                 }
                             }
                         }
@@ -7270,6 +7404,12 @@
                     "Resource"
                 ],
                 "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
                     {
                         "name": "alias",
                         "in": "query",
@@ -7436,10 +7576,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modResource"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modResourceCollection"
                                 }
                             }
                         }
@@ -7573,6 +7710,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -7588,10 +7731,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modResourceGroup"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modResourceGroupCollection"
                                 }
                             }
                         }
@@ -7725,6 +7865,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "document_group",
                         "in": "query",
                         "description": "Filter on document_group",
@@ -7751,10 +7897,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modResourceGroupResource"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modResourceGroupResourceCollection"
                                 }
                             }
                         }
@@ -7888,6 +8031,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -7940,10 +8089,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modSnippet"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modSnippetCollection"
                                 }
                             }
                         }
@@ -8075,17 +8221,21 @@
                 "tags": [
                     "System Setting"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modSystemSetting objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modSystemSetting"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modSystemSettingCollection"
                                 }
                             }
                         }
@@ -8219,6 +8369,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "templatename",
                         "in": "query",
                         "description": "Filter on templatename",
@@ -8262,10 +8418,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modTemplate"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modTemplateCollection"
                                 }
                             }
                         }
@@ -8399,6 +8552,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -8452,10 +8611,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modTemplateVar"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modTemplateVarCollection"
                                 }
                             }
                         }
@@ -8589,6 +8745,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "tmplvarid",
                         "in": "query",
                         "description": "Filter on tmplvarid",
@@ -8615,10 +8777,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modTemplateVarResource"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modTemplateVarResourceCollection"
                                 }
                             }
                         }
@@ -8750,17 +8909,21 @@
                 "tags": [
                     "Template Var Resource Group"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modTemplateVarResourceGroup objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modTemplateVarResourceGroup"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modTemplateVarResourceGroupCollection"
                                 }
                             }
                         }
@@ -8892,17 +9055,21 @@
                 "tags": [
                     "Template Var Template"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modTemplateVarTemplate objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modTemplateVarTemplate"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modTemplateVarTemplateCollection"
                                 }
                             }
                         }
@@ -9036,6 +9203,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "username",
                         "in": "query",
                         "description": "Filter on username",
@@ -9079,10 +9252,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modUser"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modUserCollection"
                                 }
                             }
                         }
@@ -9216,6 +9386,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -9261,10 +9437,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modUserGroup"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modUserGroupCollection"
                                 }
                             }
                         }
@@ -9398,6 +9571,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "role",
                         "in": "query",
                         "description": "Filter on role",
@@ -9424,10 +9603,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modUserGroupMember"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modUserGroupMemberCollection"
                                 }
                             }
                         }
@@ -9561,6 +9737,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -9586,10 +9768,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modUserGroupRole"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modUserGroupRoleCollection"
                                 }
                             }
                         }
@@ -9721,17 +9900,21 @@
                 "tags": [
                     "User Group Setting"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserGroupSetting objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modUserGroupSetting"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modUserGroupSettingCollection"
                                 }
                             }
                         }
@@ -9863,17 +10046,21 @@
                 "tags": [
                     "User Message"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserMessage objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modUserMessage"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modUserMessageCollection"
                                 }
                             }
                         }
@@ -10007,6 +10194,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "internalKey",
                         "in": "query",
                         "description": "Filter on internalKey",
@@ -10023,10 +10216,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modUserProfile"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modUserProfileCollection"
                                 }
                             }
                         }
@@ -10158,17 +10348,21 @@
                 "tags": [
                     "User Setting"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modUserSetting objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modUserSetting"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modUserSettingCollection"
                                 }
                             }
                         }
@@ -10302,6 +10496,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -10335,10 +10535,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modWorkspace"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modWorkspaceCollection"
                                 }
                             }
                         }
@@ -10472,6 +10669,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -10487,10 +10690,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modDbRegisterQueue"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modDbRegisterQueueCollection"
                                 }
                             }
                         }
@@ -10624,6 +10824,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "queue",
                         "in": "query",
                         "description": "Filter on queue",
@@ -10649,10 +10855,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modDbRegisterTopic"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modDbRegisterTopicCollection"
                                 }
                             }
                         }
@@ -10786,6 +10989,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "created",
                         "in": "query",
                         "description": "Filter on created",
@@ -10839,10 +11048,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modDbRegisterMessage"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modDbRegisterMessageCollection"
                                 }
                             }
                         }
@@ -10976,6 +11182,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "target",
                         "in": "query",
                         "description": "Filter on target",
@@ -11039,10 +11251,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modAccessMediaSource"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modAccessMediaSourceCollection"
                                 }
                             }
                         }
@@ -11176,6 +11385,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -11209,10 +11424,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modMediaSource"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modMediaSourceCollection"
                                 }
                             }
                         }
@@ -11344,17 +11556,21 @@
                 "tags": [
                     "Media Source Context"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modMediaSourceContext objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modMediaSourceContext"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modMediaSourceContextCollection"
                                 }
                             }
                         }
@@ -11486,17 +11702,21 @@
                 "tags": [
                     "Media Source Element"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modMediaSourceElement objects.",
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modMediaSourceElement"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modMediaSourceElementCollection"
                                 }
                             }
                         }
@@ -11630,6 +11850,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "name",
                         "in": "query",
                         "description": "Filter on name",
@@ -11682,10 +11908,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modTransportProvider"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modTransportProviderCollection"
                                 }
                             }
                         }
@@ -11819,6 +12042,12 @@
                 ],
                 "parameters": [
                     {
+                        "$ref": "#\/components\/parameters\/LimitParam"
+                    },
+                    {
+                        "$ref": "#\/components\/parameters\/OffsetParam"
+                    },
+                    {
                         "name": "workspace",
                         "in": "query",
                         "description": "Filter on workspace",
@@ -11912,10 +12141,7 @@
                         "content": {
                             "application\/json": {
                                 "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#\/components\/schemas\/modTransportPackage"
-                                    }
+                                    "$ref": "#\/components\/schemas\/modTransportPackageCollection"
                                 }
                             }
                         }
@@ -12077,6 +12303,22 @@
                     }
                 }
             },
+            "modAccessActionCollection": {
+                "title": "Collection of modAccessAction objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessAction"
+                        }
+                    }
+                }
+            },
             "modAccessActionDom": {
                 "title": "Access Action Dom",
                 "type": "object",
@@ -12107,6 +12349,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modAccessActionDomCollection": {
+                "title": "Collection of modAccessActionDom objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessActionDom"
+                        }
                     }
                 }
             },
@@ -12146,6 +12404,22 @@
                     }
                 }
             },
+            "modAccessCategoryCollection": {
+                "title": "Collection of modAccessCategory objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessCategory"
+                        }
+                    }
+                }
+            },
             "modAccessNamespace": {
                 "title": "Access Namespace",
                 "type": "object",
@@ -12182,6 +12456,22 @@
                     }
                 }
             },
+            "modAccessNamespaceCollection": {
+                "title": "Collection of modAccessNamespace objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessNamespace"
+                        }
+                    }
+                }
+            },
             "modAccessContext": {
                 "title": "Access Context",
                 "type": "object",
@@ -12212,6 +12502,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modAccessContextCollection": {
+                "title": "Collection of modAccessContext objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessContext"
+                        }
                     }
                 }
             },
@@ -12251,6 +12557,22 @@
                     }
                 }
             },
+            "modAccessElementCollection": {
+                "title": "Collection of modAccessElement objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessElement"
+                        }
+                    }
+                }
+            },
             "modAccessTemplateVar": {
                 "title": "Access Template Var",
                 "type": "object",
@@ -12287,6 +12609,22 @@
                     }
                 }
             },
+            "modAccessTemplateVarCollection": {
+                "title": "Collection of modAccessTemplateVar objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessTemplateVar"
+                        }
+                    }
+                }
+            },
             "modAccessMenu": {
                 "title": "Access Menu",
                 "type": "object",
@@ -12317,6 +12655,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modAccessMenuCollection": {
+                "title": "Collection of modAccessMenu objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessMenu"
+                        }
                     }
                 }
             },
@@ -12360,6 +12714,22 @@
                     }
                 }
             },
+            "modAccessPolicyCollection": {
+                "title": "Collection of modAccessPolicy objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessPolicy"
+                        }
+                    }
+                }
+            },
             "modAccessPolicyTemplate": {
                 "title": "Access Policy Template",
                 "type": "object",
@@ -12387,6 +12757,22 @@
                     }
                 }
             },
+            "modAccessPolicyTemplateCollection": {
+                "title": "Collection of modAccessPolicyTemplate objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessPolicyTemplate"
+                        }
+                    }
+                }
+            },
             "modAccessPolicyTemplateGroup": {
                 "title": "Access Policy Template Group",
                 "type": "object",
@@ -12402,6 +12788,22 @@
                     "description": {
                         "type": "string",
                         "default": null
+                    }
+                }
+            },
+            "modAccessPolicyTemplateGroupCollection": {
+                "title": "Collection of modAccessPolicyTemplateGroup objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessPolicyTemplateGroup"
+                        }
                     }
                 }
             },
@@ -12428,6 +12830,22 @@
                     "value": {
                         "type": "boolean",
                         "default": true
+                    }
+                }
+            },
+            "modAccessPermissionCollection": {
+                "title": "Collection of modAccessPermission objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessPermission"
+                        }
                     }
                 }
             },
@@ -12467,6 +12885,22 @@
                     }
                 }
             },
+            "modAccessResourceCollection": {
+                "title": "Collection of modAccessResource objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessResource"
+                        }
+                    }
+                }
+            },
             "modAccessResourceGroup": {
                 "title": "Access Resource Group",
                 "type": "object",
@@ -12503,6 +12937,22 @@
                     }
                 }
             },
+            "modAccessResourceGroupCollection": {
+                "title": "Collection of modAccessResourceGroup objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessResourceGroup"
+                        }
+                    }
+                }
+            },
             "modAction": {
                 "title": "Action",
                 "type": "object",
@@ -12534,6 +12984,22 @@
                     },
                     "help_url": {
                         "type": "string"
+                    }
+                }
+            },
+            "modActionCollection": {
+                "title": "Collection of modAction objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAction"
+                        }
                     }
                 }
             },
@@ -12597,6 +13063,22 @@
                     }
                 }
             },
+            "modActionDomCollection": {
+                "title": "Collection of modActionDom objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modActionDom"
+                        }
+                    }
+                }
+            },
             "modActionField": {
                 "title": "Action Field",
                 "type": "object",
@@ -12632,6 +13114,22 @@
                     }
                 }
             },
+            "modActionFieldCollection": {
+                "title": "Collection of modActionField objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modActionField"
+                        }
+                    }
+                }
+            },
             "modActiveUser": {
                 "title": "Active User",
                 "type": "object",
@@ -12661,6 +13159,22 @@
                     }
                 }
             },
+            "modActiveUserCollection": {
+                "title": "Collection of modActiveUser objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modActiveUser"
+                        }
+                    }
+                }
+            },
             "modCategory": {
                 "title": "Category",
                 "type": "object",
@@ -12685,6 +13199,22 @@
                     }
                 }
             },
+            "modCategoryCollection": {
+                "title": "Collection of modCategory objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modCategory"
+                        }
+                    }
+                }
+            },
             "modCategoryClosure": {
                 "title": "Category Closure",
                 "type": "object",
@@ -12703,6 +13233,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modCategoryClosureCollection": {
+                "title": "Collection of modCategoryClosure objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modCategoryClosure"
+                        }
                     }
                 }
             },
@@ -12767,6 +13313,22 @@
                     }
                 }
             },
+            "modChunkCollection": {
+                "title": "Collection of modChunk objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modChunk"
+                        }
+                    }
+                }
+            },
             "modClassMap": {
                 "title": "Class Map",
                 "type": "object",
@@ -12792,6 +13354,22 @@
                     "lexicon": {
                         "type": "string",
                         "default": "core:resource"
+                    }
+                }
+            },
+            "modClassMapCollection": {
+                "title": "Collection of modClassMap objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modClassMap"
+                        }
                     }
                 }
             },
@@ -12830,6 +13408,22 @@
                     }
                 }
             },
+            "modContentTypeCollection": {
+                "title": "Collection of modContentType objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modContentType"
+                        }
+                    }
+                }
+            },
             "modContext": {
                 "title": "Context",
                 "type": "object",
@@ -12850,6 +13444,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modContextCollection": {
+                "title": "Collection of modContext objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modContext"
+                        }
                     }
                 }
             },
@@ -12886,6 +13496,22 @@
                     }
                 }
             },
+            "modContextSettingCollection": {
+                "title": "Collection of modContextSetting objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modContextSetting"
+                        }
+                    }
+                }
+            },
             "modContextResource": {
                 "title": "Context Resource",
                 "type": "object",
@@ -12898,6 +13524,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modContextResourceCollection": {
+                "title": "Collection of modContextResource objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modContextResource"
+                        }
                     }
                 }
             },
@@ -12920,6 +13562,22 @@
                     "hide_trees": {
                         "type": "boolean",
                         "default": false
+                    }
+                }
+            },
+            "modDashboardCollection": {
+                "title": "Collection of modDashboard objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modDashboard"
+                        }
                     }
                 }
             },
@@ -12960,6 +13618,22 @@
                     }
                 }
             },
+            "modDashboardWidgetCollection": {
+                "title": "Collection of modDashboardWidget objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modDashboardWidget"
+                        }
+                    }
+                }
+            },
             "modDashboardWidgetPlacement": {
                 "title": "Dashboard Widget Placement",
                 "type": "object",
@@ -12978,6 +13652,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modDashboardWidgetPlacementCollection": {
+                "title": "Collection of modDashboardWidgetPlacement objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modDashboardWidgetPlacement"
+                        }
                     }
                 }
             },
@@ -13000,6 +13690,22 @@
                     }
                 }
             },
+            "modElementPropertySetCollection": {
+                "title": "Collection of modElementPropertySet objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modElementPropertySet"
+                        }
+                    }
+                }
+            },
             "modEvent": {
                 "title": "Event",
                 "type": "object",
@@ -13018,6 +13724,22 @@
                     }
                 }
             },
+            "modEventCollection": {
+                "title": "Collection of modEvent objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modEvent"
+                        }
+                    }
+                }
+            },
             "modFormCustomizationProfileUserGroup": {
                 "title": "Form Customization Profile User Group",
                 "type": "object",
@@ -13031,6 +13753,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modFormCustomizationProfileUserGroupCollection": {
+                "title": "Collection of modFormCustomizationProfileUserGroup objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modFormCustomizationProfileUserGroup"
+                        }
                     }
                 }
             },
@@ -13058,6 +13796,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modFormCustomizationProfileCollection": {
+                "title": "Collection of modFormCustomizationProfile objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modFormCustomizationProfile"
+                        }
                     }
                 }
             },
@@ -13102,6 +13856,22 @@
                     }
                 }
             },
+            "modFormCustomizationSetCollection": {
+                "title": "Collection of modFormCustomizationSet objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modFormCustomizationSet"
+                        }
+                    }
+                }
+            },
             "modLexiconEntry": {
                 "title": "Lexicon Entry",
                 "type": "object",
@@ -13139,6 +13909,22 @@
                     }
                 }
             },
+            "modLexiconEntryCollection": {
+                "title": "Collection of modLexiconEntry objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modLexiconEntry"
+                        }
+                    }
+                }
+            },
             "modManagerLog": {
                 "title": "Manager Log",
                 "type": "object",
@@ -13166,6 +13952,22 @@
                     "item": {
                         "type": "string",
                         "default": "0"
+                    }
+                }
+            },
+            "modManagerLogCollection": {
+                "title": "Collection of modManagerLog objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modManagerLog"
+                        }
                     }
                 }
             },
@@ -13208,6 +14010,22 @@
                     }
                 }
             },
+            "modMenuCollection": {
+                "title": "Collection of modMenu objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modMenu"
+                        }
+                    }
+                }
+            },
             "modNamespace": {
                 "title": "Namespace",
                 "type": "object",
@@ -13220,6 +14038,22 @@
                     },
                     "assets_path": {
                         "type": "string"
+                    }
+                }
+            },
+            "modNamespaceCollection": {
+                "title": "Collection of modNamespace objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modNamespace"
+                        }
                     }
                 }
             },
@@ -13260,6 +14094,22 @@
                     "updated_at": {
                         "type": "string",
                         "default": null
+                    }
+                }
+            },
+            "modExtensionPackageCollection": {
+                "title": "Collection of modExtensionPackage objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modExtensionPackage"
+                        }
                     }
                 }
             },
@@ -13329,6 +14179,22 @@
                     }
                 }
             },
+            "modPluginCollection": {
+                "title": "Collection of modPlugin objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modPlugin"
+                        }
+                    }
+                }
+            },
             "modPluginEvent": {
                 "title": "Plugin Event",
                 "type": "object",
@@ -13350,6 +14216,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modPluginEventCollection": {
+                "title": "Collection of modPluginEvent objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modPluginEvent"
+                        }
                     }
                 }
             },
@@ -13376,6 +14258,22 @@
                     "properties": {
                         "type": "string",
                         "default": null
+                    }
+                }
+            },
+            "modPropertySetCollection": {
+                "title": "Collection of modPropertySet objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modPropertySet"
+                        }
                     }
                 }
             },
@@ -13564,6 +14462,22 @@
                     }
                 }
             },
+            "modResourceCollection": {
+                "title": "Collection of modResource objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modResource"
+                        }
+                    }
+                }
+            },
             "modResourceGroup": {
                 "title": "Resource Group",
                 "type": "object",
@@ -13586,6 +14500,22 @@
                     }
                 }
             },
+            "modResourceGroupCollection": {
+                "title": "Collection of modResourceGroup objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modResourceGroup"
+                        }
+                    }
+                }
+            },
             "modResourceGroupResource": {
                 "title": "Resource Group Resource",
                 "type": "object",
@@ -13604,6 +14534,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modResourceGroupResourceCollection": {
+                "title": "Collection of modResourceGroupResource objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modResourceGroupResource"
+                        }
                     }
                 }
             },
@@ -13670,6 +14616,22 @@
                     }
                 }
             },
+            "modSnippetCollection": {
+                "title": "Collection of modSnippet objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modSnippet"
+                        }
+                    }
+                }
+            },
             "modSystemSetting": {
                 "title": "System Setting",
                 "type": "object",
@@ -13694,6 +14656,22 @@
                     "editedon": {
                         "type": "string",
                         "default": null
+                    }
+                }
+            },
+            "modSystemSettingCollection": {
+                "title": "Collection of modSystemSetting objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modSystemSetting"
+                        }
                     }
                 }
             },
@@ -13757,6 +14735,22 @@
                     },
                     "static_file": {
                         "type": "string"
+                    }
+                }
+            },
+            "modTemplateCollection": {
+                "title": "Collection of modTemplate objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modTemplate"
+                        }
                     }
                 }
             },
@@ -13841,6 +14835,22 @@
                     }
                 }
             },
+            "modTemplateVarCollection": {
+                "title": "Collection of modTemplateVar objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modTemplateVar"
+                        }
+                    }
+                }
+            },
             "modTemplateVarResource": {
                 "title": "Template Var Resource",
                 "type": "object",
@@ -13866,6 +14876,22 @@
                     }
                 }
             },
+            "modTemplateVarResourceCollection": {
+                "title": "Collection of modTemplateVarResource objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modTemplateVarResource"
+                        }
+                    }
+                }
+            },
             "modTemplateVarResourceGroup": {
                 "title": "Template Var Resource Group",
                 "type": "object",
@@ -13887,6 +14913,22 @@
                     }
                 }
             },
+            "modTemplateVarResourceGroupCollection": {
+                "title": "Collection of modTemplateVarResourceGroup objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modTemplateVarResourceGroup"
+                        }
+                    }
+                }
+            },
             "modTemplateVarTemplate": {
                 "title": "Template Var Template",
                 "type": "object",
@@ -13905,6 +14947,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modTemplateVarTemplateCollection": {
+                "title": "Collection of modTemplateVarTemplate objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modTemplateVarTemplate"
+                        }
                     }
                 }
             },
@@ -13968,6 +15026,22 @@
                     }
                 }
             },
+            "modUserCollection": {
+                "title": "Collection of modUser objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modUser"
+                        }
+                    }
+                }
+            },
             "modUserGroup": {
                 "title": "User Group",
                 "type": "object",
@@ -13998,6 +15072,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 1
+                    }
+                }
+            },
+            "modUserGroupCollection": {
+                "title": "Collection of modUserGroup objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modUserGroup"
+                        }
                     }
                 }
             },
@@ -14032,6 +15122,22 @@
                     }
                 }
             },
+            "modUserGroupMemberCollection": {
+                "title": "Collection of modUserGroupMember objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modUserGroupMember"
+                        }
+                    }
+                }
+            },
             "modUserGroupRole": {
                 "title": "User Group Role",
                 "type": "object",
@@ -14053,6 +15159,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 9999
+                    }
+                }
+            },
+            "modUserGroupRoleCollection": {
+                "title": "Collection of modUserGroupRole objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modUserGroupRole"
+                        }
                     }
                 }
             },
@@ -14087,6 +15209,22 @@
                     "editedon": {
                         "type": "string",
                         "default": null
+                    }
+                }
+            },
+            "modUserGroupSettingCollection": {
+                "title": "Collection of modUserGroupSetting objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modUserGroupSetting"
+                        }
                     }
                 }
             },
@@ -14131,6 +15269,22 @@
                         "type": "integer",
                         "format": "int32",
                         "default": 0
+                    }
+                }
+            },
+            "modUserMessageCollection": {
+                "title": "Collection of modUserMessage objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modUserMessage"
+                        }
                     }
                 }
             },
@@ -14240,6 +15394,22 @@
                     }
                 }
             },
+            "modUserProfileCollection": {
+                "title": "Collection of modUserProfile objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modUserProfile"
+                        }
+                    }
+                }
+            },
             "modUserSetting": {
                 "title": "User Setting",
                 "type": "object",
@@ -14273,6 +15443,22 @@
                     }
                 }
             },
+            "modUserSettingCollection": {
+                "title": "Collection of modUserSetting objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modUserSetting"
+                        }
+                    }
+                }
+            },
             "modWorkspace": {
                 "title": "Workspace",
                 "type": "object",
@@ -14302,6 +15488,22 @@
                     }
                 }
             },
+            "modWorkspaceCollection": {
+                "title": "Collection of modWorkspace objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modWorkspace"
+                        }
+                    }
+                }
+            },
             "modDbRegisterQueue": {
                 "title": "Db Register Queue",
                 "type": "object",
@@ -14318,6 +15520,22 @@
                     "options": {
                         "type": "string",
                         "default": null
+                    }
+                }
+            },
+            "modDbRegisterQueueCollection": {
+                "title": "Collection of modDbRegisterQueue objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modDbRegisterQueue"
+                        }
                     }
                 }
             },
@@ -14350,6 +15568,22 @@
                     "options": {
                         "type": "string",
                         "default": null
+                    }
+                }
+            },
+            "modDbRegisterTopicCollection": {
+                "title": "Collection of modDbRegisterTopic objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modDbRegisterTopic"
+                        }
                     }
                 }
             },
@@ -14398,6 +15632,22 @@
                     }
                 }
             },
+            "modDbRegisterMessageCollection": {
+                "title": "Collection of modDbRegisterMessage objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modDbRegisterMessage"
+                        }
+                    }
+                }
+            },
             "modAccessMediaSource": {
                 "title": "Access Media Source",
                 "type": "object",
@@ -14434,6 +15684,22 @@
                     }
                 }
             },
+            "modAccessMediaSourceCollection": {
+                "title": "Collection of modAccessMediaSource objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modAccessMediaSource"
+                        }
+                    }
+                }
+            },
             "modMediaSource": {
                 "title": "Media Source",
                 "type": "object",
@@ -14464,6 +15730,22 @@
                     }
                 }
             },
+            "modMediaSourceCollection": {
+                "title": "Collection of modMediaSource objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modMediaSource"
+                        }
+                    }
+                }
+            },
             "modMediaSourceContext": {
                 "title": "Media Source Context",
                 "type": "object",
@@ -14476,6 +15758,22 @@
                     "context_key": {
                         "type": "string",
                         "default": "web"
+                    }
+                }
+            },
+            "modMediaSourceContextCollection": {
+                "title": "Collection of modMediaSourceContext objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modMediaSourceContext"
+                        }
                     }
                 }
             },
@@ -14500,6 +15798,22 @@
                     "context_key": {
                         "type": "string",
                         "default": "web"
+                    }
+                }
+            },
+            "modMediaSourceElementCollection": {
+                "title": "Collection of modMediaSourceElement objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modMediaSourceElement"
+                        }
                     }
                 }
             },
@@ -14549,6 +15863,22 @@
                     },
                     "properties": {
                         "type": "string"
+                    }
+                }
+            },
+            "modTransportProviderCollection": {
+                "title": "Collection of modTransportProvider objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modTransportProvider"
+                        }
                     }
                 }
             },
@@ -14634,6 +15964,47 @@
                         "format": "int32",
                         "default": 0
                     }
+                }
+            },
+            "modTransportPackageCollection": {
+                "title": "Collection of modTransportPackage objects.",
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "The total number of results for the request, including applied filters if any."
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#\/components\/schemas\/modTransportPackage"
+                        }
+                    }
+                }
+            }
+        },
+        "parameters": {
+            "LimitParam": {
+                "name": "limit",
+                "in": "query",
+                "description": "The number of results to return per page.",
+                "schema": {
+                    "type": "integer",
+                    "format": "int32",
+                    "minimum": 1,
+                    "maximum": 100,
+                    "default": 20
+                }
+            },
+            "OffsetParam": {
+                "name": "offset",
+                "in": "query",
+                "description": "The offset to start the result set at.",
+                "schema": {
+                    "type": "integer",
+                    "format": "int32",
+                    "minimum": 0,
+                    "default": 0
                 }
             }
         }
