@@ -257,6 +257,13 @@ class Builder
         $paths['/context/{contextKey}']['get']['parameters'] = [$contextKeyParam];
         $paths['/context/{contextKey}']['put']['parameters'] = [$contextKeyParam];
         $paths['/context/{contextKey}']['delete']['parameters'] = [$contextKeyParam];
+
+        // Update tags
+        $paths['/context']['get']['tags'] = ['Contexts'];
+        $paths['/context']['post']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}']['get']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}']['put']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}']['delete']['tags'] = ['Contexts'];
         return $paths;
     }
 
@@ -290,6 +297,53 @@ class Builder
         $paths['/context/{contextKey}/setting/{settingKey}']['get']['parameters'] = [$contextKeyParam, $settingKeyParam];
         $paths['/context/{contextKey}/setting/{settingKey}']['put']['parameters'] = [$contextKeyParam, $settingKeyParam];
         $paths['/context/{contextKey}/setting/{settingKey}']['delete']['parameters'] = [$contextKeyParam, $settingKeyParam];
+
+        // Update tags
+        $paths['/context/{contextKey}/setting']['get']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}/setting']['post']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}/setting/{settingKey}']['get']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}/setting/{settingKey}']['put']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}/setting/{settingKey}']['delete']['tags'] = ['Contexts'];
+
+        return $paths;
+    }
+    public function generatePathsFormodContextResource($uri, $class, $classWithPackage, $meta, $title)
+    {
+        $paths = $this->generatePaths($uri, $class, $classWithPackage, $meta, $title);
+        $paths = $this->changeKey($paths, '/context-resource', '/context/{contextKey}/resource');
+        $paths = $this->changeKey($paths, '/context-resource/{id}', '/context/{contextKey}/resource/{resourceId}');
+        $contextKeyParam = [
+            'name' => 'contextKey',
+            'in' => 'path',
+            'description' => 'The key of the associated context.',
+            'required' => true,
+            'schema' => [
+                'type' => 'integer'
+            ]
+        ];
+        $resourceIdParam = [
+            'name' => 'resourceId',
+            'in' => 'path',
+            'description' => 'The ID of the resource assigned to the context.',
+            'required' => true,
+            'schema' => [
+                'type' => 'integer'
+            ]
+        ];
+        $paths['/context/{contextKey}/resource']['get']['parameters'][] = $contextKeyParam;
+        $paths['/context/{contextKey}/resource']['post']['parameters'][] = $contextKeyParam;
+
+        // Note, this overrides other parameters
+        $paths['/context/{contextKey}/resource/{resourceId}']['get']['parameters'] = [$contextKeyParam, $resourceIdParam];
+        $paths['/context/{contextKey}/resource/{resourceId}']['put']['parameters'] = [$contextKeyParam, $resourceIdParam];
+        $paths['/context/{contextKey}/resource/{resourceId}']['delete']['parameters'] = [$contextKeyParam, $resourceIdParam];
+
+        // Update tags
+        $paths['/context/{contextKey}/resource']['get']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}/resource']['post']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}/resource/{resourceId}']['get']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}/resource/{resourceId}']['put']['tags'] = ['Contexts'];
+        $paths['/context/{contextKey}/resource/{resourceId}']['delete']['tags'] = ['Contexts'];
 
         return $paths;
     }

@@ -4107,7 +4107,7 @@
             "get": {
                 "description": "Returns a collection of modContext objects.",
                 "tags": [
-                    "Context"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
@@ -4149,7 +4149,7 @@
             "post": {
                 "description": "Creates a new modContext object.",
                 "tags": [
-                    "Context"
+                    "Contexts"
                 ],
                 "requestBody": {
                     "description": "To create a new modContext object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
@@ -4180,7 +4180,7 @@
             "get": {
                 "description": "Retrieves a single modContext object.",
                 "tags": [
-                    "Context"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
@@ -4209,7 +4209,7 @@
             "put": {
                 "description": "Updates a modContext object.",
                 "tags": [
-                    "Context"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
@@ -4238,7 +4238,7 @@
             "delete": {
                 "description": "Deletes a modContext object.",
                 "tags": [
-                    "Context"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
@@ -4269,7 +4269,7 @@
             "get": {
                 "description": "Returns a collection of modContextSetting objects.",
                 "tags": [
-                    "Context Setting"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
@@ -4301,7 +4301,7 @@
             "post": {
                 "description": "Creates a new modContextSetting object.",
                 "tags": [
-                    "Context Setting"
+                    "Contexts"
                 ],
                 "requestBody": {
                     "description": "To create a new modContextSetting object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
@@ -4343,7 +4343,7 @@
             "get": {
                 "description": "Retrieves a single modContextSetting object.",
                 "tags": [
-                    "Context Setting"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
@@ -4381,7 +4381,7 @@
             "put": {
                 "description": "Updates a modContextSetting object.",
                 "tags": [
-                    "Context Setting"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
@@ -4419,7 +4419,7 @@
             "delete": {
                 "description": "Deletes a modContextSetting object.",
                 "tags": [
-                    "Context Setting"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
@@ -4455,13 +4455,23 @@
                 }
             }
         },
-        "\/context-resource": {
+        "\/context\/{contextKey}\/resource": {
             "get": {
                 "description": "Returns a collection of modContextResource objects.",
                 "tags": [
-                    "Context Resource"
+                    "Contexts"
                 ],
-                "parameters": [],
+                "parameters": [
+                    {
+                        "name": "contextKey",
+                        "in": "path",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Collection of modContextResource objects.",
@@ -4481,7 +4491,7 @@
             "post": {
                 "description": "Creates a new modContextResource object.",
                 "tags": [
-                    "Context Resource"
+                    "Contexts"
                 ],
                 "requestBody": {
                     "description": "To create a new modContextResource object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
@@ -4505,20 +4515,40 @@
                             }
                         }
                     }
-                }
+                },
+                "parameters": [
+                    {
+                        "name": "contextKey",
+                        "in": "path",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ]
             }
         },
-        "\/context-resource\/{id}": {
+        "\/context\/{contextKey}\/resource\/{resourceId}": {
             "get": {
                 "description": "Retrieves a single modContextResource object.",
                 "tags": [
-                    "Context Resource"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "contextKey",
                         "in": "path",
-                        "description": "The ID (primary key) of the modContextResource object to retrieve.",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "resourceId",
+                        "in": "path",
+                        "description": "The ID of the resource assigned to the context.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4541,13 +4571,22 @@
             "put": {
                 "description": "Updates a modContextResource object.",
                 "tags": [
-                    "Context Resource"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "contextKey",
                         "in": "path",
-                        "description": "The ID (primary key) of the modContextResource object to update.",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "resourceId",
+                        "in": "path",
+                        "description": "The ID of the resource assigned to the context.",
                         "required": true,
                         "schema": {
                             "type": "integer"
@@ -4570,13 +4609,22 @@
             "delete": {
                 "description": "Deletes a modContextResource object.",
                 "tags": [
-                    "Context Resource"
+                    "Contexts"
                 ],
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "contextKey",
                         "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
+                        "description": "The key of the associated context.",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "resourceId",
+                        "in": "path",
+                        "description": "The ID of the resource assigned to the context.",
                         "required": true,
                         "schema": {
                             "type": "integer"
