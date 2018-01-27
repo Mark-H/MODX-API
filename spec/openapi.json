@@ -14,10 +14,10 @@
     },
     "servers": [
         {
-            "url": "{server}/v1",
+            "url": "{server}\/v1",
             "variables": {
                 "server": {
-                    "default": "https://your-modx-site.com/api"
+                    "default": "https:\/\/your-modx-site.com\/api"
                 }
             }
         }
@@ -3730,163 +3730,6 @@
                             "application\/json": {
                                 "schema": {
                                     "$ref": "#\/components\/schemas\/modCategory"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "\/category-closure": {
-            "get": {
-                "description": "Returns a collection of modCategoryClosure objects.",
-                "tags": [
-                    "Category Closure"
-                ],
-                "parameters": [
-                    {
-                        "$ref": "#\/components\/parameters\/LimitParam"
-                    },
-                    {
-                        "$ref": "#\/components\/parameters\/OffsetParam"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Collection of modCategoryClosure objects.",
-                        "content": {
-                            "application\/json": {
-                                "schema": {
-                                    "$ref": "#\/components\/schemas\/modCategoryClosureCollection"
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "post": {
-                "description": "Creates a new modCategoryClosure object.",
-                "tags": [
-                    "Category Closure"
-                ],
-                "requestBody": {
-                    "description": "To create a new modCategoryClosure object, send a POST request with the following fields. Any omitted fields will be set their default. The ID field is automatically set to the next increment in the database.",
-                    "required": true,
-                    "content": {
-                        "application\/x-www-form-urlencoded": {
-                            "schema": {
-                                "$ref": "#\/components\/schemas\/modCategoryClosure"
-                            }
-                        }
-                    }
-                },
-                "responses": {
-                    "200": {
-                        "description": "New modCategoryClosure object successfully created.",
-                        "content": {
-                            "application\/json": {
-                                "schema": {
-                                    "$ref": "#\/components\/schemas\/modCategoryClosure"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "\/category-closure\/{id}": {
-            "get": {
-                "description": "Retrieves a single modCategoryClosure object.",
-                "tags": [
-                    "Category Closure"
-                ],
-                "parameters": [
-                    {
-                        "name": "id",
-                        "in": "path",
-                        "description": "The ID (primary key) of the modCategoryClosure object to retrieve.",
-                        "required": true,
-                        "schema": {
-                            "type": "integer"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "The requested modCategoryClosure object.",
-                        "content": {
-                            "application\/json": {
-                                "schema": {
-                                    "$ref": "#\/components\/schemas\/modCategoryClosure"
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "put": {
-                "description": "Updates a modCategoryClosure object.",
-                "tags": [
-                    "Category Closure"
-                ],
-                "parameters": [
-                    {
-                        "name": "id",
-                        "in": "path",
-                        "description": "The ID (primary key) of the modCategoryClosure object to update.",
-                        "required": true,
-                        "schema": {
-                            "type": "integer"
-                        }
-                    }
-                ],
-                "requestBody": {
-                    "description": "To update a modCategoryClosure object, send a PUT request with all object fields.",
-                    "required": true,
-                    "content": {
-                        "application\/x-www-form-urlencoded": {
-                            "schema": {
-                                "$ref": "#\/components\/schemas\/modCategoryClosure"
-                            }
-                        }
-                    }
-                },
-                "responses": {
-                    "200": {
-                        "description": "modCategoryClosure object updated.",
-                        "content": {
-                            "application\/json": {
-                                "schema": {
-                                    "$ref": "#\/components\/schemas\/modCategoryClosure"
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "delete": {
-                "description": "Deletes a modCategoryClosure object.",
-                "tags": [
-                    "Category Closure"
-                ],
-                "parameters": [
-                    {
-                        "name": "id",
-                        "in": "path",
-                        "description": "The ID (primary key) of the modAccessCategory object that needs to be removed.",
-                        "required": true,
-                        "schema": {
-                            "type": "integer"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "modCategoryClosure object removed.",
-                        "content": {
-                            "application\/json": {
-                                "schema": {
-                                    "$ref": "#\/components\/schemas\/modCategoryClosure"
                                 }
                             }
                         }
@@ -13991,43 +13834,6 @@
                         "type": "array",
                         "items": {
                             "$ref": "#\/components\/schemas\/modCategory"
-                        }
-                    }
-                }
-            },
-            "modCategoryClosure": {
-                "title": "Category Closure",
-                "type": "object",
-                "properties": {
-                    "ancestor": {
-                        "type": "integer",
-                        "format": "int32",
-                        "default": 0
-                    },
-                    "descendant": {
-                        "type": "integer",
-                        "format": "int32",
-                        "default": 0
-                    },
-                    "depth": {
-                        "type": "integer",
-                        "format": "int32",
-                        "default": 0
-                    }
-                }
-            },
-            "modCategoryClosureCollection": {
-                "title": "Collection of modCategoryClosure objects.",
-                "type": "object",
-                "properties": {
-                    "total": {
-                        "type": "integer",
-                        "description": "The total number of results for the request, including applied filters if any."
-                    },
-                    "data": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "#\/components\/schemas\/modCategoryClosure"
                         }
                     }
                 }

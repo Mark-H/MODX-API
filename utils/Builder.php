@@ -61,7 +61,7 @@ class Builder
             $attributes = $object->attributes(); // can have class, extends, table
             $class = (string)$attributes['class'];
 
-            if (in_array($class, ['modElement', 'modScript', 'modSession'], true)) {
+            if (in_array($class, ['modElement', 'modScript', 'modSession', 'modCategoryClosure'], true)) {
                 echo "Skipping model definition for {$class} as it is on the ignore list\n";
                 continue;
             }
