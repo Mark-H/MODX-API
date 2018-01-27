@@ -12,6 +12,16 @@
             "url": "https:\/\/opensource.org\/licenses\/MIT"
         }
     },
+    "servers": [
+        {
+            "url": "{server}/v1",
+            "variables": {
+                "server": {
+                    "default": "https://your-modx-site.com/api"
+                }
+            }
+        }
+    ],
     "paths": {
         "\/access-action": {
             "get": {
