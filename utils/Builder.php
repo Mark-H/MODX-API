@@ -429,6 +429,26 @@ class Builder
         return $paths;
     }
 
+    public function generatePathsFormodNamespace($uri, $class, $classWithPackage, $meta, $title)
+    {
+        $paths = $this->generatePaths($uri, $class, $classWithPackage, $meta, $title);
+        $paths = $this->changeKey($paths, '/namespace/{id}', '/namespace/{name}');
+        $nameParam = [
+            'name' => 'name',
+            'in' => 'path',
+            'description' => 'The name of the namespace to interact with.',
+            'required' => true,
+            'schema' => [
+                'type' => 'string'
+            ]
+        ];
+        $paths['/namespace/{name}']['get']['parameters'] = [$nameParam];
+        $paths['/namespace/{name}']['put']['parameters'] = [$nameParam];
+        $paths['/namespace/{name}']['delete']['parameters'] = [$nameParam];
+
+        return $paths;
+    }
+
     private function _standardGetCollectionRequest($class, $title)
     {
         return [
